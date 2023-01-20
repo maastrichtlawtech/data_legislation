@@ -1,0 +1,242 @@
+question: Start
+subquestion: |
+  This tool will help you determine whether the ePrivacy Directive applies in your case.
+  
+  <font size="2"> [Directive 2002/58/EC](https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=celex%3A32002L0058) of the European Parliament and of the Council of 12 July 2002 concerning the processing of personal data and the protection of privacy in the electronic communications sector
+continue button field: start
+---
+question: Question
+subquestion: |
+  Do you perform activities concerning any of the following areas:
+  
+  - Public security 
+  - Defence
+  - State security, including the economic well-being of the State when the activities relate to State security matters
+  - Activities of a State in areas of criminal law ?
+  
+  
+  <font size="2">***Source: Art.1(3) ePrivacy Directive***
+field: excluded_activities
+buttons:
+  - "Yes"
+  - "No"
+---
+event: art_1_3_exclusion
+question: Conclusion - The Directive is ***not*** applicable to your case
+subquestion: |
+  The Directive is not applicable to your situation, because the processing is outside of the scope of the Directive. 
+  
+  <font size="2">**Source: Art. 1(3) ePrivacy Directive**
+---
+question: Question
+subquestion: |
+  Do you perform any of the following operations on personal data, whether by automated or non-automated means?
+  
+  Collection, recording, organisation, structuring, storage, adaptation or alteration, retrieval, consultation, use, disclosure by transmission, dissemination or otherwise making available, alignment or combination, restriction, erasure or destruction.
+  
+  You can use the tool created for the GDPR to determine whether the data being processed is personal.
+  
+  <font size="2">***Source: Art.4(2) [General Data Protection Regulation](https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32016R0679); definition of "processing"***
+field: processing
+buttons:
+  - "Yes"
+  - "No"
+---
+event: not_applicable
+question: Conclusion - The Directive is ***not*** applicable to your case
+subquestion: |
+  The ePrivacy Directive is not applicable to your case.
+  
+  
+  <font size="2">***Source: Art. 3(1) ePrivacy Directive & Art.4(2) [General Data Protection Regulation](https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32016R0679); definition of "processing"***
+---
+question: Question
+subquestion: |
+  Do you provide an electronic communication service to a user or subscriber in exchange for:
+  
+  - Money
+  - Providing personal data you request
+  - Information that the end-user allows access to (such as the IP address or browser cookies)
+  - Advertising that the user is exposed to, in order to gain access to the service
+  - Otherwise monetizing the personal data the service provider has gathered from the end-user ?
+  
+  
+  <font size="2">***Source: Art. 3 ePrivacy Directive and Art. 2(4) and Recital 16 Directive of the [European Electronic Communications Code](https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=celex%3A32018L1972) ***
+field: service_remuneration
+buttons:
+  - "Yes"
+  - "No"
+---
+question: Question
+subquestion: |
+  Does your service consist wholly or mainly in the conveyance of signals on electronic communications networks? This includes:
+  
+  - Internet access service
+  - Interpersonal communication service
+  - Transmission services  used for machine-to-machine services and broadcasting
+  
+  <font size="2">**Source: Art. 3(1) ePrivacy Directive and Art. 2(4) Directive of the [European Electronic Communications Code](https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=celex%3A32018L1972)**
+  
+field: service_signals
+buttons:
+  - "Yes"
+  - "No"
+---
+question: Question
+subquestion: |
+  Is your service publicly available?
+  
+  <font size="2">**Source: Art. 3(1) ePrivacy Directive**
+field: service_public
+buttons:
+  - "Yes"
+  - "No"
+---
+question: Question
+subquestion: |
+  Does your service provide or exercise editorial control over content, that is transmitted using electronic communications networks or services?
+  
+  <font size="2">**Source:  Art. 3(1) ePrivacy Directive and Art. 2(4) Directive of the [European Electronic Communications Code](https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=celex%3A32018L1972)**
+field: service_editorial
+buttons:
+  - "Yes"
+  - "No"
+---
+question: Notice
+subquestion: |
+  You do not fulfill all of the conditions of a provider of an electronic communication service, but you might qualify as a provider of an electronic public communication network.
+  
+  <font size="2">***Source: Art. 3 ePrivacy Directive and Art. 2(4) and Recital 16 Directive of the [European Electronic Communications Code](https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=celex%3A32018L1972) ***
+continue button field: notice_not_service
+---
+event: electronic_communication_service
+question: Conclusion - The Directive ***is*** applicable to your case
+subquestion: |
+  You qualify as a service provider of an electronic communication service, and the Directive is applicable to your case.
+  
+  <font size="2">***Source: Art. 3 ePrivacy Directive***
+  
+---
+question: Question
+subquestion: |
+  Do you establish, operate, control or make available a network, that is used wholly or mainly for the provision of publicly available communication services?
+  
+  <font size="2">***Source: Art.2(8) and Art.3(16) Directive of the [European Electronic Communications Code](https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=celex%3A32018L1972) ***
+  
+field: network_public
+buttons:
+  - "Yes"
+  - "No"
+---
+question: Question
+subquestion: |
+  Does the network contain transmission systems or switching or routing equipment that make possible the conveyance of signals?
+  
+  
+  <font size="2">***Source: Art.2(1) Directive of the [European Electronic Communications Code](https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=celex%3A32018L1972) ***
+  
+  
+  
+field: network_convey
+buttons:
+  - "Yes"
+  - "No"
+---
+question: Question
+subquestion: |
+  Are the signals transmitted by one of the following ways:
+  
+  - Wire
+  - Radio
+  - Optical
+  - Electromagnetic ? 
+  
+  
+  <font size="2">***Source: Art.2(1) Directive of the [European Electronic Communications Code](https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=celex%3A32018L1972) ***
+field: network_signals
+buttons:
+  - "Yes"
+  - "No"
+---
+event: not_provider
+question: Conclusion - The Directive is ***not*** applicable to your case
+subquestion: |
+  You do not fulfill all of the conditions of a provider of public communication networks, or electronic communication services, thus the Directive is not applicable to your case.
+  
+  <font size="2">***Source: Art. 3 ePrivacy Directive***
+  
+---
+event: public_network_provider
+question: Conclusion - The Directive ***is*** applicable to your case
+subquestion: |
+  You qualify as a provider of an electronic public communication network, and the Directive is applicable to your case.
+  
+  
+  <font size="2">***Source: Art. 3 ePrivacy Directive and Art.2(1), 2(8) Directive of the [European Electronic Communications Code](https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=celex%3A32018L1972) ***
+---
+mandatory: True
+code: |
+  start
+  if processing == 'Yes':
+    if excluded_activities == 'Yes':
+      art_1_3_exclusion
+    if excluded_activities == 'No':
+      if service_remuneration == 'No':
+        notice_not_service
+        if network_public == 'No':
+          not_provider
+        if network_public == 'Yes':
+          if network_convey == 'No':
+            not_provider
+          if network_convey == 'Yes':
+            if network_signals == 'No':
+              not_provider
+            if network_signals == 'Yes':
+              public_network_provider
+      if service_remuneration == 'Yes':
+        if service_signals == 'No':
+          notice_not_service
+          if network_public == 'No':
+            not_provider
+          if network_public == 'Yes':
+            if network_convey == 'No':
+              not_provider
+            if network_convey == 'Yes':
+              if network_signals == 'No':
+                not_provider
+              if network_signals == 'Yes':
+                public_network_provider
+        if service_signals == 'Yes':
+          if service_public == 'No':
+            notice_not_service
+            if network_public == 'No':
+              not_provider
+            if network_public == 'Yes':
+              if network_convey == 'No':
+                not_provider
+              if network_convey == 'Yes':
+                if network_signals == 'No':
+                  not_provider
+                if network_signals == 'Yes':
+                  public_network_provider
+          if service_public == 'Yes':
+            if service_editorial == 'No':
+              notice_not_service
+              if network_public == 'No':
+                not_provider
+              if network_public == 'Yes':
+                if network_convey == 'No':
+                  not_provider
+                if network_convey == 'Yes':
+                  if network_signals == 'No':
+                    not_provider
+                  if network_signals == 'Yes':
+                    public_network_provider
+            if service_editorial == 'Yes':
+              electronic_communication_service
+  if processing == 'No':
+    not_applicable
+---
+# [START INLINE GRAPHDOC EXPORT]
+# {"nodes":[{"id":"38751b93-041d-4fda-af4f-85822b355878","appearance":{"x":320,"y":-100,"width":180,"height":36},"gd":{"type":"start","content":"This tool will help you determine whether the ePrivacy Directive applies in your case.\n\n<font size=\"2\"> [Directive 2002/58/EC](https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=celex%3A32002L0058) of the European Parliament and of the Council of 12 July 2002 concerning the processing of personal data and the protection of privacy in the electronic communications sector","variable":"start"}},{"id":"d13ef205-2d7b-4684-b533-4258e8a56885","appearance":{"x":90,"y":210,"width":180,"height":36},"gd":{"type":"decision","content":"Do you perform activities concerning any of the following areas:\n\n- Public security\n  - Defence\n  - State security, including the economic well-being of the State when the activities relate to State security matters\n  - Activities of a State in areas of criminal law ?\n\n\n<font size=\"2\">***Source: Art.1(3) ePrivacy Directive***","variable":"excluded_activities"}},{"id":"5f340ab3-89f9-4516-94e8-7f41d651941b","appearance":{"x":-50,"y":310,"width":180,"height":36},"gd":{"type":"end","content":"The Directive is not applicable to your situation, because the processing is outside of the scope of the Directive. \n\n<font size=\"2\">**Source: Art. 1(3) ePrivacy Directive**","variable":"art_1_3_exclusion"}},{"id":"0ce21031-692a-4cd2-bd58-8b43abccf937","appearance":{"x":320,"y":0,"width":180,"height":36},"gd":{"type":"decision","content":"Do you perform any of the following operations on personal data, whether by automated or non-automated means?\n\nCollection, recording, organisation, structuring, storage, adaptation or alteration, retrieval, consultation, use, disclosure by transmission, dissemination or otherwise making available, alignment or combination, restriction, erasure or destruction.\n\nYou can use the tool created for the GDPR to determine whether the data being processed is personal.\n\n<font size=\"2\">***Source: Art.4(2) [General Data Protection Regulation](https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32016R0679); definition of \"processing\"***","variable":"processing"}},{"id":"f21d23b0-fa92-48c7-b4f9-eef1e52048cf","appearance":{"x":490,"y":200,"width":180,"height":36},"gd":{"type":"end","content":"The ePrivacy Directive is not applicable to your case.\n\n\n<font size=\"2\">***Source: Art. 3(1) ePrivacy Directive & Art.4(2) [General Data Protection Regulation](https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32016R0679); definition of \"processing\"***","variable":"not_applicable"}},{"id":"313aa814-3203-45e7-b7b1-27a987a2326f","appearance":{"x":140,"y":420,"width":180,"height":36},"gd":{"type":"decision","content":"Do you provide an electronic communication service to a user or subscriber in exchange for:\n\n- Money\n  - Providing personal data you request\n  - Information that the end-user allows access to (such as the IP address or browser cookies)\n  - Advertising that the user is exposed to, in order to gain access to the service\n  - Otherwise monetizing the personal data the service provider has gathered from the end-user ?\n\n\n<font size=\"2\">***Source: Art. 3 ePrivacy Directive and Art. 2(4) and Recital 16 Directive of the [European Electronic Communications Code](https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=celex%3A32018L1972) ***","variable":"service_remuneration"}},{"id":"632c9104-e5a2-4a8d-abc1-e41b61271608","appearance":{"x":30,"y":550,"width":180,"height":36},"gd":{"type":"decision","content":"Does your service consist wholly or mainly in the conveyance of signals on electronic communications networks? This includes:\n\n- Internet access service\n  - Interpersonal communication service\n  - Transmission services  used for machine-to-machine services and broadcasting\n\n<font size=\"2\">**Source: Art. 3(1) ePrivacy Directive and Art. 2(4) Directive of the [European Electronic Communications Code](https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=celex%3A32018L1972)**\n","variable":"service_signals"}},{"id":"c3a967d0-795f-4d99-8bee-172b25878890","appearance":{"x":30,"y":650,"width":180,"height":36},"gd":{"type":"decision","content":"Is your service publicly available?\n\n<font size=\"2\">**Source: Art. 3(1) ePrivacy Directive**","variable":"service_public"}},{"id":"56cffa1c-4330-4f5d-9247-84ad08af6955","appearance":{"x":30,"y":760,"width":180,"height":36},"gd":{"type":"decision","content":"Does your service provide or exercise editorial control over content, that is transmitted using electronic communications networks or services?\n\n<font size=\"2\">**Source:  Art. 3(1) ePrivacy Directive and Art. 2(4) Directive of the [European Electronic Communications Code](https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=celex%3A32018L1972)**","variable":"service_editorial"}},{"id":"30059a85-1b02-4a63-b368-23580deafe31","appearance":{"x":360,"y":640,"width":180,"height":36},"gd":{"type":"notice","content":"You do not fulfill all of the conditions of a provider of an electronic communication service, but you might qualify as a provider of an electronic public communication network.\n\n<font size=\"2\">***Source: Art. 3 ePrivacy Directive and Art. 2(4) and Recital 16 Directive of the [European Electronic Communications Code](https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=celex%3A32018L1972) ***","variable":"notice_not_service"}},{"id":"4511c622-995f-4605-9e39-3226d0d9217d","appearance":{"x":30,"y":850,"width":180,"height":36},"gd":{"type":"end","content":"You qualify as a service provider of an electronic communication service, and the Directive is applicable to your case.\n\n<font size=\"2\">***Source: Art. 3 ePrivacy Directive***\n","variable":"electronic_communication_service"}},{"id":"186e4e19-8b1a-49bc-b4e7-a31a509d4d07","appearance":{"x":480,"y":710,"width":180,"height":36},"gd":{"type":"decision","content":"Do you establish, operate, control or make available a network, that is used wholly or mainly for the provision of publicly available communication services?\n\n<font size=\"2\">***Source: Art.2(8) and Art.3(16) Directive of the [European Electronic Communications Code](https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=celex%3A32018L1972) ***\n","variable":"network_public"}},{"id":"52579612-1363-40d8-8c5d-0041d89beee5","appearance":{"x":480,"y":790,"width":180,"height":36},"gd":{"type":"decision","content":"Does the network contain transmission systems or switching or routing equipment that make possible the conveyance of signals?\n\n\n<font size=\"2\">***Source: Art.2(1) Directive of the [European Electronic Communications Code](https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=celex%3A32018L1972) ***\n\n\n","variable":"network_convey"}},{"id":"77990945-79f4-4092-986b-5659b3da51cf","appearance":{"x":480,"y":870,"width":180,"height":36},"gd":{"type":"decision","content":"Are the signals transmitted by one of the following ways:\n\n- Wire\n  - Radio\n  - Optical\n  - Electromagnetic ? \n\n\n<font size=\"2\">***Source: Art.2(1) Directive of the [European Electronic Communications Code](https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=celex%3A32018L1972) ***","variable":"network_signals"}},{"id":"e13c3723-9fb3-4ad8-bd7b-5dabdb8196cc","appearance":{"x":830,"y":850,"width":180,"height":36},"gd":{"type":"end","content":"You do not fulfill all of the conditions of a provider of public communication networks, or electronic communication services, thus the Directive is not applicable to your case.\n\n<font size=\"2\">***Source: Art. 3 ePrivacy Directive***\n","variable":"not_provider"}},{"id":"6b160142-ea80-41de-bc7a-0148943f3cac","appearance":{"x":480,"y":960,"width":180,"height":36},"gd":{"type":"end","content":"You qualify as a provider of an electronic public communication network, and the Directive is applicable to your case.\n\n\n<font size=\"2\">***Source: Art. 3 ePrivacy Directive and Art.2(1), 2(8) Directive of the [European Electronic Communications Code](https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=celex%3A32018L1972) ***","variable":"public_network_provider"}}],"edges":[{"id":"b69d3d72-5569-47bf-927c-472a0b147f16","node_from_id":"d13ef205-2d7b-4684-b533-4258e8a56885","node_to_id":"5f340ab3-89f9-4516-94e8-7f41d651941b","gd":{"content":"Yes"}},{"id":"e5e3cd07-af37-43fc-81cf-b4ad4cc13ff7","node_from_id":"38751b93-041d-4fda-af4f-85822b355878","node_to_id":"0ce21031-692a-4cd2-bd58-8b43abccf937","gd":{"content":null}},{"id":"c4d27296-2afc-4208-a6bd-9d824d0d6f7e","node_from_id":"0ce21031-692a-4cd2-bd58-8b43abccf937","node_to_id":"d13ef205-2d7b-4684-b533-4258e8a56885","gd":{"content":"Yes"}},{"id":"803d90bd-c647-4508-be59-125310d75f98","node_from_id":"313aa814-3203-45e7-b7b1-27a987a2326f","node_to_id":"30059a85-1b02-4a63-b368-23580deafe31","gd":{"content":"No"}},{"id":"226689e0-3dd4-4702-a0e3-af5dff768188","node_from_id":"632c9104-e5a2-4a8d-abc1-e41b61271608","node_to_id":"30059a85-1b02-4a63-b368-23580deafe31","gd":{"content":"No"}},{"id":"36294d91-fde0-4bf0-a48c-5bf04d5e9b45","node_from_id":"c3a967d0-795f-4d99-8bee-172b25878890","node_to_id":"30059a85-1b02-4a63-b368-23580deafe31","gd":{"content":"No"}},{"id":"bb7b5210-879d-4f67-9620-d95a1216d053","node_from_id":"56cffa1c-4330-4f5d-9247-84ad08af6955","node_to_id":"30059a85-1b02-4a63-b368-23580deafe31","gd":{"content":"No"}},{"id":"13fddbbe-ec36-473f-bf10-31438d3e57ce","node_from_id":"313aa814-3203-45e7-b7b1-27a987a2326f","node_to_id":"632c9104-e5a2-4a8d-abc1-e41b61271608","gd":{"content":"Yes"}},{"id":"23a0a22f-7b72-4f64-a187-82d3b5bdda42","node_from_id":"632c9104-e5a2-4a8d-abc1-e41b61271608","node_to_id":"c3a967d0-795f-4d99-8bee-172b25878890","gd":{"content":"Yes"}},{"id":"3ec36f19-cf76-4c9f-b6c3-46804d8bfc99","node_from_id":"c3a967d0-795f-4d99-8bee-172b25878890","node_to_id":"56cffa1c-4330-4f5d-9247-84ad08af6955","gd":{"content":"Yes"}},{"id":"074ed3aa-5865-449c-a03e-0d25ce166ead","node_from_id":"56cffa1c-4330-4f5d-9247-84ad08af6955","node_to_id":"4511c622-995f-4605-9e39-3226d0d9217d","gd":{"content":"Yes"}},{"id":"e193c1bf-9bc2-4f40-874c-e226c3b1c409","node_from_id":"186e4e19-8b1a-49bc-b4e7-a31a509d4d07","node_to_id":"e13c3723-9fb3-4ad8-bd7b-5dabdb8196cc","gd":{"content":"No"}},{"id":"5c41e4f1-4303-42ab-b7f3-57f43ece253b","node_from_id":"52579612-1363-40d8-8c5d-0041d89beee5","node_to_id":"e13c3723-9fb3-4ad8-bd7b-5dabdb8196cc","gd":{"content":"No"}},{"id":"240a6e9e-8e1c-4d4a-92ab-13393ceb801c","node_from_id":"77990945-79f4-4092-986b-5659b3da51cf","node_to_id":"e13c3723-9fb3-4ad8-bd7b-5dabdb8196cc","gd":{"content":"No"}},{"id":"c815d034-f5a8-4cd5-a37c-a0bc9398ed21","node_from_id":"186e4e19-8b1a-49bc-b4e7-a31a509d4d07","node_to_id":"52579612-1363-40d8-8c5d-0041d89beee5","gd":{"content":"Yes"}},{"id":"5f5badad-12f0-48fe-ba16-c7f101c09346","node_from_id":"52579612-1363-40d8-8c5d-0041d89beee5","node_to_id":"77990945-79f4-4092-986b-5659b3da51cf","gd":{"content":"Yes"}},{"id":"4f6f5b16-64e2-40a0-bfb6-77174d8a8631","node_from_id":"77990945-79f4-4092-986b-5659b3da51cf","node_to_id":"6b160142-ea80-41de-bc7a-0148943f3cac","gd":{"content":"Yes"}},{"id":"4824854f-7ce5-461f-bb2c-7e8c899e3967","node_from_id":"30059a85-1b02-4a63-b368-23580deafe31","node_to_id":"186e4e19-8b1a-49bc-b4e7-a31a509d4d07","gd":{"content":null}},{"id":"3a65dbe3-40ee-42a0-9127-2948ba96003b","node_from_id":"d13ef205-2d7b-4684-b533-4258e8a56885","node_to_id":"313aa814-3203-45e7-b7b1-27a987a2326f","gd":{"content":"No"}},{"id":"e4ddb4fc-dcb5-4b78-976f-fcffdfe39d06","node_from_id":"0ce21031-692a-4cd2-bd58-8b43abccf937","node_to_id":"f21d23b0-fa92-48c7-b4f9-eef1e52048cf","gd":{"content":"No"}}],"main":{"name":"Untitled graph"}}
+# [END INLINE GRAPHDOC EXPORT]

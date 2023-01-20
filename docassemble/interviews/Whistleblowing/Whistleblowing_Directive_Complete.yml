@@ -1,0 +1,467 @@
+question: Start
+subquestion: |
+  This tool will determine whether the common minimum standards for the protection of persons reporting a breach of Union law in the Directive on the protection of persons who report breaches of Union law *(Whistleblower Directive)* are applicable to your case.
+  
+  
+  <font size="2"> [Directive (EU) 2019/1937](https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32019L1937) of the European Parliament and of the Council of 23 October 2019 on the protection of persons who report breaches of Union law
+continue button field: start
+---
+question: Question
+subquestion: |
+  Have you reported a breach in any of the following sectors : 
+  
+  - Financial services
+  - Products and markets
+  - Prevention of money laundering and terrorist financing
+  - Transport safety
+  - Protection of the environment ?
+  
+  
+  <font size="2">***Source: Art.3(1) and Annex Part II Directive on the protection of persons who report breaches of Union law***
+field: exception_areas
+buttons:
+  - "Yes"
+  - "No"
+---
+question: Question
+subquestion: |
+  As a reporting person, did you have reasonable grounds to believe that the information you used as a basis for the report was true at the time of the reporting?
+  
+  
+  <font size="2">***Source: Art.6(1)(a) Directive on the protection of persons who report breaches of Union law***
+  
+field: reasonably_true
+buttons:
+  - "Yes"
+  - "No"
+---
+event: specific_sector_exclusion
+question: Conclusion - The Directive ***is*** applicable conditionally
+subquestion: |
+  Specific rules in other European Union legislation have been formulated in respect to these areas, and as such those have priority over the Directive. The applicable legislation can be found in Part II of the Annex in the [Directive](https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32019L1937) on the protection of persons who report breaches of Union law. 
+  
+  
+  <font size="2">***Source: Art. 3(1) Directive on the protection of persons who report breaches of Union law***
+  
+  
+  
+  
+---
+event: internal_external_report
+question: Conclusion - The Directive ***is*** applicable to your case
+subquestion: |
+  The conditions for the protection of reporting persons have been fulfilled, and the Directive is applicable to your case. 
+  
+  <font size="2">***Source: Art. 6(1)(b) Directive on the protection of persons who report breaches of Union law***
+---
+event: untrue_report
+question: 
+subquestion: |
+  The conditions for the protection provided by the Directive have not been fulfilled, and thus the Directive is not applicable to your case. 
+  
+  <font size="2">***Source: Art. 6(1)(a) Directive on the protection of persons who report breaches of Union law***
+---
+event: neither_report_nor_disclosure
+question: Conclusion - The Directive is ***not*** applicable to your case
+subquestion: |
+  The Directive only applies in situations of internal-, external reporting or public disclosures under certain circumstances, thus the Directive is not applicable to your case. 
+  
+  
+  <font size="2">***Source: Art. 6(1)(b) Directive on the protection of persons who report breaches of Union law***
+---
+question: Question
+subquestion: |
+  Did you report an act or omission that:
+  
+  - Is unlawful and relate to the Union acts;
+  
+  *or*
+  
+  - Defeats the object or the purpose of the rules in the Union acts ?
+  
+  
+  
+  <font size="2">***Source: Art. 5(1) Directive on the protection of persons who report breaches of Union law***
+  
+field: information_acquirement
+buttons:
+  - "Yes"
+  - "No"
+---
+event: no_report
+question: Conclusion - The Directive is ***not*** applicable to your case
+subquestion: |
+  The Directive is not applicable to your situation, since it only applies in cases where a breach of European Union law was reported.
+  
+  <font size="2">***Source: Art. 1 Directive on the protection of persons who report breaches of Union law***
+---
+question: Question
+subquestion: |
+  Are you a person currently working in the private or public sector, and you acquired information on breaches in a work context?
+  
+  
+  <font size="2">***Source: Art.4(1) Directive on the protection of persons who report breaches of Union law***
+  
+  
+field: current_worker
+buttons:
+  - "Yes"
+  - "No"
+---
+question: Notice
+subquestion: |
+  In the Directive a worker is defined as a person:
+  
+  - Having the status of worker, within the meaning of Article 45(1) TFEU, including civil servants;
+  - Having self-employed status, within the meaning of Article 49 TFEU;
+  - Belonging to the administrative, management or supervisory body of an undertaking, including non-executive members, as well as volunteers and paid or unpaid trainees;
+  - Working under the supervision and direction of contractors, subcontractors and suppliers.
+  
+  
+  <font size="2">***Source: Art. 4(1) Directive on the protection of persons who report breaches of Union law***
+continue button field: notice_worker
+---
+question: Question
+subquestion: |
+  Are you a person reporting on a breach because of information acquired in a work-based relationship, which has now ended?
+  
+  
+  <font size="2">***Source: Art.4(2) Directive on the protection of persons who report breaches of Union law***
+field: previous_worker
+buttons:
+  - "Yes"
+  - "No"
+---
+question: Question
+subquestion: |
+  Are you a person reporting on a breach because of information acquired during the recruitment process or other pre-contractual negotiations?
+  
+  
+  <font size="2">***Source: Art.4(1) Directive on the protection of persons who report breaches of Union law***
+field: upcoming_worker
+buttons:
+  - "Yes"
+  - "No"
+---
+question: Question
+subquestion: |
+  Do you fall in one of the following categories:
+  
+  - Facilitators;
+  
+  
+  - Third persons who are connected with the reporting persons and who could suffer retaliation in a work-related context, such as colleagues or relatives of the reporting persons
+  
+  
+  - Legal entities that the reporting persons own, work for or are otherwise connected with in a work-related context ?
+  
+  
+  <font size="2">***Source: Art.4(4) Directive on the protection of persons who report breaches of Union law***
+field: other_persons
+buttons:
+  - "Yes"
+  - "No"
+---
+event: unrelated_person
+question: Conclusion - The Directive is ***not*** applicable to your case
+subquestion: |
+  The personal scope of the Directive is not fulfilled, and the Directive is not applicable to your case.
+  
+  
+  <font size="2">***Source: Art. 4 Directive on the protection of persons who report breaches of Union law***
+---
+question: Question
+subquestion: |
+  Did you report the breach in one of the following areas:
+  
+  - Public procurement
+  - Financial services, products and markets, and prevention of money laundering and terrorist financing
+  - Product safety and compliance
+  - Transport safety
+  - Protection of the environment
+  - Radiation protection and nuclear safety
+  - Food and feed safety, animal health and welfare
+  - Public health
+  - Consumer protection
+  - Protection of privacy and personal data, and security of network and information systems ?
+  
+  
+  <font size="2">***Source: Art.2(1)(a) Directive on the protection of persons who report breaches of Union law***
+field: breach_areas
+buttons:
+  - "Yes"
+  - "No"
+---
+question: Question
+subquestion: |
+  Did you report a breach:
+  
+  - Affecting the financial interests of the Union;
+  
+  *or*
+  
+  - Relating to the internal market  (breaches of competition and State aid rules, corporate tax rules or an arrangement the purpose of which was to defeat the object or purpose of corporate tax law) ? 
+  
+  
+  <font size="2">***Source: Art.2(1)(b) Directive on the protection of persons who report breaches of Union law***
+field: secondary_areas
+buttons:
+  - "Yes"
+  - "No"
+---
+event: breach_outside_scope
+question: Conclusion - The Directive is ***not*** applicable to your case
+subquestion: |
+  The material scope of the Directive has not been fulfilled, and thus the Directive is not applicable to your case.
+  
+  
+  <font size="2">***Source: Art. 2 Directive on the protection of persons who report breaches of Union law***
+---
+event: protected_other_person
+question: Conclusion - Use tool from reporting persons viewpoint
+subquestion: |
+  The protections given by the Directive apply to persons other than the person reporting the breach, but the other conditions for protection have to be fulfilled by the person making the report. 
+  
+  Use the tool to answer the questions from the viewpoint of the person making the report to see if the other conditions for protection are also fulfilled. 
+  
+  <font size="2">***Source: Recital 41 and Art. 4(4)(a)  Directive on the protection of persons who report breaches of Union law***
+  
+---
+question: Question
+subquestion: |
+  Did you report the breach of European Union law through internal reporting channels?
+  
+  
+  <font size="2">***Source: Art.5(4) and Art.7 Directive on the protection of persons who report breaches of Union law***
+field: internal_report
+buttons:
+  - "Yes"
+  - "No"
+---
+question: Question
+subquestion: |
+  Did you report the breach of European Union law through external reporting channels?
+  
+  <font size="2">***Source: Art.5(5) and Art.10 Directive on the protection of persons who report breaches of Union law***
+field: external_report
+buttons:
+  - "Yes"
+  - "No"
+---
+question: Question
+subquestion: |
+  Did you make a public disclosure about the breach?
+  
+  <font size="2">***Source: Art.5(6) and Art.15 Directive on the protection of persons who report breaches of Union law***
+field: public_disclosure
+buttons:
+  - "Yes"
+  - "No"
+---
+question: Question
+subquestion: |
+  Did you have reasonable grounds to believe that:
+  
+  - The breach may constitute an imminent or manifest danger to the public interest, such as where there is an emergency situation or a risk of irreversible damage;
+  
+  *or*
+  
+  - If you were to report externally there would be a risk of retalation, or that the breach would not likely be effectively addressed because of the circumstances of the case (such as where evidence may be concealed or destroyed, or the authority may be in collusion with the perpetrator or involved in the breach) ?
+  
+  <font size="2">***Source: Art.15(1) Directive on the protection of persons who report breaches of Union law***
+field: public_disclosure_grounds
+buttons:
+  - "Yes"
+  - "No"
+---
+event: disclosure_fulfilled
+question: Conclusion - The Directive ***is*** applicable to your case
+subquestion: |
+  The conditions for the protection provided by the Directive have been fulfilled, and thus the Directive is applicable to your case. If you disclosed the breach to the press, specific national provisions on protection *can* apply, and will have priority over the Directive.
+  
+  
+  <font size="2">***Source: Art. 15 Directive on the protection of persons who report breaches of Union law***
+  
+  
+---
+event: disclosure_not_fulfilled
+question: Conclusion - The Directive is ***not*** applicable to your case
+subquestion: |
+  The conditions for protection in cases of public disclosure have not been fulfilled, and as such the Directive is not applicable to your case. 
+  
+  <font size="2">***Source: Art.15(1) Directive on the protection of persons who report breaches of Union law***
+---
+question: Question
+subquestion: |
+  Did someone else report an act or omission that:
+  
+  - Is unlawful and relate to the Union acts;
+  
+  *or*
+  
+  - Defeats the object or the purpose of the rules in the Union acts ?
+  
+  
+  
+  <font size="2">***Source: Art. 5(1) Directive on the protection of persons who report breaches of Union law***
+field: reported_by_someone_else
+buttons:
+  - "Yes"
+  - "No"
+---
+mandatory: True
+code: |
+  start
+  if information_acquirement == 'Yes':
+    notice_worker
+    if current_worker == 'No':
+      if previous_worker == 'No':
+        if upcoming_worker == 'No':
+          if other_persons == 'No':
+            unrelated_person
+          if other_persons == 'Yes':
+            protected_other_person
+        if upcoming_worker == 'Yes':
+          if breach_areas == 'No':
+            if secondary_areas == 'No':
+              breach_outside_scope
+            if secondary_areas == 'Yes':
+              if exception_areas == 'No':
+                if reasonably_true == 'No':
+                  untrue_report
+                if reasonably_true == 'Yes':
+                  if internal_report == 'No':
+                    if external_report == 'No':
+                      if public_disclosure == 'No':
+                        neither_report_nor_disclosure
+                      if public_disclosure == 'Yes':
+                        if public_disclosure_grounds == 'Yes':
+                          disclosure_fulfilled
+                        if public_disclosure_grounds == 'No':
+                          disclosure_not_fulfilled
+                    if external_report == 'Yes':
+                      internal_external_report
+                  if internal_report == 'Yes':
+                    internal_external_report
+              if exception_areas == 'Yes':
+                specific_sector_exclusion
+          if breach_areas == 'Yes':
+            if exception_areas == 'No':
+              if reasonably_true == 'No':
+                untrue_report
+              if reasonably_true == 'Yes':
+                if internal_report == 'No':
+                  if external_report == 'No':
+                    if public_disclosure == 'No':
+                      neither_report_nor_disclosure
+                    if public_disclosure == 'Yes':
+                      if public_disclosure_grounds == 'Yes':
+                        disclosure_fulfilled
+                      if public_disclosure_grounds == 'No':
+                        disclosure_not_fulfilled
+                  if external_report == 'Yes':
+                    internal_external_report
+                if internal_report == 'Yes':
+                  internal_external_report
+            if exception_areas == 'Yes':
+              specific_sector_exclusion
+      if previous_worker == 'Yes':
+        if breach_areas == 'No':
+          if secondary_areas == 'No':
+            breach_outside_scope
+          if secondary_areas == 'Yes':
+            if exception_areas == 'No':
+              if reasonably_true == 'No':
+                untrue_report
+              if reasonably_true == 'Yes':
+                if internal_report == 'No':
+                  if external_report == 'No':
+                    if public_disclosure == 'No':
+                      neither_report_nor_disclosure
+                    if public_disclosure == 'Yes':
+                      if public_disclosure_grounds == 'Yes':
+                        disclosure_fulfilled
+                      if public_disclosure_grounds == 'No':
+                        disclosure_not_fulfilled
+                  if external_report == 'Yes':
+                    internal_external_report
+                if internal_report == 'Yes':
+                  internal_external_report
+            if exception_areas == 'Yes':
+              specific_sector_exclusion
+        if breach_areas == 'Yes':
+          if exception_areas == 'No':
+            if reasonably_true == 'No':
+              untrue_report
+            if reasonably_true == 'Yes':
+              if internal_report == 'No':
+                if external_report == 'No':
+                  if public_disclosure == 'No':
+                    neither_report_nor_disclosure
+                  if public_disclosure == 'Yes':
+                    if public_disclosure_grounds == 'Yes':
+                      disclosure_fulfilled
+                    if public_disclosure_grounds == 'No':
+                      disclosure_not_fulfilled
+                if external_report == 'Yes':
+                  internal_external_report
+              if internal_report == 'Yes':
+                internal_external_report
+          if exception_areas == 'Yes':
+            specific_sector_exclusion
+    if current_worker == 'Yes':
+      if breach_areas == 'No':
+        if secondary_areas == 'No':
+          breach_outside_scope
+        if secondary_areas == 'Yes':
+          if exception_areas == 'No':
+            if reasonably_true == 'No':
+              untrue_report
+            if reasonably_true == 'Yes':
+              if internal_report == 'No':
+                if external_report == 'No':
+                  if public_disclosure == 'No':
+                    neither_report_nor_disclosure
+                  if public_disclosure == 'Yes':
+                    if public_disclosure_grounds == 'Yes':
+                      disclosure_fulfilled
+                    if public_disclosure_grounds == 'No':
+                      disclosure_not_fulfilled
+                if external_report == 'Yes':
+                  internal_external_report
+              if internal_report == 'Yes':
+                internal_external_report
+          if exception_areas == 'Yes':
+            specific_sector_exclusion
+      if breach_areas == 'Yes':
+        if exception_areas == 'No':
+          if reasonably_true == 'No':
+            untrue_report
+          if reasonably_true == 'Yes':
+            if internal_report == 'No':
+              if external_report == 'No':
+                if public_disclosure == 'No':
+                  neither_report_nor_disclosure
+                if public_disclosure == 'Yes':
+                  if public_disclosure_grounds == 'Yes':
+                    disclosure_fulfilled
+                  if public_disclosure_grounds == 'No':
+                    disclosure_not_fulfilled
+              if external_report == 'Yes':
+                internal_external_report
+            if internal_report == 'Yes':
+              internal_external_report
+        if exception_areas == 'Yes':
+          specific_sector_exclusion
+  if information_acquirement == 'No':
+    if reported_by_someone_else == 'Yes':
+      if other_persons == 'No':
+        unrelated_person
+      if other_persons == 'Yes':
+        protected_other_person
+    if reported_by_someone_else == 'No':
+      no_report
+---
+# [START INLINE GRAPHDOC EXPORT]
+# {"nodes":[{"id":"85ac0bff-c99c-47c6-b57e-5ed4fc22200f","appearance":{"x":300,"y":-130,"width":180,"height":36},"gd":{"type":"start","content":"This tool will determine whether the common minimum standards for the protection of persons reporting a breach of Union law in the Directive on the protection of persons who report breaches of Union law *(Whistleblower Directive)* are applicable to your case.\n\n\n<font size=\"2\"> [Directive (EU) 2019/1937](https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32019L1937) of the European Parliament and of the Council of 23 October 2019 on the protection of persons who report breaches of Union law","variable":"start"}},{"id":"691c52aa-4bad-4bd1-a8f6-1bdd9e66f7d4","appearance":{"x":70,"y":630,"width":180,"height":36},"gd":{"type":"decision","content":"Have you reported a breach in any of the following sectors : \n\n- Financial services\n  - Products and markets\n  - Prevention of money laundering and terrorist financing\n  - Transport safety\n  - Protection of the environment ?\n\n\n<font size=\"2\">***Source: Art.3(1) and Annex Part II Directive on the protection of persons who report breaches of Union law***","variable":"exception_areas"}},{"id":"42ef6b49-802c-449b-bf20-eed906821329","appearance":{"x":280,"y":700,"width":180,"height":36},"gd":{"type":"decision","content":"As a reporting person, did you have reasonable grounds to believe that the information you used as a basis for the report was true at the time of the reporting?\n\n\n<font size=\"2\">***Source: Art.6(1)(a) Directive on the protection of persons who report breaches of Union law***\n","variable":"reasonably_true"}},{"id":"42b166ec-06f3-48b5-b58d-b7f0aba7bc09","appearance":{"x":-130,"y":710,"width":180,"height":36},"gd":{"type":"end","content":"Specific rules in other European Union legislation have been formulated in respect to these areas, and as such those have priority over the Directive. The applicable legislation can be found in Part II of the Annex in the [Directive](https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32019L1937) on the protection of persons who report breaches of Union law. \n\n\n<font size=\"2\">***Source: Art. 3(1) Directive on the protection of persons who report breaches of Union law***\n\n\n\n","variable":"specific_sector_exclusion"}},{"id":"a1859e34-959a-434e-985f-07daf293b8d0","appearance":{"x":-150,"y":1110,"width":180,"height":36},"gd":{"type":"end","content":"The conditions for the protection of reporting persons have been fulfilled, and the Directive is applicable to your case. \n\n<font size=\"2\">***Source: Art. 6(1)(b) Directive on the protection of persons who report breaches of Union law***","variable":"internal_external_report"}},{"id":"60aea458-1773-4bd8-8be3-f068961e4746","appearance":{"x":490,"y":820,"width":180,"height":36},"gd":{"type":"end","content":"The conditions for the protection provided by the Directive have not been fulfilled, and thus the Directive is not applicable to your case. \n\n<font size=\"2\">***Source: Art. 6(1)(a) Directive on the protection of persons who report breaches of Union law***","variable":"untrue_report"}},{"id":"72d5addd-03dd-44a8-b35e-fd5f91790216","appearance":{"x":360,"y":1250,"width":180,"height":36},"gd":{"type":"end","content":"The Directive only applies in situations of internal-, external reporting or public disclosures under certain circumstances, thus the Directive is not applicable to your case. \n\n\n<font size=\"2\">***Source: Art. 6(1)(b) Directive on the protection of persons who report breaches of Union law***","variable":"neither_report_nor_disclosure"}},{"id":"5daf1a6b-ee13-4a07-9588-5bf45e0bad11","appearance":{"x":300,"y":-30,"width":180,"height":36},"gd":{"type":"decision","content":"Did you report an act or omission that:\n\n- Is unlawful and relate to the Union acts;\n\n*or*\n\n- Defeats the object or the purpose of the rules in the Union acts ?\n\n\n\n<font size=\"2\">***Source: Art. 5(1) Directive on the protection of persons who report breaches of Union law***\n","variable":"information_acquirement"}},{"id":"4199b065-cf00-4a25-8d16-60568ff57201","appearance":{"x":800,"y":160,"width":180,"height":36},"gd":{"type":"end","content":"The Directive is not applicable to your situation, since it only applies in cases where a breach of European Union law was reported.\n\n<font size=\"2\">***Source: Art. 1 Directive on the protection of persons who report breaches of Union law***","variable":"no_report"}},{"id":"a3c418c7-4387-4034-bc90-9294b9564b43","appearance":{"x":250,"y":130,"width":180,"height":36},"gd":{"type":"decision","content":"Are you a person currently working in the private or public sector, and you acquired information on breaches in a work context?\n\n\n<font size=\"2\">***Source: Art.4(1) Directive on the protection of persons who report breaches of Union law***\n\n","variable":"current_worker"}},{"id":"5f8b830e-4325-4e39-a567-0e14a7cb7545","appearance":{"x":300,"y":60,"width":180,"height":36},"gd":{"type":"notice","content":"In the Directive a worker is defined as a person:\n\n- Having the status of worker, within the meaning of Article 45(1) TFEU, including civil servants;\n  - Having self-employed status, within the meaning of Article 49 TFEU;\n  - Belonging to the administrative, management or supervisory body of an undertaking, including non-executive members, as well as volunteers and paid or unpaid trainees;\n  - Working under the supervision and direction of contractors, subcontractors and suppliers.\n\n\n<font size=\"2\">***Source: Art. 4(1) Directive on the protection of persons who report breaches of Union law***","variable":"notice_worker"}},{"id":"d6a92752-9cac-4b38-a668-b393642f413b","appearance":{"x":420,"y":200,"width":180,"height":36},"gd":{"type":"decision","content":"Are you a person reporting on a breach because of information acquired in a work-based relationship, which has now ended?\n\n\n<font size=\"2\">***Source: Art.4(2) Directive on the protection of persons who report breaches of Union law***","variable":"previous_worker"}},{"id":"7b1b2087-06cd-4961-b210-cb8a5749ec5b","appearance":{"x":570,"y":270,"width":180,"height":36},"gd":{"type":"decision","content":"Are you a person reporting on a breach because of information acquired during the recruitment process or other pre-contractual negotiations?\n\n\n<font size=\"2\">***Source: Art.4(1) Directive on the protection of persons who report breaches of Union law***","variable":"upcoming_worker"}},{"id":"0f9d90cd-ae6a-42b1-bf22-e04aca2bbd97","appearance":{"x":700,"y":360,"width":180,"height":36},"gd":{"type":"decision","content":"Do you fall in one of the following categories:\n\n- Facilitators;\n\n\n- Third persons who are connected with the reporting persons and who could suffer retaliation in a work-related context, such as colleagues or relatives of the reporting persons\n\n\n- Legal entities that the reporting persons own, work for or are otherwise connected with in a work-related context ?\n\n\n<font size=\"2\">***Source: Art.4(4) Directive on the protection of persons who report breaches of Union law***","variable":"other_persons"}},{"id":"4970dd6a-bce8-478b-9c36-15aa321bbf30","appearance":{"x":870,"y":450,"width":180,"height":36},"gd":{"type":"end","content":"The personal scope of the Directive is not fulfilled, and the Directive is not applicable to your case.\n\n\n<font size=\"2\">***Source: Art. 4 Directive on the protection of persons who report breaches of Union law***","variable":"unrelated_person"}},{"id":"5cf21f47-0053-422e-9b2b-544ac0eee888","appearance":{"x":90,"y":340,"width":180,"height":36},"gd":{"type":"decision","content":"Did you report the breach in one of the following areas:\n\n- Public procurement;\n\n- Financial services, products and markets, and prevention of money laundering and terrorist financing\n  - Product safety and compliance\n  - Transport safety\n  - Protection of the environment\n  - Radiation protection and nuclear safety\n  - Food and feed safety, animal health and welfare\n  - Public health\n  - Consumer protection\n  - Protection of privacy and personal data, and security of network and information systems ?\n\n\n<font size=\"2\">***Source: Art.2(1)(a) Directive on the protection of persons who report breaches of Union law***","variable":"breach_areas"}},{"id":"520ac25a-11c8-4d8c-b295-64c4e4786c2b","appearance":{"x":200,"y":420,"width":180,"height":36},"gd":{"type":"decision","content":"Did you report a breach:\n\n- Affecting the financial interests of the Union;\n\n*or*\n\n- Relating to the internal market  (breaches of competition and State aid rules, corporate tax rules or an arrangement the purpose of which was to defeat the object or purpose of corporate tax law) ? \n\n\n<font size=\"2\">***Source: Art.2(1)(b) Directive on the protection of persons who report breaches of Union law***","variable":"secondary_areas"}},{"id":"a554358a-ba2c-4553-9284-8f628b8521a0","appearance":{"x":310,"y":530,"width":180,"height":36},"gd":{"type":"end","content":"The material scope of the Directive has not been fulfilled, and thus the Directive is not applicable to your case.\n\n\n<font size=\"2\">***Source: Art. 2 Directive on the protection of persons who report breaches of Union law***","variable":"breach_outside_scope"}},{"id":"1c38405b-9a4d-4bf0-b580-da3659dcd04e","appearance":{"x":660,"y":460,"width":180,"height":36},"gd":{"type":"end","content":"The protections given by the Directive apply to persons other than the person reporting the breach, but the other conditions for protection have to be fulfilled by the person making the report. \n\nUse the tool to answer the questions from the viewpoint of the person making the report to see if the other conditions for protection are also fulfilled. \n\n<font size=\"2\">***Source: Recital 41 and Art. 4(4)(a)  Directive on the protection of persons who report breaches of Union law***\n","variable":"protected_other_person"}},{"id":"0d874485-b168-4e54-a9cf-55e0b5d572a4","appearance":{"x":100,"y":800,"width":180,"height":36},"gd":{"type":"decision","content":"Did you report the breach of European Union law through internal reporting channels?\n\n\n<font size=\"2\">***Source: Art.5(4) and Art.7 Directive on the protection of persons who report breaches of Union law***","variable":"internal_report"}},{"id":"a9099f98-913e-48f4-88ea-562e93a7b88b","appearance":{"x":210,"y":870,"width":180,"height":36},"gd":{"type":"decision","content":"Did you report the breach of European Union law through external reporting channels?\n\n<font size=\"2\">***Source: Art.5(5) and Art.10 Directive on the protection of persons who report breaches of Union law***","variable":"external_report"}},{"id":"ce963cb4-3916-442e-9af7-4f85195c5df0","appearance":{"x":310,"y":960,"width":180,"height":36},"gd":{"type":"decision","content":"Did you make a public disclosure about the breach?\n\n<font size=\"2\">***Source: Art.5(6) and Art.15 Directive on the protection of persons who report breaches of Union law***","variable":"public_disclosure"}},{"id":"dffd8e48-95cb-4e86-bf7c-ab69cfb85040","appearance":{"x":130,"y":1050,"width":180,"height":36},"gd":{"type":"decision","content":"Did you have reasonable grounds to believe that:\n\n- The breach may constitute an imminent or manifest danger to the public interest, such as where there is an emergency situation or a risk of irreversible damage;\n\n*or*\n\n- If you were to report externally there would be a risk of retalation, or that the breach would not likely be effectively addressed because of the circumstances of the case (such as where evidence may be concealed or destroyed, or the authority may be in collusion with the perpetrator or involved in the breach) ?\n\n<font size=\"2\">***Source: Art.15(1) Directive on the protection of persons who report breaches of Union law***","variable":"public_disclosure_grounds"}},{"id":"90e2afe0-fd0c-4c97-b8d1-a8b3b2a4939d","appearance":{"x":40,"y":1160,"width":180,"height":36},"gd":{"type":"end","content":"The conditions for the protection provided by the Directive have been fulfilled, and thus the Directive is applicable to your case. If you disclosed the breach to the press, specific national provisions on protection *can* apply, and will have priority over the Directive.\n\n\n<font size=\"2\">***Source: Art. 15 Directive on the protection of persons who report breaches of Union law***\n\n","variable":"disclosure_fulfilled"}},{"id":"222d54bc-d0ea-4eb3-b998-a77e3ad782ed","appearance":{"x":230,"y":1160,"width":180,"height":36},"gd":{"type":"end","content":"The conditions for protection in cases of public disclosure have not been fulfilled, and as such the Directive is not applicable to your case. \n\n<font size=\"2\">***Source: Art.15(1) Directive on the protection of persons who report breaches of Union law***","variable":"disclosure_not_fulfilled"}},{"id":"fb8ec3d2-fec6-44cd-8958-7e3ca4f420a2","appearance":{"x":560,"y":50,"width":180,"height":36},"gd":{"type":"decision","content":"Did someone else report an act or omission that:\n\n- Is unlawful and relate to the Union acts;\n\n*or*\n\n- Defeats the object or the purpose of the rules in the Union acts ?\n\n\n\n<font size=\"2\">***Source: Art. 5(1) Directive on the protection of persons who report breaches of Union law***","variable":"reported_by_someone_else"}}],"edges":[{"id":"9a87233d-9b61-48ee-8226-3e69fe38f4ca","node_from_id":"691c52aa-4bad-4bd1-a8f6-1bdd9e66f7d4","node_to_id":"42ef6b49-802c-449b-bf20-eed906821329","gd":{"content":"No"}},{"id":"f8d54a5f-32f3-4f31-b800-f9a984e9b931","node_from_id":"691c52aa-4bad-4bd1-a8f6-1bdd9e66f7d4","node_to_id":"42b166ec-06f3-48b5-b58d-b7f0aba7bc09","gd":{"content":"Yes"}},{"id":"44f04a97-ae35-492b-9221-e7e6380c77ac","node_from_id":"42ef6b49-802c-449b-bf20-eed906821329","node_to_id":"60aea458-1773-4bd8-8be3-f068961e4746","gd":{"content":"No"}},{"id":"f0445eb6-dd06-4d14-8db3-c8147b6faa1e","node_from_id":"85ac0bff-c99c-47c6-b57e-5ed4fc22200f","node_to_id":"5daf1a6b-ee13-4a07-9588-5bf45e0bad11","gd":{"content":null}},{"id":"d9fb647c-34b2-4b29-a5f7-5b805ae915fc","node_from_id":"5daf1a6b-ee13-4a07-9588-5bf45e0bad11","node_to_id":"5f8b830e-4325-4e39-a567-0e14a7cb7545","gd":{"content":"Yes"}},{"id":"afdbff5d-0d94-4fa7-96b7-97ac90b103f7","node_from_id":"5f8b830e-4325-4e39-a567-0e14a7cb7545","node_to_id":"a3c418c7-4387-4034-bc90-9294b9564b43","gd":{"content":null}},{"id":"9d220e3f-dad7-4eff-b06a-fb8da28a9beb","node_from_id":"a3c418c7-4387-4034-bc90-9294b9564b43","node_to_id":"d6a92752-9cac-4b38-a668-b393642f413b","gd":{"content":"No"}},{"id":"dffd4021-1608-47fb-8fdc-e444fd3f6fd9","node_from_id":"d6a92752-9cac-4b38-a668-b393642f413b","node_to_id":"7b1b2087-06cd-4961-b210-cb8a5749ec5b","gd":{"content":"No"}},{"id":"945fc31e-b375-4df7-8ec8-c2ed50336ebc","node_from_id":"7b1b2087-06cd-4961-b210-cb8a5749ec5b","node_to_id":"0f9d90cd-ae6a-42b1-bf22-e04aca2bbd97","gd":{"content":"No"}},{"id":"4fe400c4-9015-4407-a916-303d705646cb","node_from_id":"0f9d90cd-ae6a-42b1-bf22-e04aca2bbd97","node_to_id":"4970dd6a-bce8-478b-9c36-15aa321bbf30","gd":{"content":"No"}},{"id":"aa5f9e8d-c1cd-49ce-954c-56e6c3358bf5","node_from_id":"a3c418c7-4387-4034-bc90-9294b9564b43","node_to_id":"5cf21f47-0053-422e-9b2b-544ac0eee888","gd":{"content":"Yes"}},{"id":"6e322c0c-12c2-4923-97b1-044b129eca65","node_from_id":"5cf21f47-0053-422e-9b2b-544ac0eee888","node_to_id":"520ac25a-11c8-4d8c-b295-64c4e4786c2b","gd":{"content":"No"}},{"id":"f1940572-ba20-460f-abbd-9e810b63473b","node_from_id":"520ac25a-11c8-4d8c-b295-64c4e4786c2b","node_to_id":"a554358a-ba2c-4553-9284-8f628b8521a0","gd":{"content":"No"}},{"id":"9f237fca-0f81-474b-8619-c6184526f956","node_from_id":"d6a92752-9cac-4b38-a668-b393642f413b","node_to_id":"5cf21f47-0053-422e-9b2b-544ac0eee888","gd":{"content":"Yes"}},{"id":"dc2e27f4-2a91-4d42-961d-c4d078bbb5c5","node_from_id":"7b1b2087-06cd-4961-b210-cb8a5749ec5b","node_to_id":"5cf21f47-0053-422e-9b2b-544ac0eee888","gd":{"content":"Yes"}},{"id":"ea1cd9b7-d8ec-47d7-8156-d549737d0e1d","node_from_id":"0f9d90cd-ae6a-42b1-bf22-e04aca2bbd97","node_to_id":"1c38405b-9a4d-4bf0-b580-da3659dcd04e","gd":{"content":"Yes"}},{"id":"46d38c74-eca7-4e3e-ab15-c1fbac325468","node_from_id":"5cf21f47-0053-422e-9b2b-544ac0eee888","node_to_id":"691c52aa-4bad-4bd1-a8f6-1bdd9e66f7d4","gd":{"content":"Yes"}},{"id":"34a9a8eb-e19f-4fb8-80d2-af50815e1523","node_from_id":"520ac25a-11c8-4d8c-b295-64c4e4786c2b","node_to_id":"691c52aa-4bad-4bd1-a8f6-1bdd9e66f7d4","gd":{"content":"Yes"}},{"id":"7e911f3d-d9e6-43d2-8e7c-92b34f53fb3f","node_from_id":"42ef6b49-802c-449b-bf20-eed906821329","node_to_id":"0d874485-b168-4e54-a9cf-55e0b5d572a4","gd":{"content":"Yes"}},{"id":"08b04126-7722-4d07-8546-8bfa559f77f3","node_from_id":"0d874485-b168-4e54-a9cf-55e0b5d572a4","node_to_id":"a9099f98-913e-48f4-88ea-562e93a7b88b","gd":{"content":"No"}},{"id":"e845fa98-806a-4bab-ab60-cf21d40a6feb","node_from_id":"a9099f98-913e-48f4-88ea-562e93a7b88b","node_to_id":"ce963cb4-3916-442e-9af7-4f85195c5df0","gd":{"content":"No"}},{"id":"12b4d7ef-f079-4112-8166-5f9c70643473","node_from_id":"0d874485-b168-4e54-a9cf-55e0b5d572a4","node_to_id":"a1859e34-959a-434e-985f-07daf293b8d0","gd":{"content":"Yes"}},{"id":"8b7e41ed-a71e-4773-9c16-bcf0cd096553","node_from_id":"a9099f98-913e-48f4-88ea-562e93a7b88b","node_to_id":"a1859e34-959a-434e-985f-07daf293b8d0","gd":{"content":"Yes"}},{"id":"a602d3a9-d585-4dd8-aced-7581d5e6f211","node_from_id":"ce963cb4-3916-442e-9af7-4f85195c5df0","node_to_id":"72d5addd-03dd-44a8-b35e-fd5f91790216","gd":{"content":"No"}},{"id":"3e58a88c-8aa4-47c2-93e6-b435263b8d61","node_from_id":"ce963cb4-3916-442e-9af7-4f85195c5df0","node_to_id":"dffd8e48-95cb-4e86-bf7c-ab69cfb85040","gd":{"content":"Yes"}},{"id":"35f3a78b-b520-413c-99ba-4da98bd9a298","node_from_id":"dffd8e48-95cb-4e86-bf7c-ab69cfb85040","node_to_id":"90e2afe0-fd0c-4c97-b8d1-a8b3b2a4939d","gd":{"content":"Yes"}},{"id":"5224ae9d-5c7a-40e2-927e-5c03044daed6","node_from_id":"dffd8e48-95cb-4e86-bf7c-ab69cfb85040","node_to_id":"222d54bc-d0ea-4eb3-b998-a77e3ad782ed","gd":{"content":"No"}},{"id":"65baefbc-4b94-4672-85dd-cdf026c4e4bc","node_from_id":"5daf1a6b-ee13-4a07-9588-5bf45e0bad11","node_to_id":"fb8ec3d2-fec6-44cd-8958-7e3ca4f420a2","gd":{"content":"No"}},{"id":"284a8929-bf73-444c-a7ad-5b645a0c8ccf","node_from_id":"fb8ec3d2-fec6-44cd-8958-7e3ca4f420a2","node_to_id":"0f9d90cd-ae6a-42b1-bf22-e04aca2bbd97","gd":{"content":"Yes"}},{"id":"d14a5b4b-59b3-4d18-ac8e-646f8308987c","node_from_id":"fb8ec3d2-fec6-44cd-8958-7e3ca4f420a2","node_to_id":"4199b065-cf00-4a25-8d16-60568ff57201","gd":{"content":"No"}}],"main":{"name":"Untitled graph"}}
+# [END INLINE GRAPHDOC EXPORT]

@@ -1,0 +1,300 @@
+question: Start
+subquestion: |
+  This tool will help you determine whether the EU Regulation 2019/1150 on promoting fairness and transparency for business users of online intermediation services (Platform to business Regulation) is applicable to your case.
+  
+  <font size="2"> [Regulation (EU) 2019/1150](https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=celex%3A32019R1150) of the European Parliament and of the Council of 20 June 2019 on promoting fairness and transparency for business users of online intermediation services
+continue button field: start
+---
+event: end_outside_geographic_scope
+question: Conclusion - The Regulation is ***not*** applicable to your case
+subquestion: |
+  The Regulation only applies to situations where the customers are located in the European Union and where the business is established or has residence in the European Union. The geographical scope is not fulfilled and thus the Regulation is not applicable to your case. 
+  
+  <font size="2"> ***Source: Art. 1(2) Platform to business Regulation***
+---
+question: Question
+subquestion: |
+  Do any of these business users or corporate website users have their place of establishment or residence in the European Union?
+  
+  <font size="2"> ***Source: Art. 1(2) Platform to business Regulation***
+field: users_location
+buttons:
+  - "Yes"
+  - "No"
+---
+question: Question
+subquestion: |
+  Do any of these business users and corporate website users, through your online intermediation services or online search engines, offer goods or services to consumers located in the European Union?
+  
+  <font size="2"> ***Source: Art. 1(2) Platform to business Regulation***
+  
+field: customers_location
+buttons:
+  - "Yes"
+  - "No"
+---
+event: end_regulation_applies
+question: Conclusion - The Regulation ***is*** applicable to your case
+subquestion: |
+  All of the conditions have been fulfilled, and the Regulation is applicable to your case. 
+  
+  
+---
+question: Question
+subquestion: |
+  Are you a natural or a legal person that provides or offers to provide online intermediation services?
+  
+  <font size="2"> ***Source: Art. 1(2) and Art. 2(3) Platform to business Regulation***
+  
+field: intermediation_service
+buttons:
+  - "Yes"
+  - "No"
+  - "I do not know"
+---
+question: Question
+subquestion: |
+  Are you a natural or a legal person that provides or offers to provide online search engines?
+  
+  <font size="2"> ***Source: Art. 1(2) and Art. 2(6) Platform to business Regulation***
+field: search_engine
+buttons:
+  - "Yes"
+  - "No"
+  - "I do not know"
+---
+question: Question
+subquestion: |
+  Do you offer the intermediation services to any private individual or a legal person who:
+  
+  - Is acting in a commercial or professional capacity; 
+  
+  *or*
+  
+  - Through online intermediation services offers goods or services to consumers for purposes relating to its trade, business, craft or profession ? 
+  
+  <font size="2"> ***Source: Art. 1(2) and Art. 2(1) Platform to business Regulation***
+field: business_user
+buttons:
+  - "Yes"
+  - "No"
+---
+question: Question
+subquestion: |
+  Do you offer the online search engine to any private individual or a legal person who uses an online interface/software, such as a website or a mobile application, to offer goods or services to consumers for purposes relating to its trade, business, craft or profession?
+  
+  <font size="2"> ***Source: Art. 1(2) and Art. 2(7) Platform to business Regulation***
+field: corporate_website_user
+buttons:
+  - "Yes"
+  - "No"
+---
+question: Notice
+subquestion: |
+  Online search engines are digital services that allow users to: 
+  
+  1. Input queries in order to perform searches of, in principle, all websites, or all websites in a particular language
+  2.  On the basis of a query on any subject in the form of a keyword, voice request, phrase or other input
+  3.  And it returns results in any format in which information related to the requested content can be found.
+   
+   
+   <font size="2"> ***Source: Art. 2 (5) Platform to business Regulation***
+continue button field: notice_search_engine
+---
+question: Notice
+subquestion: |
+  Online intermediation services are services that:
+  
+  - Are normally provided for remuneration, at a distance, by electronic means and at the individual request of a recipient of services (Directive (EU) 2015/1535); and
+  
+  - Allow business users to offer goods or services to consumers, with a view to facilitating the initiating of direct transactions between those business users and consumers, irrespective of where those transactions are ultimately concluded; and
+  
+  - Are provided to business users on the basis of contractual relationships between the provider of those services and business users which offer goods or services to consumers
+  
+  Examples of online intermediation services include:
+  • Online e-commerce market places, including collaborative ones on which business users are active
+  •	Online software applications services, such as application stores, 
+  •	Online social media services
+  
+  
+  
+  
+  <font size="2"> ***Source: Recital 11, Art. 2 (2) Platform to business Regulation and Art. 1 (1)(b) [Directive (EU) 2015/1535](https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32015L1535)***
+continue button field: notice_intermediation
+---
+event: end_not_business_user
+question: Conclusion - The Regulation is ***not*** applicable to your case
+subquestion: |
+  The Regulation only applies when the intermediation services are being offered to business users. You do not fulfill the definition of a business user, and thus the Regulation is not applicable to your case.
+  
+  <font size="2"> ***Source: Art. 1(2) and Art. 2(1) Platform to business Regulation***
+---
+event: end_not_search_nor_intermediation
+question: Conclusion - The Regulation is ***not*** applicable to your case
+subquestion: |
+  The Regulation applies to online intermediation services and online search engines, and you do not fulfill the requirements of either service. Therefore, the Regulation is not applicable to your case. 
+  
+  <font size="2"> ***Source: Art. 1(2), Art. 2(2) and Art. 2(5) Platform to business Regulation***
+---
+question: Question
+subquestion: |
+  Does the service you provide fall into one of these categories:
+  
+  - Peer-to-peer online intermediation services without the presence of business users
+  - Pure business-to-business online intermediation services which are not offered to consumers
+  - Search engine optimisation software services
+  - Services which revolve around advertising-blocking software
+  - Technological functionalities and interfaces that merely connect hardware and applications
+  - Online payment services
+  - Online advertising tools or exchanges which are not provided with the aim of the facilitating the initiation of direct transactions between businesses and consumers and which do not involve a contractual relationship between them ?
+  
+  <font size="2"> ***Source: Recital 11 Platform to business Regulation***
+field: recital_exceptions
+buttons:
+  - "Yes"
+  - "No"
+---
+event: end_excluded_service
+question: Conclusion - The Regulation is ***not*** applicable to your case
+subquestion: |
+  The service that you provide is excluded from the Regulation. Therefore, the Regulation is not applicable to your case. 
+  
+  
+  <font size="2"> ***Source: Recital 11  Platform to business Regulation***
+---
+question: Question
+subquestion: |
+  Are you a natural or a legal person that provides or offers to provide online intermediation services?
+  
+  <font size="2"> ***Source: Art. 1(2) and Art. 2(3) Platform to business Regulation***
+field: intermediation_service2
+buttons:
+  - "Yes"
+  - "No"
+---
+question: Question
+subquestion: |
+  Are you a natural or a legal person that provides or offers to provide online search engines?
+  
+  <font size="2"> ***Source: Art. 1(2) and Art. 2(6) Platform to business Regulation***
+field: search_engine2
+buttons:
+  - "Yes"
+  - "No"
+---
+event: end_not_corporate_user
+question: Conclusion - The Regulation is ***not*** applicable to your case
+subquestion: |
+  The Regulation only applies when the search engine services are being offered to corporate website users. You do not fulfill the definition of a corporate website user, and thus the Regulation is not applicable to your case.
+  
+  
+  <font size="2"> ***Source: Art. 1(2) and Art. 2(7) Platform to business Regulation***
+  
+---
+mandatory: True
+code: |
+  start
+  if intermediation_service == 'I do not know':
+    notice_intermediation
+    if intermediation_service2 == 'Yes':
+      if business_user == 'No':
+        end_not_business_user
+      if business_user == 'Yes':
+        if users_location == 'No':
+          end_outside_geographic_scope
+        if users_location == 'Yes':
+          if customers_location == 'No':
+            end_outside_geographic_scope
+          if customers_location == 'Yes':
+            if recital_exceptions == 'Yes':
+              end_excluded_service
+            if recital_exceptions == 'No':
+              end_regulation_applies
+    if intermediation_service2 == 'No':
+      if search_engine == 'I do not know':
+        notice_search_engine
+        if search_engine2 == 'Yes':
+          if corporate_website_user == 'Yes':
+            if users_location == 'No':
+              end_outside_geographic_scope
+            if users_location == 'Yes':
+              if customers_location == 'No':
+                end_outside_geographic_scope
+              if customers_location == 'Yes':
+                if recital_exceptions == 'Yes':
+                  end_excluded_service
+                if recital_exceptions == 'No':
+                  end_regulation_applies
+          if corporate_website_user == 'No':
+            end_not_corporate_user
+        if search_engine2 == 'No':
+          end_not_search_nor_intermediation
+      if search_engine == 'Yes':
+        if corporate_website_user == 'Yes':
+          if users_location == 'No':
+            end_outside_geographic_scope
+          if users_location == 'Yes':
+            if customers_location == 'No':
+              end_outside_geographic_scope
+            if customers_location == 'Yes':
+              if recital_exceptions == 'Yes':
+                end_excluded_service
+              if recital_exceptions == 'No':
+                end_regulation_applies
+        if corporate_website_user == 'No':
+          end_not_corporate_user
+      if search_engine == 'No':
+        end_not_search_nor_intermediation
+  if intermediation_service == 'No':
+    if search_engine == 'I do not know':
+      notice_search_engine
+      if search_engine2 == 'Yes':
+        if corporate_website_user == 'Yes':
+          if users_location == 'No':
+            end_outside_geographic_scope
+          if users_location == 'Yes':
+            if customers_location == 'No':
+              end_outside_geographic_scope
+            if customers_location == 'Yes':
+              if recital_exceptions == 'Yes':
+                end_excluded_service
+              if recital_exceptions == 'No':
+                end_regulation_applies
+        if corporate_website_user == 'No':
+          end_not_corporate_user
+      if search_engine2 == 'No':
+        end_not_search_nor_intermediation
+    if search_engine == 'Yes':
+      if corporate_website_user == 'Yes':
+        if users_location == 'No':
+          end_outside_geographic_scope
+        if users_location == 'Yes':
+          if customers_location == 'No':
+            end_outside_geographic_scope
+          if customers_location == 'Yes':
+            if recital_exceptions == 'Yes':
+              end_excluded_service
+            if recital_exceptions == 'No':
+              end_regulation_applies
+      if corporate_website_user == 'No':
+        end_not_corporate_user
+    if search_engine == 'No':
+      end_not_search_nor_intermediation
+  if intermediation_service == 'Yes':
+    if business_user == 'No':
+      end_not_business_user
+    if business_user == 'Yes':
+      if users_location == 'No':
+        end_outside_geographic_scope
+      if users_location == 'Yes':
+        if customers_location == 'No':
+          end_outside_geographic_scope
+        if customers_location == 'Yes':
+          if recital_exceptions == 'Yes':
+            end_excluded_service
+          if recital_exceptions == 'No':
+            end_regulation_applies
+---
+# [START INLINE GRAPHDOC EXPORT]
+# {"nodes":[{"id":"73659211-95f4-4731-aae2-81315ba1bc4f","appearance":{"x":200,"y":-120,"width":180,"height":36},"gd":{"type":"start","content":"This tool will help you determine whether the EU Regulation 2019/1150 on promoting fairness and transparency for business users of online intermediation services (Platform to business Regulation) is applicable to your case.\n\n<font size=\"2\"> [Regulation (EU) 2019/1150](https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=celex%3A32019R1150) of the European Parliament and of the Council of 20 June 2019 on promoting fairness and transparency for business users of online intermediation services","variable":"start"}},{"id":"10f5cc1b-83a5-4ff2-b63a-b553d135f63e","appearance":{"x":250,"y":740,"width":180,"height":36},"gd":{"type":"end","content":"The Regulation only applies to situations where the customers are located in the European Union and where the business is established or has residence in the European Union. The geographical scope is not fulfilled and thus the Regulation is not applicable to your case. \n\n<font size=\"2\"> ***Source: Art. 1(2) Platform to business Regulation***","variable":"end_outside_geographic_scope"}},{"id":"dec203e1-389b-4560-be32-a837e9731b4a","appearance":{"x":300,"y":430,"width":180,"height":36},"gd":{"type":"decision","content":"Do any of these business users or corporate website users have their place of establishment or residence in the European Union?\n\n<font size=\"2\"> ***Source: Art. 1(2) Platform to business Regulation***","variable":"users_location"}},{"id":"701ebf83-7cd6-46e9-80e7-ba9a4485581e","appearance":{"x":80,"y":540,"width":180,"height":36},"gd":{"type":"decision","content":"Do any of these business users and corporate website users, through your online intermediation services or online search engines, offer goods or services to consumers located in the European Union?\n\n<font size=\"2\"> ***Source: Art. 1(2) Platform to business Regulation***\n","variable":"customers_location"}},{"id":"12cf286d-986d-4560-93be-c271ffd37dd3","appearance":{"x":-40,"y":760,"width":180,"height":36},"gd":{"type":"end","content":"All of the conditions have been fulfilled, and the Regulation is applicable to your case. \n\n","variable":"end_regulation_applies"}},{"id":"2de5eb36-226c-4621-a3ac-f74c406d00be","appearance":{"x":200,"y":-40,"width":180,"height":36},"gd":{"type":"decision","content":"Are you a natural or a legal person that provides or offers to provide online intermediation services?\n\n<font size=\"2\"> ***Source: Art. 1(2) and Art. 2(3) Platform to business Regulation***\n","variable":"intermediation_service"}},{"id":"e211cd20-bf92-4127-b653-fc6c5c10d05d","appearance":{"x":410,"y":50,"width":180,"height":36},"gd":{"type":"decision","content":"Are you a natural or a legal person that provides or offers to provide online search engines?\n\n<font size=\"2\"> ***Source: Art. 1(2) and Art. 2(6) Platform to business Regulation***","variable":"search_engine"}},{"id":"6dc6ddf7-5fe7-4330-bdea-1087fc1aa39f","appearance":{"x":130,"y":190,"width":180,"height":36},"gd":{"type":"decision","content":"Do you offer the intermediation services to any private individual or a legal person who:\n\n- Is acting in a commercial or professional capacity; \n\n*or*\n\n- Through online intermediation services offers goods or services to consumers for purposes relating to its trade, business, craft or profession ? \n\n<font size=\"2\"> ***Source: Art. 1(2) and Art. 2(1) Platform to business Regulation***","variable":"business_user"}},{"id":"98d58fe2-692c-46ca-919e-f43d64d4ff43","appearance":{"x":320,"y":200,"width":180,"height":36},"gd":{"type":"decision","content":"Do you offer the online search engine to any private individual or a legal person who uses an online interface/software, such as a website or a mobile application, to offer goods or services to consumers for purposes relating to its trade, business, craft or profession?\n\n<font size=\"2\"> ***Source: Art. 1(2) and Art. 2(7) Platform to business Regulation***","variable":"corporate_website_user"}},{"id":"44b53032-5b99-4d2f-a4aa-f2946f15c216","appearance":{"x":720,"y":110,"width":180,"height":36},"gd":{"type":"notice","content":"Online search engines are digital services that allow users to: \n\n1. Input queries in order to perform searches of, in principle, all websites, or all websites in a particular language\n 2.  On the basis of a query on any subject in the form of a keyword, voice request, phrase or other input\n 3.  And it returns results in any format in which information related to the requested content can be found.\n \n \n <font size=\"2\"> ***Source: Art. 2 (5) Platform to business Regulation***","variable":"notice_search_engine"}},{"id":"926f5fee-a8bf-4630-b83c-17fea6546131","appearance":{"x":-40,"y":30,"width":180,"height":36},"gd":{"type":"notice","content":"Online intermediation services are services that:\n\n- Are normally provided for remuneration, at a distance, by electronic means and at the individual request of a recipient of services (Directive (EU) 2015/1535); and\n\n- Allow business users to offer goods or services to consumers, with a view to facilitating the initiating of direct transactions between those business users and consumers, irrespective of where those transactions are ultimately concluded; and\n\n- Are provided to business users on the basis of contractual relationships between the provider of those services and business users which offer goods or services to consumers\n\nExamples of online intermediation services include:\n• Online e-commerce market places, including collaborative ones on which business users are active\n•\tOnline software applications services, such as application stores, \n•\tOnline social media services\n\n\n\n\n<font size=\"2\"> ***Source: Recital 11, Art. 2 (2) Platform to business Regulation and Art. 1 (1)(b) [Directive (EU) 2015/1535](https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32015L1535)***","variable":"notice_intermediation"}},{"id":"f1c8311b-3fd9-4813-9309-113c7408aaaf","appearance":{"x":30,"y":250,"width":180,"height":36},"gd":{"type":"end","content":"The Regulation only applies when the intermediation services are being offered to business users. You do not fulfill the definition of a business user, and thus the Regulation is not applicable to your case.\n\n<font size=\"2\"> ***Source: Art. 1(2) and Art. 2(1) Platform to business Regulation***","variable":"end_not_business_user"}},{"id":"07124bb9-41a5-4d88-9111-43c0a236b707","appearance":{"x":560,"y":250,"width":180,"height":36},"gd":{"type":"end","content":"The Regulation applies to online intermediation services and online search engines, and you do not fulfill the requirements of either service. Therefore, the Regulation is not applicable to your case. \n\n<font size=\"2\"> ***Source: Art. 1(2), Art. 2(2) and Art. 2(5) Platform to business Regulation***","variable":"end_not_search_nor_intermediation"}},{"id":"cb76c489-b06f-4ba5-a5a0-c89f2bbb0438","appearance":{"x":-200,"y":610,"width":180,"height":36},"gd":{"type":"decision","content":"Does the service you provide fall into one of these categories:\n\n- Peer-to-peer online intermediation services without the presence of business users;\n - Pure business-to-business online intermediation services which are not offered to consumers\n - Search engine optimisation software services\n - Services which revolve around advertising-blocking software\n - Technological functionalities and interfaces that merely connect hardware and applications\n - Online payment services\n - Online advertising tools or exchanges which are not provided with the aim of the facilitating the initiation of direct transactions between businesses and consumers and which do not involve a contractual relationship between them ?\n\n<font size=\"2\"> ***Source: Recital 11 Platform to business Regulation***","variable":"recital_exceptions"}},{"id":"2c07fa0b-556e-49a8-bcb1-d4dfe6191f14","appearance":{"x":-260,"y":760,"width":180,"height":36},"gd":{"type":"end","content":"The service that you provide is excluded from the Regulation. Therefore, the Regulation is not applicable to your case. \n\n\n<font size=\"2\"> ***Source: Recital 11  Platform to business Regulation***","variable":"end_excluded_service"}},{"id":"681519d1-0212-4153-b13c-2bc0cc490bf2","appearance":{"x":-40,"y":100,"width":180,"height":36},"gd":{"type":"decision","content":"Are you a natural or a legal person that provides or offers to provide online intermediation services?\n\n<font size=\"2\"> ***Source: Art. 1(2) and Art. 2(3) Platform to business Regulation***","variable":"intermediation_service2"}},{"id":"ff309a36-d307-4b7b-a299-425dc8232e4e","appearance":{"x":720,"y":170,"width":180,"height":36},"gd":{"type":"decision","content":"Are you a natural or a legal person that provides or offers to provide online search engines?\n\n<font size=\"2\"> ***Source: Art. 1(2) and Art. 2(6) Platform to business Regulation***","variable":"search_engine2"}},{"id":"a39ec750-d933-4889-a224-8ac63512f1b1","appearance":{"x":460,"y":320,"width":180,"height":36},"gd":{"type":"end","content":"The Regulation only applies when the search engine services are being offered to corporate website users. You do not fulfill the definition of a corporate website user, and thus the Regulation is not applicable to your case.\n\n\n<font size=\"2\"> ***Source: Art. 1(2) and Art. 2(7) Platform to business Regulation***\n","variable":"end_not_corporate_user"}}],"edges":[{"id":"037b96d0-e2dc-46d7-a386-378ab7bfc279","node_from_id":"dec203e1-389b-4560-be32-a837e9731b4a","node_to_id":"10f5cc1b-83a5-4ff2-b63a-b553d135f63e","gd":{"content":"No"}},{"id":"81948a83-de17-45a5-9119-08d51d5a97b5","node_from_id":"dec203e1-389b-4560-be32-a837e9731b4a","node_to_id":"701ebf83-7cd6-46e9-80e7-ba9a4485581e","gd":{"content":"Yes"}},{"id":"085af8f5-5b5f-4f2c-be2c-d634f814e6ff","node_from_id":"701ebf83-7cd6-46e9-80e7-ba9a4485581e","node_to_id":"10f5cc1b-83a5-4ff2-b63a-b553d135f63e","gd":{"content":"No"}},{"id":"ab685322-d490-458b-93fe-a9354d866035","node_from_id":"2de5eb36-226c-4621-a3ac-f74c406d00be","node_to_id":"926f5fee-a8bf-4630-b83c-17fea6546131","gd":{"content":"I do not know"}},{"id":"560b4b2d-c27a-411a-af04-f8bfec424722","node_from_id":"2de5eb36-226c-4621-a3ac-f74c406d00be","node_to_id":"e211cd20-bf92-4127-b653-fc6c5c10d05d","gd":{"content":"No"}},{"id":"657e6195-eddd-4bd0-a798-ba9b13dc7643","node_from_id":"e211cd20-bf92-4127-b653-fc6c5c10d05d","node_to_id":"44b53032-5b99-4d2f-a4aa-f2946f15c216","gd":{"content":"I do not know"}},{"id":"47f4ca7e-2829-4f67-ada3-d570cd4918d6","node_from_id":"e211cd20-bf92-4127-b653-fc6c5c10d05d","node_to_id":"98d58fe2-692c-46ca-919e-f43d64d4ff43","gd":{"content":"Yes"}},{"id":"3cc2adf5-47cc-4beb-893b-7a46cba6ecf1","node_from_id":"2de5eb36-226c-4621-a3ac-f74c406d00be","node_to_id":"6dc6ddf7-5fe7-4330-bdea-1087fc1aa39f","gd":{"content":"Yes"}},{"id":"8f16555b-3b5a-4e9c-8867-efa8ce6a986f","node_from_id":"73659211-95f4-4731-aae2-81315ba1bc4f","node_to_id":"2de5eb36-226c-4621-a3ac-f74c406d00be","gd":{"content":null}},{"id":"98aafa97-e3b4-4c04-8687-f64a523531b5","node_from_id":"6dc6ddf7-5fe7-4330-bdea-1087fc1aa39f","node_to_id":"f1c8311b-3fd9-4813-9309-113c7408aaaf","gd":{"content":"No"}},{"id":"c51e06a8-266b-4815-a6ea-5fab65a022fb","node_from_id":"6dc6ddf7-5fe7-4330-bdea-1087fc1aa39f","node_to_id":"dec203e1-389b-4560-be32-a837e9731b4a","gd":{"content":"Yes"}},{"id":"8e615a32-4a38-4f1e-8312-b17f92250943","node_from_id":"98d58fe2-692c-46ca-919e-f43d64d4ff43","node_to_id":"dec203e1-389b-4560-be32-a837e9731b4a","gd":{"content":"Yes"}},{"id":"e9bdb384-0095-41e6-99dc-4bb22ef44663","node_from_id":"cb76c489-b06f-4ba5-a5a0-c89f2bbb0438","node_to_id":"2c07fa0b-556e-49a8-bcb1-d4dfe6191f14","gd":{"content":"Yes"}},{"id":"69721bc9-0a71-471e-a702-06b8e5be9264","node_from_id":"cb76c489-b06f-4ba5-a5a0-c89f2bbb0438","node_to_id":"12cf286d-986d-4560-93be-c271ffd37dd3","gd":{"content":"No"}},{"id":"faacf87d-a84a-400e-8ef8-04776aacad7c","node_from_id":"701ebf83-7cd6-46e9-80e7-ba9a4485581e","node_to_id":"cb76c489-b06f-4ba5-a5a0-c89f2bbb0438","gd":{"content":"Yes"}},{"id":"7dc89a74-003d-4d9d-b72a-9ed92a28ba7f","node_from_id":"926f5fee-a8bf-4630-b83c-17fea6546131","node_to_id":"681519d1-0212-4153-b13c-2bc0cc490bf2","gd":{"content":null}},{"id":"1120a9eb-4055-4b17-9764-88a4d54dfbc3","node_from_id":"681519d1-0212-4153-b13c-2bc0cc490bf2","node_to_id":"6dc6ddf7-5fe7-4330-bdea-1087fc1aa39f","gd":{"content":"Yes"}},{"id":"a6614d5f-7ae4-44dd-9d6c-8cd5083146ab","node_from_id":"681519d1-0212-4153-b13c-2bc0cc490bf2","node_to_id":"e211cd20-bf92-4127-b653-fc6c5c10d05d","gd":{"content":"No"}},{"id":"cc5dc053-7132-4a9c-8812-721c6db15e9e","node_from_id":"44b53032-5b99-4d2f-a4aa-f2946f15c216","node_to_id":"ff309a36-d307-4b7b-a299-425dc8232e4e","gd":{"content":null}},{"id":"6b6e97e8-6891-42af-b534-ff5148d7f2e6","node_from_id":"ff309a36-d307-4b7b-a299-425dc8232e4e","node_to_id":"98d58fe2-692c-46ca-919e-f43d64d4ff43","gd":{"content":"Yes"}},{"id":"570af9ba-dadb-4443-94b0-80fe81d27b15","node_from_id":"ff309a36-d307-4b7b-a299-425dc8232e4e","node_to_id":"07124bb9-41a5-4d88-9111-43c0a236b707","gd":{"content":"No"}},{"id":"df4ed3eb-48f8-4c05-93a1-5108f0ab6811","node_from_id":"e211cd20-bf92-4127-b653-fc6c5c10d05d","node_to_id":"07124bb9-41a5-4d88-9111-43c0a236b707","gd":{"content":"No"}},{"id":"4aaf7cc3-e5a4-4897-ace6-4da0d6d6f809","node_from_id":"98d58fe2-692c-46ca-919e-f43d64d4ff43","node_to_id":"a39ec750-d933-4889-a224-8ac63512f1b1","gd":{"content":"No"}}],"main":{"name":"Untitled graph"}}
+# [END INLINE GRAPHDOC EXPORT]

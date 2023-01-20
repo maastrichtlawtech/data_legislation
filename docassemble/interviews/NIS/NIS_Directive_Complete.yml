@@ -1,0 +1,252 @@
+question: Start
+subquestion: |
+  This tool will help you determine whether the security and incident notification system requirements set out in the Directive on security of network and information systems (NIS) apply to your case.
+  
+  <font size="2"> [Directive (EU) 2016/1148](https://eur-lex.europa.eu/eli/dir/2016/1148/oj) of the European Parliament and of the Council of 6 July 2016 concerning measures for a high common level of security of network and information systems across the Union
+continue button field: start
+---
+question: Question
+subquestion: |
+  Do you provide a service which is essential for the maintenance of critical societal and/or economic activities?
+  
+  
+  <font size="2">***Source: Art.5(2)(a) Directive on security of network and information systems***
+  
+  
+field: essential_service
+buttons:
+  - "Yes"
+  - "No"
+---
+question: Question
+subquestion: |
+  Does the provision of that service depend on network and information systems?
+  
+  
+  <font size="2">***Source: Art.5(2)(b) Directive on security of network and information systems***
+field: essential_systems
+buttons:
+  - "Yes"
+  - "No"
+---
+question: Question
+subquestion: |
+  Would a security incident have significant disruptive effects on the provision of that service?
+  
+  
+  <font size="2">***Source: Art.Article 5(2)(c) Directive on security of network and information systems***
+field: essential_disruption
+buttons:
+  - "Yes"
+  - "No"
+---
+question: Question
+subquestion: |
+  Do you provide any of these kinds of digital services:
+  
+  - Online marketplace
+  - Online search engine 
+  - Cloud computing service ?
+  
+  
+  <font size="2">***Source: Art.4(5) and Annex III Directive on security of network and information systems***
+field: digital_services
+buttons:
+  - "Yes"
+  - "No"
+---
+question: Question
+subquestion: |
+  Do you provide publicly available electronic communication services?
+  
+  
+  <font size="2">***Source: Recital 7 Directive on security of network and information systems***
+field: exception_public_service
+buttons:
+  - "Yes"
+  - "No"
+---
+question: Question
+subquestion: |
+  Do you provide public communication networks?
+  
+  
+  <font size="2">***Source: Recital 7 Directive on security of network and information systems***
+field: exception_public_network
+buttons:
+  - "Yes"
+  - "No"
+---
+question: Question
+subquestion: |
+  Are you a trust service provider?
+  
+  
+  <font size="2">***Source: Art.1(3) Directive on security of network and information systems***
+field: exception_trust_service
+buttons:
+  - "Yes"
+  - "No"
+---
+event: not_provider
+question: End
+subquestion: |
+  The NIS Directive is not applicable to your situation, since you do not qualify as a digital service provider or a provider of an essential service.
+  
+  <font size="2">***Source: Art. 1(2)(d) Directive on security of network and information systems***
+---
+question: Question
+subquestion: |
+  Is the service you provide relied upon by many other businesses within the European Union?
+  
+  
+  <font size="2">***Source: Recital 48 Directive on security of network and information systems***
+field: exception_relied_upon
+buttons:
+  - "Yes"
+  - "No"
+---
+question: Question
+subquestion: |
+  Are you a micro- or small enterprise?
+  
+  
+  <font size="2">***Source: Art.16(11) and Recital 53 Directive on security of network and information systems***
+field: exception_small_business
+buttons:
+  - "Yes"
+  - "No"
+---
+question: Notice
+subquestion: |
+  You fulfill the conditions of an essential service provider within the meaning of the Directive.
+  
+  
+  <font size="2">***Source: Art. 5(2) Directive on security of network and information systems**
+continue button field: notice_essential_service_provider
+---
+question: Notice
+subquestion: |
+  You fulfill the conditions of a digital service provider within the meaning of the Directive.
+  
+  <font size="2">***Source: Art. 4(5) and (6) Directive on security of network and information systems***
+continue button field: notice_digital_service_provider
+---
+event: micro_small_business
+question: Conclusion - The Directive is ***not*** applicable to your case
+subquestion: |
+  The security and incident notification requirements do not apply to micro- and small businesses, and as such the requirements of the Directive are not applicable to your case.
+  
+  
+  <font size="2">***Source: Art. 16(11) and Recital 53 Directive on security of network and information systems*** 
+---
+event: provider_electronic_service_network
+question: Conclusion - The Directive is ***not*** applicable to your case
+subquestion: |
+  The rules and requirements for providers electronic communication services and electronic public communication network are legislated in [Directive 2002/58/EC](https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=celex%3A32002L0058), and thus the NIS Directive is not applicable to your case.
+  
+  <font size="2">***Source: Recital 7 Directive on security of network and information systems*** 
+---
+event: trust_service_provider
+question: Conclusion - The Directive is ***not*** applicable to your case
+subquestion: |
+  The rules and requirements for trust service providers are legislated in [Regulation (EU) No 910/2014](https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=uriserv:OJ.L_.2014.257.01.0073.01.ENG), and thus the NIS Directive is not applicable to your case.
+  
+  <font size="2">***Source: Art. 1(3) and Recital 7 Directive on security of network and information systems*** 
+---
+event: directive_applies
+question: Conclusion - The Directive ***is*** applicable to your case
+subquestion: |
+  All of the conditions have been fulfilled, and the security and incident notification system requirements set out in the Directive are applicable to your case.
+---
+event: not_relied_upon
+question: Conclusion - The Directive is ***not*** applicable to your case
+subquestion: |
+  The Directive only applies to those digital service providers which many businesses in the Union rely on increasingly, thus the Directive is not applicable to your case.
+  
+  <font size="2">***Source: Recital 48 Directive on security of network and information systems***
+---
+mandatory: True
+code: |
+  start
+  if essential_service == 'Yes':
+    if essential_systems == 'Yes':
+      if essential_disruption == 'Yes':
+        notice_essential_service_provider
+        if exception_trust_service == 'No':
+          if exception_public_service == 'No':
+            if exception_public_network == 'No':
+              directive_applies
+            if exception_public_network == 'Yes':
+              provider_electronic_service_network
+          if exception_public_service == 'Yes':
+            provider_electronic_service_network
+        if exception_trust_service == 'Yes':
+          trust_service_provider
+      if essential_disruption == 'No':
+        if digital_services == 'No':
+          not_provider
+        if digital_services == 'Yes':
+          if exception_relied_upon == 'Yes':
+            notice_digital_service_provider
+            if exception_small_business == 'Yes':
+              micro_small_business
+            if exception_small_business == 'No':
+              if exception_trust_service == 'No':
+                if exception_public_service == 'No':
+                  if exception_public_network == 'No':
+                    directive_applies
+                  if exception_public_network == 'Yes':
+                    provider_electronic_service_network
+                if exception_public_service == 'Yes':
+                  provider_electronic_service_network
+              if exception_trust_service == 'Yes':
+                trust_service_provider
+          if exception_relied_upon == 'No':
+            not_relied_upon
+    if essential_systems == 'No':
+      if digital_services == 'No':
+        not_provider
+      if digital_services == 'Yes':
+        if exception_relied_upon == 'Yes':
+          notice_digital_service_provider
+          if exception_small_business == 'Yes':
+            micro_small_business
+          if exception_small_business == 'No':
+            if exception_trust_service == 'No':
+              if exception_public_service == 'No':
+                if exception_public_network == 'No':
+                  directive_applies
+                if exception_public_network == 'Yes':
+                  provider_electronic_service_network
+              if exception_public_service == 'Yes':
+                provider_electronic_service_network
+            if exception_trust_service == 'Yes':
+              trust_service_provider
+        if exception_relied_upon == 'No':
+          not_relied_upon
+  if essential_service == 'No':
+    if digital_services == 'No':
+      not_provider
+    if digital_services == 'Yes':
+      if exception_relied_upon == 'Yes':
+        notice_digital_service_provider
+        if exception_small_business == 'Yes':
+          micro_small_business
+        if exception_small_business == 'No':
+          if exception_trust_service == 'No':
+            if exception_public_service == 'No':
+              if exception_public_network == 'No':
+                directive_applies
+              if exception_public_network == 'Yes':
+                provider_electronic_service_network
+            if exception_public_service == 'Yes':
+              provider_electronic_service_network
+          if exception_trust_service == 'Yes':
+            trust_service_provider
+      if exception_relied_upon == 'No':
+        not_relied_upon
+---
+# [START INLINE GRAPHDOC EXPORT]
+# {"nodes":[{"id":"57bde51a-88b7-424f-b06d-1b4076ef2456","appearance":{"x":120,"y":60,"width":180,"height":36},"gd":{"type":"start","content":"This tool will help you determine whether the security and incident notification system requirements set out in the Directive on security of network and information systems (NIS) apply to your case.\n\n<font size=\"2\"> [Directive (EU) 2016/1148](https://eur-lex.europa.eu/eli/dir/2016/1148/oj) of the European Parliament and of the Council of 6 July 2016 concerning measures for a high common level of security of network and information systems across the Union","variable":"start"}},{"id":"b298a90b-8f69-4c07-a8c9-db19da86e509","appearance":{"x":120,"y":200,"width":180,"height":36},"gd":{"type":"decision","content":"Do you provide a service which is essential for the maintenance of critical societal and/or economic activities?\n\n\n<font size=\"2\">***Source: Art.5(2)(a) Directive on security of network and information systems***\n\n","variable":"essential_service"}},{"id":"2cc43451-5e90-4407-8670-2f0b3118739c","appearance":{"x":120,"y":320,"width":180,"height":36},"gd":{"type":"decision","content":"Does the provision of that service depend on network and information systems?\n\n\n<font size=\"2\">***Source: Art.5(2)(b) Directive on security of network and information systems***","variable":"essential_systems"}},{"id":"337e3f33-6d5f-492f-8540-143664f28ab8","appearance":{"x":120,"y":410,"width":180,"height":36},"gd":{"type":"decision","content":"Would a security incident have significant disruptive effects on the provision of that service?\n\n\n<font size=\"2\">***Source: Art.Article 5(2)(c) Directive on security of network and information systems***","variable":"essential_disruption"}},{"id":"8e3d59f2-f6f0-4fe5-9976-29d3a1f15322","appearance":{"x":410,"y":250,"width":180,"height":36},"gd":{"type":"decision","content":"Do you provide any of these kinds of digital services:\n\n- Online marketplace\n  - Online search engine\n  - Cloud computing service ?\n\n\n<font size=\"2\">***Source: Art.4(5) and Annex III Directive on security of network and information systems***","variable":"digital_services"}},{"id":"6ff4d79a-44fb-476b-96be-3f3f55300cd5","appearance":{"x":250,"y":670,"width":180,"height":36},"gd":{"type":"decision","content":"Do you provide publicly available electronic communication services?\n\n\n<font size=\"2\">***Source: Recital 7 Directive on security of network and information systems***","variable":"exception_public_service"}},{"id":"5910cccb-2364-43c7-825a-90e14d4464d1","appearance":{"x":210,"y":760,"width":180,"height":36},"gd":{"type":"decision","content":"Do you provide public communication networks?\n\n\n<font size=\"2\">***Source: Recital 7 Directive on security of network and information systems***","variable":"exception_public_network"}},{"id":"f335b813-3f3d-45b1-8f97-8ddda3e7ba3b","appearance":{"x":250,"y":590,"width":180,"height":36},"gd":{"type":"decision","content":"Are you a trust service provider?\n\n\n<font size=\"2\">***Source: Art.1(3) Directive on security of network and information systems***","variable":"exception_trust_service"}},{"id":"99a80573-8a49-4d04-a5e8-07840f23bf45","appearance":{"x":640,"y":300,"width":180,"height":36},"gd":{"type":"end","content":"The NIS Directive is not applicable to your situation, since you do not qualify as a digital service provider or a provider of an essential service.\n\n<font size=\"2\">***Source: Art. 1(2)(d) Directive on security of network and information systems***","variable":"not_provider"}},{"id":"7c82e882-d462-448b-a1f5-c508656ba412","appearance":{"x":410,"y":330,"width":180,"height":36},"gd":{"type":"decision","content":"Is the service you provide relied upon by many other businesses within the European Union?\n\n\n<font size=\"2\">***Source: Recital 48 Directive on security of network and information systems***","variable":"exception_relied_upon"}},{"id":"fe84ba33-3fce-4ffc-8b7b-b7b5ef3da83c","appearance":{"x":410,"y":500,"width":180,"height":36},"gd":{"type":"decision","content":"Are you a micro- or small enterprise?\n\n\n<font size=\"2\">***Source: Art.16(11) and Recital 53 Directive on security of network and information systems***","variable":"exception_small_business"}},{"id":"fcd985a1-806a-4416-a4d0-ec8a8eea4dbe","appearance":{"x":120,"y":480,"width":180,"height":36},"gd":{"type":"notice","content":"You fulfill the conditions of an essential service provider within the meaning of the Directive.\n\n\n<font size=\"2\">***Source: Art. 5(2) Directive on security of network and information systems**","variable":"notice_essential_service_provider"}},{"id":"7bcc38fb-6d29-46c1-af3f-1b864a14805a","appearance":{"x":410,"y":420,"width":180,"height":36},"gd":{"type":"notice","content":"You fulfill the conditions of a digital service provider within the meaning of the Directive.\n\n<font size=\"2\">***Source: Art. 4(5) and (6) Directive on security of network and information systems***","variable":"notice_digital_service_provider"}},{"id":"d1c7c03a-7870-4a66-8a29-8ee25b4e5ea6","appearance":{"x":660,"y":550,"width":180,"height":36},"gd":{"type":"end","content":"The security and incident notification requirements do not apply to micro- and small businesses, and as such the requirements of the Directive are not applicable to your case.\n\n\n<font size=\"2\">***Source: Art. 16(11) and Recital 53 Directive on security of network and information systems*** ","variable":"micro_small_business"}},{"id":"d4521042-5ab0-4f71-8202-d66ecadb1860","appearance":{"x":-40,"y":830,"width":180,"height":36},"gd":{"type":"end","content":"The rules and requirements for providers electronic communication services and electronic public communication network are legislated in [Directive 2002/58/EC](https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=celex%3A32002L0058), and thus the NIS Directive is not applicable to your case.\n\n<font size=\"2\">***Source: Recital 7 Directive on security of network and information systems*** ","variable":"provider_electronic_service_network"}},{"id":"ff286250-fb94-4fd4-a33c-6f2dfe2e0ae5","appearance":{"x":-10,"y":660,"width":180,"height":36},"gd":{"type":"end","content":"The rules and requirements for trust service providers are legislated in [Regulation (EU) No 910/2014](https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=uriserv:OJ.L_.2014.257.01.0073.01.ENG), and thus the NIS Directive is not applicable to your case.\n\n<font size=\"2\">***Source: Art. 1(3) and Recital 7 Directive on security of network and information systems*** ","variable":"trust_service_provider"}},{"id":"8445faf6-78ea-4266-a062-c9bdc94c07ea","appearance":{"x":210,"y":830,"width":180,"height":36},"gd":{"type":"end","content":"All of the conditions have been fulfilled, and the security and incident notification system requirements set out in the Directive are applicable to your case.","variable":"directive_applies"}},{"id":"d4ba3257-f933-43c2-9c0d-a93827893508","appearance":{"x":630,"y":390,"width":180,"height":36},"gd":{"type":"end","content":"The Directive only applies to those digital service providers which many businesses in the Union rely on increasingly, thus the Directive is not applicable to your case.\n\n<font size=\"2\">***Source: Recital 48 Directive on security of network and information systems***","variable":"not_relied_upon"}}],"edges":[{"id":"b92eadef-27f3-47e9-af8f-f3740da70cf4","node_from_id":"57bde51a-88b7-424f-b06d-1b4076ef2456","node_to_id":"b298a90b-8f69-4c07-a8c9-db19da86e509","gd":{"content":null}},{"id":"a9d8e0c8-5fc7-45bc-a510-2377e6c5d456","node_from_id":"b298a90b-8f69-4c07-a8c9-db19da86e509","node_to_id":"2cc43451-5e90-4407-8670-2f0b3118739c","gd":{"content":"Yes"}},{"id":"1b53306a-7bdc-4f37-ba2e-069b6bf7fc16","node_from_id":"2cc43451-5e90-4407-8670-2f0b3118739c","node_to_id":"337e3f33-6d5f-492f-8540-143664f28ab8","gd":{"content":"Yes"}},{"id":"af4cf72f-1f58-44ce-9d6c-aaf775d10b66","node_from_id":"b298a90b-8f69-4c07-a8c9-db19da86e509","node_to_id":"8e3d59f2-f6f0-4fe5-9976-29d3a1f15322","gd":{"content":"No"}},{"id":"cb9885ef-507d-443b-bafc-cffc78a7bf1f","node_from_id":"8e3d59f2-f6f0-4fe5-9976-29d3a1f15322","node_to_id":"99a80573-8a49-4d04-a5e8-07840f23bf45","gd":{"content":"No"}},{"id":"7f1ad4f3-9564-4a4f-a06e-d984b2e9d4f0","node_from_id":"8e3d59f2-f6f0-4fe5-9976-29d3a1f15322","node_to_id":"7c82e882-d462-448b-a1f5-c508656ba412","gd":{"content":"Yes"}},{"id":"53cbd1bf-a946-434c-81c5-a303d57bb9c8","node_from_id":"7c82e882-d462-448b-a1f5-c508656ba412","node_to_id":"7bcc38fb-6d29-46c1-af3f-1b864a14805a","gd":{"content":"Yes"}},{"id":"0a48c0a8-91f2-4c4b-b2bc-7d15cf9ad169","node_from_id":"7bcc38fb-6d29-46c1-af3f-1b864a14805a","node_to_id":"fe84ba33-3fce-4ffc-8b7b-b7b5ef3da83c","gd":{"content":null}},{"id":"aab0dfbb-2744-4688-8ac2-b04468d75531","node_from_id":"fe84ba33-3fce-4ffc-8b7b-b7b5ef3da83c","node_to_id":"d1c7c03a-7870-4a66-8a29-8ee25b4e5ea6","gd":{"content":"Yes"}},{"id":"c4ae1c3f-e472-4815-8a2f-67c5510917eb","node_from_id":"337e3f33-6d5f-492f-8540-143664f28ab8","node_to_id":"fcd985a1-806a-4416-a4d0-ec8a8eea4dbe","gd":{"content":"Yes"}},{"id":"3f09c1cd-0c5e-4492-a93c-9af2076ebfca","node_from_id":"fe84ba33-3fce-4ffc-8b7b-b7b5ef3da83c","node_to_id":"f335b813-3f3d-45b1-8f97-8ddda3e7ba3b","gd":{"content":"No"}},{"id":"0c1f5145-8cf2-47c2-b364-8e8f0bc46a56","node_from_id":"f335b813-3f3d-45b1-8f97-8ddda3e7ba3b","node_to_id":"6ff4d79a-44fb-476b-96be-3f3f55300cd5","gd":{"content":"No"}},{"id":"636059b4-4727-4e18-abd3-ac676a3b34d6","node_from_id":"6ff4d79a-44fb-476b-96be-3f3f55300cd5","node_to_id":"5910cccb-2364-43c7-825a-90e14d4464d1","gd":{"content":"No"}},{"id":"6920975f-1e17-48de-9b95-b2885df7fa87","node_from_id":"fcd985a1-806a-4416-a4d0-ec8a8eea4dbe","node_to_id":"f335b813-3f3d-45b1-8f97-8ddda3e7ba3b","gd":{"content":null}},{"id":"e4451888-0d82-46d5-90da-bfbcc3701698","node_from_id":"5910cccb-2364-43c7-825a-90e14d4464d1","node_to_id":"8445faf6-78ea-4266-a062-c9bdc94c07ea","gd":{"content":"No"}},{"id":"1cb67266-e2ae-4449-b75a-6abb33cb77d3","node_from_id":"5910cccb-2364-43c7-825a-90e14d4464d1","node_to_id":"d4521042-5ab0-4f71-8202-d66ecadb1860","gd":{"content":"Yes"}},{"id":"fdca7a39-80ae-4665-aefd-08a4e79f058a","node_from_id":"6ff4d79a-44fb-476b-96be-3f3f55300cd5","node_to_id":"d4521042-5ab0-4f71-8202-d66ecadb1860","gd":{"content":"Yes"}},{"id":"e5d7955c-b89e-4311-97ef-db8f0fab15a3","node_from_id":"f335b813-3f3d-45b1-8f97-8ddda3e7ba3b","node_to_id":"ff286250-fb94-4fd4-a33c-6f2dfe2e0ae5","gd":{"content":"Yes"}},{"id":"29fd84a8-d9f2-43de-89ef-e85ddd266c89","node_from_id":"2cc43451-5e90-4407-8670-2f0b3118739c","node_to_id":"8e3d59f2-f6f0-4fe5-9976-29d3a1f15322","gd":{"content":"No"}},{"id":"745d11d5-11e1-4fea-a333-e04e81f0fdfc","node_from_id":"337e3f33-6d5f-492f-8540-143664f28ab8","node_to_id":"8e3d59f2-f6f0-4fe5-9976-29d3a1f15322","gd":{"content":"No"}},{"id":"e99f617b-d217-40f0-8c69-d4aea3a5c708","node_from_id":"7c82e882-d462-448b-a1f5-c508656ba412","node_to_id":"d4ba3257-f933-43c2-9c0d-a93827893508","gd":{"content":"No"}}],"main":{"name":"Untitled graph"}}
+# [END INLINE GRAPHDOC EXPORT]

@@ -1,0 +1,128 @@
+question: Start
+subquestion: |
+  This tool will help you determine whether the Regulation on the free flow of non-personal data in the European Union applies in your case.
+  
+  
+  <font size="2"> [Regulation (EU) 2018/1807](https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32018R1807) of the European Parliament and of the Council of 14 November 2018 on a framework for the free flow of non-personal data in the European Union
+continue button field: start
+---
+question: Question
+subquestion: |
+  Is the processing of the non-personal data:
+  
+  Provided as a service to users residing or having an establishment in the Union;
+  
+  *or*
+  
+  Carried out by a natural or legal person residing or having an establishment in the Union for its own needs ? 
+  
+  
+  <font size="2">***Source: Art.2(1) Regulation on the free flow of non-personal data in the European Union***
+  
+  
+field: art_2_1_processing
+buttons:
+  - "Yes"
+  - "No"
+---
+event: regulation_applies
+question: Conclusion - The Regulation ***is*** applicable to your case
+subquestion: |
+  All of the conditions have been fulfilled, and the Regulation on the free flow of non-personal data in the European Union  is applicable in your case.
+---
+event: not_applicable
+question: Conclusion - The Regulation is ***not*** applicable to your case
+subquestion: |
+  The regulation is not applicable to your situation. because the processing is outside of the scope of the regulation. 
+  
+  <font size="2">**Source: Art.2(3) Regulation on the free flow of non-personal data in the European Union**
+---
+question: Personal and non-personal data
+subquestion: |
+  In the case of a data set composed of both personal and non-personal data, this Regulation applies to the non-personal data part of the data set. Where personal and non-personal data in a data set are inextricably linked, this Regulation shall not prejudice the application of the General Data Protection Regulation (GDPR) [(EU) 2016/679](https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32016R0679). 
+  
+  
+  <font size="2">***Source: Art.2(2) Regulation on the free flow of non-personal data in the European Union***
+continue button field: mixed_data_rules
+---
+question: Question
+subquestion: |
+  Do you perform any of the following operations on personal data, whether by automated or non-automated means?
+  
+  Collection, recording, organisation, structuring, storage, adaptation or alteration, retrieval, consultation, use, disclosure by transmission, dissemination or otherwise making available, alignment or combination, restriction, erasure or destruction 
+  
+  <font size="2">***Source:  Art.3(2) Regulation on the free flow of non-personal data in the European Union***
+field: processing
+buttons:
+  - "Yes"
+  - "No"
+---
+event: no_processing
+question: Conclusion - The Regulation is ***not*** applicable to your case
+subquestion: |
+  The free flow of non-personal data regulation is not applicable to your situation, since data is not being processed.
+  
+  <font size="2">***Source:  Art.2(1) Regulation on the free flow of non-personal data in the European Union***
+---
+question: Question
+subquestion: |
+  Are you processing any electronic data which does not qualify as personal data?
+  
+  
+  <font size="2">***Source:  Art.1 and Art.2 Regulation on the free flow of non-personal data in the European Union***
+field: personal_data
+buttons:
+  - "Yes"
+  - "No"
+  - "I do not know"
+---
+event: only_personal_data
+question: Conclusion - The Regulation is ***not*** applicable to your case
+subquestion: |
+  The data being processed is personal data, and as such the Regulation on the free flow of non-personal data does not apply in your case. 
+    
+    The rules of the General Data Protection Regulation can apply, so it is recommended that you  use the GDPR tool to see whether it applies in your case. 
+  
+    <font size="2">***Source:  Art. 1 and 2(1), Regulation on the free flow of non-personal data in the European Union*** 
+---
+question: Question
+subquestion: |
+  Is the data you are processing composed of both personal- and non-personal data?
+  
+  <font size="2">***Source: Art.2(2) Regulation on the free flow of non-personal data in the European Union***
+field: personal_and_non_personal_data
+buttons:
+  - "Yes"
+  - "No"
+---
+event: consult_GDPR_tool
+question: Conclusion - Use the GDPR tool to determine your answer
+subquestion: |
+  Use the other tool created for the GDPR to determine whether the data being processed is personal.
+---
+mandatory: True
+code: |
+  start
+  if processing == 'No':
+    no_processing
+  if processing == 'Yes':
+    if personal_data == 'No':
+      only_personal_data
+    if personal_data == 'Yes':
+      if personal_and_non_personal_data == 'Yes':
+        mixed_data_rules
+        if art_2_1_processing == 'Yes':
+          regulation_applies
+        if art_2_1_processing == 'No':
+          not_applicable
+      if personal_and_non_personal_data == 'No':
+        if art_2_1_processing == 'Yes':
+          regulation_applies
+        if art_2_1_processing == 'No':
+          not_applicable
+    if personal_data == 'I do not know':
+      consult_GDPR_tool
+---
+# [START INLINE GRAPHDOC EXPORT]
+# {"nodes":[{"id":"b41bfd17-4e49-4777-9b31-b5dea25cc805","appearance":{"x":290,"y":-110,"width":180,"height":36},"gd":{"type":"start","content":"This tool will help you determine whether the Regulation on the free flow of non-personal data in the European Union applies in your case.\n\n\n<font size=\"2\"> [Regulation (EU) 2018/1807](https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32018R1807) of the European Parliament and of the Council of 14 November 2018 on a framework for the free flow of non-personal data in the European Union","variable":"start"}},{"id":"0926040f-637d-4635-a0f8-c2fae5247a79","appearance":{"x":150,"y":390,"width":180,"height":36},"gd":{"type":"decision","content":"Is the processing of the non-personal data:\n\nProvided as a service to users residing or having an establishment in the Union;\n\n*or*\n\nCarried out by a natural or legal person residing or having an establishment in the Union for its own needs ? \n\n\n<font size=\"2\">***Source: Art.2(1) Regulation on the free flow of non-personal data in the European Union***\n\n","variable":"art_2_1_processing"}},{"id":"8065081c-7913-470e-b0ce-2b633535323e","appearance":{"x":10,"y":580,"width":180,"height":36},"gd":{"type":"end","content":"All of the conditions have been fulfilled, and the Regulation on the free flow of non-personal data in the European Union  is applicable in your case.","variable":"regulation_applies"}},{"id":"870a961f-52f5-41f1-8c2d-a7a72cd026b4","appearance":{"x":310,"y":580,"width":180,"height":36},"gd":{"type":"end","content":"The regulation is not applicable to your situation. because the processing is outside of the scope of the regulation. \n\n<font size=\"2\">**Source: Art.2(3) Regulation on the free flow of non-personal data in the European Union**","variable":"not_applicable"}},{"id":"16adcdeb-45dc-42da-aef0-b922c9b2085f","appearance":{"x":-60,"y":370,"width":180,"height":36},"gd":{"type":"notice","content":"In the case of a data set composed of both personal and non-personal data, this Regulation applies to the non-personal data part of the data set. Where personal and non-personal data in a data set are inextricably linked, this Regulation shall not prejudice the application of the General Data Protection Regulation (GDPR) [(EU) 2016/679](https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32016R0679). \n\n\n<font size=\"2\">***Source: Art.2(2) Regulation on the free flow of non-personal data in the European Union***","variable":"mixed_data_rules"}},{"id":"3d9fbfee-3632-4af9-afb2-cc6a8cea547b","appearance":{"x":290,"y":-10,"width":180,"height":36},"gd":{"type":"decision","content":"Do you perform any of the following operations on personal data, whether by automated or non-automated means?\n\nCollection, recording, organisation, structuring, storage, adaptation or alteration, retrieval, consultation, use, disclosure by transmission, dissemination or otherwise making available, alignment or combination, restriction, erasure or destruction \n\n<font size=\"2\">***Source:  Art.3(2) Regulation on the free flow of non-personal data in the European Union***","variable":"processing"}},{"id":"897775ee-3dbb-4a2b-bd61-101e6d6bdc90","appearance":{"x":510,"y":70,"width":180,"height":36},"gd":{"type":"end","content":"The free flow of non-personal data regulation is not applicable to your situation, since data is not being processed.\n\n<font size=\"2\">***Source:  Art.2(1) Regulation on the free flow of non-personal data in the European Union***","variable":"no_processing"}},{"id":"b4949915-58b4-458d-9fed-b4b23fba2071","appearance":{"x":210,"y":100,"width":180,"height":36},"gd":{"type":"decision","content":"Are you processing any electronic data which does not qualify as personal data?\n\n\n<font size=\"2\">***Source:  Art.1 and Art.2 Regulation on the free flow of non-personal data in the European Union***","variable":"personal_data"}},{"id":"b01fadb9-850b-49fa-b764-6fa23f06678a","appearance":{"x":490,"y":190,"width":180,"height":36},"gd":{"type":"end","content":"The data being processed is personal data, and as such the Regulation on the free flow of non-personal data does not apply in your case. \n  \n  The rules of the General Data Protection Regulation can apply, so it is recommended that you  use the GDPR tool to see whether it applies in your case. \n\n  <font size=\"2\">***Source:  Art. 1 and 2(1), Regulation on the free flow of non-personal data in the European Union*** ","variable":"only_personal_data"}},{"id":"b7be8071-f998-4744-bfa7-d9c77176c381","appearance":{"x":30,"y":170,"width":180,"height":36},"gd":{"type":"decision","content":"Is the data you are processing composed of both personal- and non-personal data?\n\n<font size=\"2\">***Source: Art.2(2) Regulation on the free flow of non-personal data in the European Union***","variable":"personal_and_non_personal_data"}},{"id":"6cf1e8f6-1dec-493d-85e5-6a557ac67529","appearance":{"x":210,"y":230,"width":180,"height":36},"gd":{"type":"end","content":"Use the other tool created for the GDPR to determine whether the data being processed is personal.","variable":"consult_GDPR_tool"}}],"edges":[{"id":"23afe840-d645-4128-9543-797ecb8fb8a8","node_from_id":"0926040f-637d-4635-a0f8-c2fae5247a79","node_to_id":"8065081c-7913-470e-b0ce-2b633535323e","gd":{"content":"Yes"}},{"id":"f1c16d31-5933-44b9-ab33-bd0f41066cad","node_from_id":"0926040f-637d-4635-a0f8-c2fae5247a79","node_to_id":"870a961f-52f5-41f1-8c2d-a7a72cd026b4","gd":{"content":"No"}},{"id":"c615dded-0491-430f-b0d9-370700fa24de","node_from_id":"16adcdeb-45dc-42da-aef0-b922c9b2085f","node_to_id":"0926040f-637d-4635-a0f8-c2fae5247a79","gd":{"content":null}},{"id":"ac6f2aa5-8c21-4422-b94d-644af594cffb","node_from_id":"b41bfd17-4e49-4777-9b31-b5dea25cc805","node_to_id":"3d9fbfee-3632-4af9-afb2-cc6a8cea547b","gd":{"content":null}},{"id":"1f10b881-0bb7-4b86-872f-f7101cef680d","node_from_id":"3d9fbfee-3632-4af9-afb2-cc6a8cea547b","node_to_id":"897775ee-3dbb-4a2b-bd61-101e6d6bdc90","gd":{"content":"No"}},{"id":"326e12d1-40a2-406f-a2d6-c9b45812b8ab","node_from_id":"3d9fbfee-3632-4af9-afb2-cc6a8cea547b","node_to_id":"b4949915-58b4-458d-9fed-b4b23fba2071","gd":{"content":"Yes"}},{"id":"7511dceb-264f-48e1-ab65-f06d24d60b1b","node_from_id":"b4949915-58b4-458d-9fed-b4b23fba2071","node_to_id":"b01fadb9-850b-49fa-b764-6fa23f06678a","gd":{"content":"No"}},{"id":"45cb485c-3055-43e9-89b1-cd304a3d4b08","node_from_id":"b4949915-58b4-458d-9fed-b4b23fba2071","node_to_id":"b7be8071-f998-4744-bfa7-d9c77176c381","gd":{"content":"Yes"}},{"id":"8100845c-538c-4588-85ff-78832d676d0d","node_from_id":"b7be8071-f998-4744-bfa7-d9c77176c381","node_to_id":"16adcdeb-45dc-42da-aef0-b922c9b2085f","gd":{"content":"Yes"}},{"id":"e31ec21d-713d-4a71-ab7e-ef66e07d951c","node_from_id":"b7be8071-f998-4744-bfa7-d9c77176c381","node_to_id":"0926040f-637d-4635-a0f8-c2fae5247a79","gd":{"content":"No"}},{"id":"6e27a954-1354-4fe3-8c47-d622f79a5b45","node_from_id":"b4949915-58b4-458d-9fed-b4b23fba2071","node_to_id":"6cf1e8f6-1dec-493d-85e5-6a557ac67529","gd":{"content":"I do not know"}}],"main":{"name":"Untitled graph"}}
+# [END INLINE GRAPHDOC EXPORT]

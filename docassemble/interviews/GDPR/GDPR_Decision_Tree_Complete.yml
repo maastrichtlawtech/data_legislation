@@ -1,0 +1,375 @@
+question: Start
+subquestion: |
+  This tool will help you determine whether the EU General Data Protection Regulation is applicable in your case.
+  
+  <font size="2">[Regulation (EU) 2016/679](https://eur-lex.europa.eu/eli/reg/2016/679/oj) of the European Parliament and of the Council of 27 April 2016 on the protection of natural persons with regard to the processing of personal data and on the free movement of such data
+continue button field: goal
+---
+question: Question
+subquestion: |
+  Do you perform on the data any of the following operations, whether by automated or non-automated means?
+  
+  Collection, recording, organisation, structuring, storage, adaptation or alteration, retrieval, consultation, use, disclosure by transmission, dissemination or otherwise making available, alignment or combination, restriction, erasure or destruction?
+  
+  <font size="2">***Source: Art.4(2) General Data Protection Regulation; definition of "processing"***
+field: processing
+buttons:
+  - "Yes"
+  - "No"
+---
+event: gdpr_not_applies
+question: Conclusion - The Regulation is ***not*** applicable to your case
+subquestion: |
+  The GDPR is  not applicable to your situation.
+  
+  
+  
+  
+  
+  
+  
+---
+question: Question
+subquestion: |
+  Does the information in question relate to an identified or identifiable natural person?
+  
+  <font size="2">
+  Explanation:
+  
+  The GDPR protects only personal data of ***identified*** or ***identifiable*** natural persons. 
+  
+  An ***identifiable natural person*** is a natural person who can be identified, directly or indirectly, in particular by reference to an identifier such as a name, an identification number, location data, an online identifier or to one or more factors specific to the physical, physiological, genetic, mental, economic, cultural or social identity of that natural person. Just because you do not know the name of the person does not mean that the person is not identifiable. Examples of data that makes a person identifiable include IP addresses, cookies, or radio frequency tags. 
+  
+  Deceased natural persons are not protected by this Regulation. The GDPR does not cover data processing which concerns legal persons and undertakings established as legal persons, including the name and the form of the legal person and their contact details.
+  
+  For more information, consult the official GDPR [website](https://gdpr.eu/eu-gdpr-personal-data/).
+  	
+  <font size="2"> ***Source: Art. 1; Art. 4(1) Recitals 14, 27, and 30 General Data Protection Regulation***
+field: identified_or_identifiable
+buttons:
+  - "Yes"
+  - "No"
+---
+question: Question
+subquestion: |
+  Do you process any data belonging to these categories?: 
+    
+    * Racial or ethnic origin
+    * Political opinions
+    * Religious or philosophical beliefs
+    * Trade union membership
+    * Genetic, biometric data for the purpose of uniquely identifying a person
+    * Health data
+    * Data concerning a person's sex life or sexual orientation
+    
+  
+  
+  <font size="2"> ***Source: Art. 9(1) General Data Protection Regulation***
+field: sensitive_data
+buttons:
+  - "Yes"
+  - "No"
+---
+question: Question
+subquestion: |
+  Do you collect, store or process any of the following information?
+  
+  * Name
+  * Address
+  * Phone number
+  * E-mail address
+  * Online identifiers (such as IP address, cookie identifiers or RFID tags)
+  * Identification numbers (such as social security-, health insurance-, tax identification- or citizen service numbers)
+  * Identification documents (such as identity card, driver’s license or passport)
+  * Photos
+  * Video recordings
+  
+  <font size="2"> ***Source:  Art. 4(1), Recital 30 General Data Protection Regulation and [European Commission](https://commission.europa.eu/law/law-topic/data-protection/reform/what-personal-data_en#examples-of-personal-data)***
+field: non_sensitive_data
+buttons:
+  - "Yes"
+  - "No"
+---
+question: Notice
+subquestion: |
+  You are processing special categories of personal data also known as sensitive data, and the processing of such data is prohibited, unless one of the exceptions in Article 9 (2) of the GDPR apply. 
+  
+  <font size="2"> ***Source:  Art. 9(1) and Art 9(2) General Data Protection Regulation***
+  
+  
+continue button field: notice_sensitive_data
+---
+question: Notice
+subquestion: |
+  You are processing personal data within the meaning of the GDPR.
+  
+  
+  <font size="2"> ***Source: Art. 4(1) General Data Protection Regulation***
+continue button field: notice_material_scope
+---
+question: Question
+subquestion: |
+  Do you collect, store or process at least ***two*** of the following categories of data: 
+    
+    * Year of birth
+    * Gender
+    * Physical characteristics (such as weight, skin colour, hair colour, eye colour, stature, height, dress size)
+    * Details of profession
+    * Education
+    * Information on income and financial status (such as bank details, loans)
+    * Information on family and marital status
+    * Certificates, job references, employee appraisals, curriculum vitae
+    * Telecommunications data (such as connection data, contents of the communication) 
+    * Location data or postal code
+    * Customer data (such as orders, customer account data, delivery addresses) 
+    * Psychometric data (such as assessments of a person in terms of knowledge, skills and experience)
+    * Voice recordings
+    * Spoken language or languages
+  
+  
+  <font size="2"> ***Source: Art. 4(1) and Recital 26 General Data Protection Regulation**
+field: potentially_identifiable
+buttons:
+  - "Yes"
+  - "No"
+---
+question: Question
+subquestion: |
+  Do you determine the purposes and means of the processing of personal data, either alone or jointly with others?
+  
+  
+  <font size="2"> ***Source: Art. 4(7) General Data Protection Regulation***
+field: controller
+buttons:
+  - "Yes"
+  - "No"
+---
+question: Question
+subquestion: |
+  Do you process personal data on behalf of someone else, who determines the purposes and means of the processing of personal data, either alone or jointly with others?
+  
+  <font size="2"> ***Source: Art. 4(8) General Data Protection Regulation***
+field: processor
+buttons:
+  - "Yes"
+  - "No"
+---
+question: Question
+subquestion: |
+  Are you established in the European Union?
+  
+  <font size="2"> ***Source: Art. 3(1) General Data Protection Regulation***
+field: establishment
+buttons:
+  - "Yes"
+  - "No"
+---
+question: Question
+subquestion: |
+  Is the processing of personal data related to:
+  
+  * The offering of goods or services to data subjects within the European Union?
+  * The monitoring of the behavior of the data subjects within the European Union?
+  
+  
+  <font size="2"> ***Source: Art. 3(2) General Data Protection Regulation***
+field: located_in_eu
+buttons:
+  - "Yes"
+  - "No"
+---
+event: gdpr_applies
+question: Conclusion - The Regulation ***is*** applicable to your case
+subquestion: |
+  All of the conditions have been fulfilled, and the GDPR is applicable in your case.
+---
+question: Question
+subquestion: |
+  Are you a controller who is not established in the European Union, but in a place where Member State law applies by virtue of public international law?
+  
+  
+  <font size="2"> ***Source: Art. 3(3) General Data Protection Regulation***
+field: public_int_law
+buttons:
+  - "Yes"
+  - "No"
+---
+question: Notice
+subquestion: |
+  Under the General Data Protection Regulation, you qualify as a controller, and the personal scope of the regulation is fulfilled.
+  
+  
+  <font size="2"> ***Source: Art. 4(7) General Data Protection Regulation***
+continue button field: notice_controller
+---
+question: Notice
+subquestion: |
+  Under the General Data Protection Regulation, you qualify as a processor, and the personal scope of the regulation is fulfilled.
+  
+  
+  <font size="2"> ***Source: Art. 4(8) General Data Protection Regulation***
+continue button field: notice_processor
+---
+question: Notice
+subquestion: |
+  The territorial scope requirements of the GDPR are fulfilled.
+  
+  
+  <font size="2"> ***Source: Art. 3 General Data Protection Regulation***
+continue button field: notice_territorial_scope
+---
+question: Notice
+subquestion: |
+  The territorial scope requirements of the GDPR are not fulfilled.
+  
+  
+  <font size="2"> ***Source: Art. 3 General Data Protection Regulation***
+continue button field: notice_no_territorial_scope
+---
+event: not_personal_scope
+question: Conclusion - The Regulation is ***not*** applicable to your case
+subquestion: |
+  The personal scope of the regulation is not fulfilled, as you do not qualify as a controller or a processor. Please note that under Art. 4(10) GDPR you might be considered a third party and the Regulation can apply accordingly. 
+  
+  
+---
+question: Notice
+subquestion: |
+  The GDPR applies when personal data is being processed, and the material scope requirements of the GDPR are not fulfilled.
+  
+  <font size="2"> ***Source: Art. 2(1) and Art. 4(1) General Data Protection Regulation***
+  
+  
+continue button field: notice_no_material_scope
+---
+mandatory: True
+code: |
+  goal
+  if processing == 'Yes':
+    if identified_or_identifiable == 'Yes':
+      if sensitive_data == 'No':
+        if non_sensitive_data == 'Yes':
+          notice_material_scope
+          if controller == 'No':
+            if processor == 'Yes':
+              notice_processor
+              if establishment == 'No':
+                if located_in_eu == 'No':
+                  if public_int_law == 'Yes':
+                    notice_territorial_scope
+                    gdpr_applies
+                  if public_int_law == 'No':
+                    notice_no_territorial_scope
+                    gdpr_not_applies
+                if located_in_eu == 'Yes':
+                  notice_territorial_scope
+                  gdpr_applies
+              if establishment == 'Yes':
+                notice_territorial_scope
+                gdpr_applies
+            if processor == 'No':
+              not_personal_scope
+          if controller == 'Yes':
+            notice_controller
+            if establishment == 'No':
+              if located_in_eu == 'No':
+                if public_int_law == 'Yes':
+                  notice_territorial_scope
+                  gdpr_applies
+                if public_int_law == 'No':
+                  notice_no_territorial_scope
+                  gdpr_not_applies
+              if located_in_eu == 'Yes':
+                notice_territorial_scope
+                gdpr_applies
+            if establishment == 'Yes':
+              notice_territorial_scope
+              gdpr_applies
+        if non_sensitive_data == 'No':
+          if potentially_identifiable == 'Yes':
+            notice_material_scope
+            if controller == 'No':
+              if processor == 'Yes':
+                notice_processor
+                if establishment == 'No':
+                  if located_in_eu == 'No':
+                    if public_int_law == 'Yes':
+                      notice_territorial_scope
+                      gdpr_applies
+                    if public_int_law == 'No':
+                      notice_no_territorial_scope
+                      gdpr_not_applies
+                  if located_in_eu == 'Yes':
+                    notice_territorial_scope
+                    gdpr_applies
+                if establishment == 'Yes':
+                  notice_territorial_scope
+                  gdpr_applies
+              if processor == 'No':
+                not_personal_scope
+            if controller == 'Yes':
+              notice_controller
+              if establishment == 'No':
+                if located_in_eu == 'No':
+                  if public_int_law == 'Yes':
+                    notice_territorial_scope
+                    gdpr_applies
+                  if public_int_law == 'No':
+                    notice_no_territorial_scope
+                    gdpr_not_applies
+                if located_in_eu == 'Yes':
+                  notice_territorial_scope
+                  gdpr_applies
+              if establishment == 'Yes':
+                notice_territorial_scope
+                gdpr_applies
+          if potentially_identifiable == 'No':
+            notice_no_material_scope
+            gdpr_not_applies
+      if sensitive_data == 'Yes':
+        notice_sensitive_data
+        if controller == 'No':
+          if processor == 'Yes':
+            notice_processor
+            if establishment == 'No':
+              if located_in_eu == 'No':
+                if public_int_law == 'Yes':
+                  notice_territorial_scope
+                  gdpr_applies
+                if public_int_law == 'No':
+                  notice_no_territorial_scope
+                  gdpr_not_applies
+              if located_in_eu == 'Yes':
+                notice_territorial_scope
+                gdpr_applies
+            if establishment == 'Yes':
+              notice_territorial_scope
+              gdpr_applies
+          if processor == 'No':
+            not_personal_scope
+        if controller == 'Yes':
+          notice_controller
+          if establishment == 'No':
+            if located_in_eu == 'No':
+              if public_int_law == 'Yes':
+                notice_territorial_scope
+                gdpr_applies
+              if public_int_law == 'No':
+                notice_no_territorial_scope
+                gdpr_not_applies
+            if located_in_eu == 'Yes':
+              notice_territorial_scope
+              gdpr_applies
+          if establishment == 'Yes':
+            notice_territorial_scope
+            gdpr_applies
+    if identified_or_identifiable == 'No':
+      notice_no_material_scope
+      gdpr_not_applies
+  if processing == 'No':
+    notice_no_material_scope
+    gdpr_not_applies
+---
+# [START INLINE GRAPHDOC EXPORT]
+# {"nodes":[{"id":"5435def0-6ea3-4da1-8123-6854a8c69c9b","appearance":{"x":180,"y":-140,"width":180,"height":36},"gd":{"type":"start","content":"This tool will help you determine whether the EU General Data Protection Regulation is applicable in your case.\n\n[Regulation (EU) 2016/679]((https://eur-lex.europa.eu/eli/reg/2016/679/oj) of the European Parliament and of the Council of 27 April 2016 on the protection of natural persons with regard to the processing of personal data and on the free movement of such data","variable":"goal"}},{"id":"3c0d3bd6-2740-40ce-8522-c217449565a9","appearance":{"x":500,"y":-30,"width":180,"height":36},"gd":{"type":"decision","content":"Do you perform on the data any of the following operations, whether by automated or non-automated means?\n\nCollection, recording, organisation, structuring, storage, adaptation or alteration, retrieval, consultation, use, disclosure by transmission, dissemination or otherwise making available, alignment or combination, restriction, erasure or destruction?\n\n<font size=\"2\">***Source: Art.4(2) General Data Protection Regulation; definition of \"processing\"***","variable":"processing"}},{"id":"48aec6fc-347a-4a28-9f86-9d56e4c2e73d","appearance":{"x":410,"y":1240,"width":180,"height":36},"gd":{"type":"end","content":"The GDPR is  not applicable to your situation.\n\n\n\n\n\n\n","variable":"gdpr_not_applies"}},{"id":"5b8da6de-c6c4-4eb9-a73b-fd85aee7eb7a","appearance":{"x":380,"y":50,"width":180,"height":36},"gd":{"type":"decision","content":"Does the information in question relate to an identified or identifiable natural person?\n\n<font size=\"0.9\">\nExplanation:\n\nThe GDPR protects only personal data of ***identified*** or ***identifiable*** natural persons. \n\nAn ***identifiable natural person*** is a natural person who can be identified, directly or indirectly, in particular by reference to an identifier such as a name, an identification number, location data, an online identifier or to one or more factors specific to the physical, physiological, genetic, mental, economic, cultural or social identity of that natural person. Just because you do not know the name of the person does not mean that the person is not identifiable. Examples of data that makes a person identifiable include IP addresses, cookies, or radio frequency tags. \n\nDeceased natural persons are not protected by this Regulation. The GDPR does not cover data processing which concerns legal persons and undertakings established as legal persons, including the name and the form of the legal person and their contact details.\n\nFor more information, consult the official GDPR [website](https://gdpr.eu/eu-gdpr-personal-data/).\n\t\n<font size=\"2\"> ***Source: Art. 1; Art. 4(1) Recitals 14, 27, and 30 General Data Protection Regulation***","variable":"identified_or_identifiable"}},{"id":"77e529ef-7288-4863-a791-33694eb32460","appearance":{"x":270,"y":180,"width":180,"height":36},"gd":{"type":"decision","content":"Do you process any data belonging to these categories?: \n  \n  * Racial or ethnic origin\n  * Political opinions\n  * Religious or philosophical beliefs\n  * Trade union membership\n  * Genetic, biometric data for the purpose of uniquely identifying a person\n  * Health data\n  * Data concerning a person's sex life or sexual orientation\n  \n\n\n<font size=\"2\"> ***Source: Art. 9(1) General Data Protection Regulation***","variable":"sensitive_data"}},{"id":"6b486a1d-97ce-4d19-b57e-82203548ff79","appearance":{"x":-30,"y":300,"width":180,"height":36},"gd":{"type":"decision","content":"Do you collect, store or process any of the following information?\n\n* Name\n* Address\n* Phone number\n* E-mail address\n* Online identifiers (such as IP address, cookie identifiers or RFID tags)\n* Identification numbers (such as social security-, health insurance-, tax identification- or citizen service numbers)\n* Identification documents (such as identity card, driver’s license or passport)\n* Photos\n* Video recordings\n\n<font size=\"2\"> ***Source:  Art. 4(1), Recital 30 General Data Protection Regulation and [European Commission](https://commission.europa.eu/law/law-topic/data-protection/reform/what-personal-data_en#examples-of-personal-data)***","variable":"non_sensitive_data"}},{"id":"77cf7d9d-bc00-4b41-82f3-d59a15df204a","appearance":{"x":220,"y":310,"width":180,"height":36},"gd":{"type":"notice","content":"You are processing special categories of personal data also known as sensitive data, and the processing of such data is prohibited, unless one of the exceptions in Article 9 (2) of the GDPR apply. \n\n<font size=\"2\"> ***Source:  Art. 9(1) and Art 9(2) General Data Protection Regulation***\n\n","variable":"notice_sensitive_data"}},{"id":"be60d3c1-d448-4394-bb5f-e1b7cb2df1bc","appearance":{"x":-160,"y":440,"width":180,"height":36},"gd":{"type":"notice","content":"You are processing personal data within the meaning of the GDPR.\n\n\n<font size=\"2\"> ***Source: Art. 4(1) General Data Protection Regulation***","variable":"notice_material_scope"}},{"id":"60d0191e-d8be-4b91-aa4e-896bb0bc2b8f","appearance":{"x":110,"y":370,"width":180,"height":36},"gd":{"type":"decision","content":"Do you collect, store or process at least ***two*** of the following categories of data: \n  \n  * Year of birth\n  * Gender\n  * Physical characteristics (such as weight, skin colour, hair colour, eye colour, stature, height, dress size)\n  * Details of profession\n  * Education\n  * Information on income and financial status (such as bank details, loans)\n  * Information on family and marital status\n  * Certificates, job references, employee appraisals, curriculum vitae\n  * Telecommunications data (such as connection data, contents of the communication) \n  * Location data or postal code\n  * Customer data (such as orders, customer account data, delivery addresses) \n  * Psychometric data (such as assessments of a person in terms of knowledge, skills and experience)\n  * Voice recordings\n  * Spoken language or languages\n\n\n<font size=\"2\"> ***Source: Art. 4(1) and Recital 26 General Data Protection Regulation**","variable":"potentially_identifiable"}},{"id":"9ef1b6bd-103d-43e6-9afc-ca89300c2901","appearance":{"x":220,"y":490,"width":180,"height":36},"gd":{"type":"decision","content":"Do you determine the purposes and means of the processing of personal data, either alone or jointly with others?\n\n\n<font size=\"2\"> ***Source: Art. 4(7) General Data Protection Regulation***","variable":"controller"}},{"id":"21dbf9dd-e38e-4f95-9a81-c866dbf4ba8b","appearance":{"x":240,"y":570,"width":180,"height":36},"gd":{"type":"decision","content":"Do you process personal data on behalf of someone else, who determines the purposes and means of the processing of personal data, either alone or jointly with others?\n\n<font size=\"2\"> ***Source: Art. 4(8) General Data Protection Regulation***","variable":"processor"}},{"id":"28863016-106a-47b0-93e9-aae826113dab","appearance":{"x":50,"y":930,"width":180,"height":36},"gd":{"type":"decision","content":"Are you established in the European Union?\n\n<font size=\"2\"> ***Source: Art. 3(1) General Data Protection Regulation***","variable":"establishment"}},{"id":"0cdea030-879e-42ea-8d03-4af2082acde2","appearance":{"x":-50,"y":1000,"width":180,"height":36},"gd":{"type":"decision","content":"Is the processing of personal data related to:\n\n* The offering of goods or services to data subjects within the European Union?\n* The monitoring of the behavior of the data subjects within the European Union?\n\n\n<font size=\"2\"> ***Source: Art. 3(2) General Data Protection Regulation***","variable":"located_in_eu"}},{"id":"18f0db25-b7e4-4064-a4ef-0f9edf84df6d","appearance":{"x":130,"y":1240,"width":180,"height":36},"gd":{"type":"end","content":"All of the conditions have been fulfilled, and the GDPR is applicable in your case.","variable":"gdpr_applies"}},{"id":"b645f944-28fe-4d9e-8725-8f8d3be7b2c9","appearance":{"x":-110,"y":1080,"width":180,"height":36},"gd":{"type":"decision","content":"Are you a controller who is not established in the European Union, but in a place where Member State law applies by virtue of public international law?\n\n\n<font size=\"2\"> ***Source: Art. 3(3) General Data Protection Regulation***","variable":"public_int_law"}},{"id":"f8cec28e-5271-44f4-aa02-462b09fb882e","appearance":{"x":-150,"y":600,"width":180,"height":36},"gd":{"type":"notice","content":"Under the General Data Protection Regulation, you qualify as a controller, and the personal scope of the regulation is fulfilled.\n\n\n<font size=\"2\"> ***Source: Art. 4(7) General Data Protection Regulation***","variable":"notice_controller"}},{"id":"d834b315-d23a-4a9a-b3e1-0bf34861f170","appearance":{"x":-40,"y":660,"width":180,"height":36},"gd":{"type":"notice","content":"Under the General Data Protection Regulation, you qualify as a processor, and the personal scope of the regulation is fulfilled.\n\n\n<font size=\"2\"> ***Source: Art. 4(8) General Data Protection Regulation***","variable":"notice_processor"}},{"id":"11b9ade8-0631-4c1e-912a-da6b7e530855","appearance":{"x":130,"y":1170,"width":180,"height":36},"gd":{"type":"notice","content":"The territorial scope requirements of the GDPR are fulfilled.\n\n\n<font size=\"2\"> ***Source: Art. 3 General Data Protection Regulation***","variable":"notice_territorial_scope"}},{"id":"a37f5548-1ae2-4ede-a852-f089775a068b","appearance":{"x":-110,"y":1170,"width":180,"height":36},"gd":{"type":"notice","content":"The territorial scope requirements of the GDPR are not fulfilled.\n\n\n<font size=\"2\"> ***Source: Art. 3 General Data Protection Regulation***","variable":"notice_no_territorial_scope"}},{"id":"b80c21da-8c60-43c6-b3fb-fddb01a076f3","appearance":{"x":290,"y":680,"width":180,"height":36},"gd":{"type":"end","content":"The personal scope of the regulation is not fulfilled, as you do not qualify as a controller or a processor. Please note that under Art. 4(10) GDPR you might be considered a third party and the Regulation can apply accordingly. \n\n","variable":"not_personal_scope"}},{"id":"27f66c55-81ce-4719-904e-21b9fe4546bc","appearance":{"x":410,"y":1010,"width":180,"height":36},"gd":{"type":"notice","content":"The GDPR applies when personal data is being processed, and the material scope requirements of the GDPR are not fulfilled.\n\n<font size=\"2\"> ***Source: Art. 2(1) and Art. 4(1) General Data Protection Regulation***\n\n","variable":"notice_no_material_scope"}}],"edges":[{"id":"fa5b2c6b-578d-4555-9116-313bff8f47a7","node_from_id":"5435def0-6ea3-4da1-8123-6854a8c69c9b","node_to_id":"3c0d3bd6-2740-40ce-8522-c217449565a9","gd":{"content":null}},{"id":"a341ea1a-c0ed-49d2-b5e4-ba24929efc2c","node_from_id":"5b8da6de-c6c4-4eb9-a73b-fd85aee7eb7a","node_to_id":"77e529ef-7288-4863-a791-33694eb32460","gd":{"content":"Yes"}},{"id":"b61b7132-663f-428d-b80d-304787217198","node_from_id":"77e529ef-7288-4863-a791-33694eb32460","node_to_id":"6b486a1d-97ce-4d19-b57e-82203548ff79","gd":{"content":"No"}},{"id":"cd7addfc-664f-4dcd-8331-1bba9c5b12fb","node_from_id":"77e529ef-7288-4863-a791-33694eb32460","node_to_id":"77cf7d9d-bc00-4b41-82f3-d59a15df204a","gd":{"content":"Yes"}},{"id":"26b4d3cd-6098-4261-ad87-4519de808b29","node_from_id":"6b486a1d-97ce-4d19-b57e-82203548ff79","node_to_id":"be60d3c1-d448-4394-bb5f-e1b7cb2df1bc","gd":{"content":"Yes"}},{"id":"b842c7f2-5893-4de1-89c7-05bb66cd3e82","node_from_id":"6b486a1d-97ce-4d19-b57e-82203548ff79","node_to_id":"60d0191e-d8be-4b91-aa4e-896bb0bc2b8f","gd":{"content":"No"}},{"id":"b6527944-6300-4084-957a-03791553637c","node_from_id":"60d0191e-d8be-4b91-aa4e-896bb0bc2b8f","node_to_id":"be60d3c1-d448-4394-bb5f-e1b7cb2df1bc","gd":{"content":"Yes"}},{"id":"d4b64839-d078-456d-9971-cd71684e32c6","node_from_id":"be60d3c1-d448-4394-bb5f-e1b7cb2df1bc","node_to_id":"9ef1b6bd-103d-43e6-9afc-ca89300c2901","gd":{"content":null}},{"id":"c6f847d8-d8c7-43c4-858a-94af4c01f167","node_from_id":"9ef1b6bd-103d-43e6-9afc-ca89300c2901","node_to_id":"21dbf9dd-e38e-4f95-9a81-c866dbf4ba8b","gd":{"content":"No"}},{"id":"9f23ce8a-e4ac-448e-861f-7350a05ae6b8","node_from_id":"28863016-106a-47b0-93e9-aae826113dab","node_to_id":"0cdea030-879e-42ea-8d03-4af2082acde2","gd":{"content":"No"}},{"id":"482204a1-6d0e-475f-87f5-cfed893c5cf4","node_from_id":"0cdea030-879e-42ea-8d03-4af2082acde2","node_to_id":"b645f944-28fe-4d9e-8725-8f8d3be7b2c9","gd":{"content":"No"}},{"id":"241cefb0-4adf-4c7f-b898-64f8d775be12","node_from_id":"9ef1b6bd-103d-43e6-9afc-ca89300c2901","node_to_id":"f8cec28e-5271-44f4-aa02-462b09fb882e","gd":{"content":"Yes"}},{"id":"8ecd771f-eac5-4292-98de-51af75ac756f","node_from_id":"21dbf9dd-e38e-4f95-9a81-c866dbf4ba8b","node_to_id":"d834b315-d23a-4a9a-b3e1-0bf34861f170","gd":{"content":"Yes"}},{"id":"a8dd3a54-cd08-4b2e-9c02-1e86915383eb","node_from_id":"28863016-106a-47b0-93e9-aae826113dab","node_to_id":"11b9ade8-0631-4c1e-912a-da6b7e530855","gd":{"content":"Yes"}},{"id":"16847643-1971-465e-a934-f3302a04cadb","node_from_id":"11b9ade8-0631-4c1e-912a-da6b7e530855","node_to_id":"18f0db25-b7e4-4064-a4ef-0f9edf84df6d","gd":{"content":null}},{"id":"bfd4caa5-dda8-40cc-89ef-509eeda36aa2","node_from_id":"0cdea030-879e-42ea-8d03-4af2082acde2","node_to_id":"11b9ade8-0631-4c1e-912a-da6b7e530855","gd":{"content":"Yes"}},{"id":"54253433-7275-4817-8132-d771082fca57","node_from_id":"b645f944-28fe-4d9e-8725-8f8d3be7b2c9","node_to_id":"11b9ade8-0631-4c1e-912a-da6b7e530855","gd":{"content":"Yes"}},{"id":"b6fa4fd1-f8d1-4eb2-acf5-3f752a00c53f","node_from_id":"f8cec28e-5271-44f4-aa02-462b09fb882e","node_to_id":"28863016-106a-47b0-93e9-aae826113dab","gd":{"content":null}},{"id":"f6fafa29-65da-4540-a494-1e74a082e18b","node_from_id":"77cf7d9d-bc00-4b41-82f3-d59a15df204a","node_to_id":"9ef1b6bd-103d-43e6-9afc-ca89300c2901","gd":{"content":null}},{"id":"338ca9bf-e03f-4ef1-91c2-8d6bac42a7d7","node_from_id":"3c0d3bd6-2740-40ce-8522-c217449565a9","node_to_id":"5b8da6de-c6c4-4eb9-a73b-fd85aee7eb7a","gd":{"content":"Yes"}},{"id":"bc3a3120-88e1-4f4a-b368-4ecec5721290","node_from_id":"b645f944-28fe-4d9e-8725-8f8d3be7b2c9","node_to_id":"a37f5548-1ae2-4ede-a852-f089775a068b","gd":{"content":"No"}},{"id":"c7402d96-fac5-4717-8fa0-6a5f2fffc114","node_from_id":"a37f5548-1ae2-4ede-a852-f089775a068b","node_to_id":"48aec6fc-347a-4a28-9f86-9d56e4c2e73d","gd":{"content":null}},{"id":"31e54126-b2f3-47dc-92db-44a473f37a76","node_from_id":"21dbf9dd-e38e-4f95-9a81-c866dbf4ba8b","node_to_id":"b80c21da-8c60-43c6-b3fb-fddb01a076f3","gd":{"content":"No"}},{"id":"4ff69bc2-8e38-496b-a8b3-0909deb865b9","node_from_id":"d834b315-d23a-4a9a-b3e1-0bf34861f170","node_to_id":"28863016-106a-47b0-93e9-aae826113dab","gd":{"content":null}},{"id":"eba02e37-83f0-4c9a-9601-c7cf9f2fcc7f","node_from_id":"5b8da6de-c6c4-4eb9-a73b-fd85aee7eb7a","node_to_id":"27f66c55-81ce-4719-904e-21b9fe4546bc","gd":{"content":"No"}},{"id":"01d45d4e-6fbb-467e-984e-e2d8422aa212","node_from_id":"3c0d3bd6-2740-40ce-8522-c217449565a9","node_to_id":"27f66c55-81ce-4719-904e-21b9fe4546bc","gd":{"content":"No"}},{"id":"63823351-eff8-462d-848e-3ec0c0c47386","node_from_id":"60d0191e-d8be-4b91-aa4e-896bb0bc2b8f","node_to_id":"27f66c55-81ce-4719-904e-21b9fe4546bc","gd":{"content":"No"}},{"id":"6a8f33f6-c8c5-4b5e-af99-6fbb37ec7b88","node_from_id":"27f66c55-81ce-4719-904e-21b9fe4546bc","node_to_id":"48aec6fc-347a-4a28-9f86-9d56e4c2e73d","gd":{"content":null}}],"main":{"name":"Untitled graph"}}
+# [END INLINE GRAPHDOC EXPORT]
