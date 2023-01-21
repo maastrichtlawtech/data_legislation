@@ -60,6 +60,6 @@ protection of databases\n\n## Author\n\nSystem Administrator, admin@admin.com\n\
       namespace_packages=['docassemble'],
       install_requires=[],
       zip_safe=False,
-      package_data=find_package_data(where='docassemble/interviews/database_directive/',\
+      package_data=find_package_data(where='docassemble/Database_directive/',\
                                      package='docassemble.database_directive'),
      )
