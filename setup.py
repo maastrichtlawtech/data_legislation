@@ -42,7 +42,7 @@ def find_package_data(where='.', package='', exclude=standard_exclude, exclude_d
                 out.setdefault(package, []).append(prefix+name)
     return out
 
-setup(name='docassemble.database_directive',
+setup(name='docassemble.Database_directive',
       version='0.0.1',
       description=('Questions to determine whether the legal protection of\
                    databases as laid out by the Database directive are\
@@ -61,5 +61,5 @@ protection of databases\n\n## Author\n\nSystem Administrator, admin@admin.com\n\
       install_requires=[],
       zip_safe=False,
       package_data=find_package_data(where='docassemble/Database_directive/',\
-                                     package='docassemble.database_directive'),
+                                     package='docassemble.Database_directive'),
      )
