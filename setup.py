@@ -42,15 +42,18 @@ def find_package_data(where='.', package='', exclude=standard_exclude, exclude_d
                 out.setdefault(package, []).append(prefix+name)
     return out
 
-setup(name='docassemble.Database_directive',
+setup(name='docassemble.NIS',
       version='0.0.1',
-      description=('Questions to determine whether the legal protection of\
-                   databases as laid out by the Database directive are\
-                   applicable in your case.'),
-      long_description='# docassemble.database_directive\n\n[Directive\
-      96/9/EC](https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=celex%3A31996L0009)\
-of the European Parliament and of the Council of 11 March 1996 on the legal\
-protection of databases\n\n## Author\n\nSystem Administrator, admin@admin.com\n\n',
+      description=('Questions to determine whether the security and incident\
+              notification system requirements set out in the Directive on \
+              security of network and information systems (NIS) apply to\
+              your case.'),
+      long_description='# docassemble.NIS\n\n[Directive (EU) 2016/1148]\
+              (https://eur-lex.europa.eu/eli/dir/2016/1148/oj) of the\
+              European Parliament and of the Council of 6 July 2016\
+              concerning measures for a high common level of security of\
+              network and information systems across the Union\n\n\
+              ## Author\n\nSystem Administrator, admin@admin.com\n\n',
       long_description_content_type='text/markdown',
       author='Gijs van Dijck',
       author_email='gijs.vandijck@maastrichtuniversity.nl',
@@ -60,6 +63,6 @@ protection of databases\n\n## Author\n\nSystem Administrator, admin@admin.com\n\
       namespace_packages=['docassemble'],
       install_requires=[],
       zip_safe=False,
-      package_data=find_package_data(where='docassemble/Database_directive/',\
-                                     package='docassemble.Database_directive'),
+      package_data=find_package_data(where='docassemble/NIS/',\
+                                     package='docassemble.NIS'),
      )
