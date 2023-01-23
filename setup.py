@@ -45,7 +45,7 @@ def find_package_data(where='.', package='', exclude=standard_exclude, exclude_d
 setup(name='docassemble.GDPR',
       version='0.0.1',
       description=('Questions to help you determine whether the EU General Data Protection Regulation is applicable in your case.'),
-      long_description='# docassemble.database_directive\n\n[Regulation (EU)\
+      long_description='# docassemble.GDPR\n\n[Regulation (EU)\
       2016/679](https://eur-lex.europa.eu/eli/reg/2016/679/oj) of the European\
       Parliament and of the Council of 27 April 2016 on the protection of\
       natural persons with regard to the processing of personal data and on\
