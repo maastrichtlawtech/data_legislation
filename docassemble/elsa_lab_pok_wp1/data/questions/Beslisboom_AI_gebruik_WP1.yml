@@ -2,6 +2,8 @@ question: Start
 subquestion: |
   Deze tool gaat over de inzet van datagedreven analyses in enigerlei besluitvorming. Door de verschillende stappen te doorlopen, wordt inzicht verkregen in de essentiele aspecten om te bepalen of de inzet van datagedreven analyses voldoende verantwoord is.
   
+  Het doel van de tool is om discussies over de inzet van datagedreven analyses (bestaande en toekomstige) te kanaliseren, te bevorderen dat de juiste vragen worden gesteld (en beantwoord) en te helpen bij het creeren van een verantwoording voor de inzet van datagedreven analyses.
+  
   (De tool spreekt over datagedreven analyses, wat anlaysis met zowel artificiele intelligentie (AI) als statistiek omvat.)
 continue button field: start
 ---
@@ -20,23 +22,20 @@ subquestion: |
 ---
 question: Notice
 subquestion: |
-  Een eerste stap is om te bepalen of het verantwoord is om de problematiek waar datagedreven analyses voor worden ontwikkeld of ingezet te reduceren variabelen. Daarbij zijn verschillende overwegingen relevant, die hierna worden besproken.
-continue button field: reductie_tot_variabelen_verantwoord_1
----
-question: Notice
-subquestion: |
-  **Oversimplificatie** 
-  Het proces om complexe problemen te reduceren tot variabelen kan de werkelijkheid oversimplificeren. Veel problemen in de echte wereld worden beïnvloed door een veelheid aan factoren die niet adequaat kunnen worden weergegeven door een beperkte set variabelen. Het negeren van belangrijke factoren kan leiden tot onnauwkeurige modellen en voorspellingen. 
+  Een eerste stap is om te bepalen of het verantwoord is om de problematiek waar datagedreven analyses voor worden ontwikkeld of ingezet te reduceren variabelen. Daarbij zijn onder meer de volgende overwegingen relevant:
   
-  **Veronderstellingen**
-  Bij het reduceren van variabelen worden vaak aannames gedaan over de relaties tussen variabelen. Deze aannames gelden niet altijd in de echte wereld, wat leidt tot onnauwkeurigheden, zelfs als een model vanuit statistisch perspectief goede resultaten vertoont. Zo geldt dat in veel gevallen geen goed of volledig begrip bestaat van de onderliggende mechanismen die complexe problemen veroorzaken. Het reduceren van deze problemen tot variabelen kan leiden tot modellen die gebaseerd zijn op onvolledige of onjuiste aannames. Voorts geldt dat veel fenomenen niet-lineaire relaties tussen variabelen vertonen. Het vereenvoudigen van deze relaties tot lineaire modellen kan leiden tot verkeerde uitkomsten en conclusies. Daarbij zijn er bij sommige problemen complexe interacties tussen variabelen. Door ze te reduceren tot individuele variabelen, kunnen de interacties verloren gaan.
+  **Oversimplificatie** .
+  Het proces om complexe problemen te reduceren tot variabelen kan de werkelijkheid oversimplificeren. Veel problemen in de echte wereld worden beïnvloed door een veelheid aan factoren dat niet adequaat kan worden teruggebracht tot een beperkte set variabelen. Het negeren van belangrijke factoren kan leiden tot onnauwkeurige modellen en voorspellingen. 
   
-  **Contextgevoeligheid**
-  Of datagedreven analyses verantwoord zijn, hangt af van de context waarin ze worden toegepast. Het opsporen van mogelijke fraude is een heel andere dan de inzet van datagedreven analyses om het recht meer begrijpelijk te maken voor burgers. De *impact* voor betrokkenen kan per toepassing verschillen. Ook binnen een toepassing kan de impact verschillen. Het inzetten van datagedreven analyses voor het identificeren van fraudeurs is een andere context dan het inzetten ervan om te bepalen welke groep *in ieder geval niet* als fraudeur wordt aangemerkt (wat betekent dat het voor de overgebleven groep niet bekend is of zij fraudeur zijn en dus niet dat de overgebleven groep uit fraudeurs bestaat).
+  **Veronderstellingen**.
+  Bij het reduceren van variabelen worden vaak aannames gedaan over de relaties tussen variabelen. Deze aannames gelden niet altijd in de echte wereld, wat leidt tot onnauwkeurigheden, zelfs als een model vanuit statistisch perspectief goede resultaten vertoont. Aannames over de onderliggende mechanismen die complexe problemen veroorzaken, kunnen dan leiden tot onvolledige of onjuiste modellen. Voorts geldt dat veel fenomenen niet-lineaire relaties tussen variabelen vertonen. Het vereenvoudigen van deze relaties tot lineaire modellen kan leiden tot verkeerde uitkomsten en conclusies. Daarbij zijn er bij sommige problemen complexe interacties tussen variabelen. Door ze te reduceren tot individuele variabelen, kunnen de interacties verloren gaan.
   
-  **Generalisatie**
+  **Contextgevoeligheid**.
+  Of datagedreven analyses verantwoord zijn, hangt af van de context waarin ze worden toegepast. Het opsporen van mogelijke fraude is een heel andere context dan de inzet van datagedreven analyses om het recht meer begrijpelijk te maken voor burgers. De *impact* voor betrokkenen kan per toepassing verschillen. Ook binnen een toepassing kan de impact verschillen. Het inzetten van datagedreven analyses voor het identificeren van fraudeurs is een andere context dan het inzetten ervan om te bepalen welke groep *in ieder geval niet* als fraudeur wordt aangemerkt (wat betekent dat het voor de overgebleven groep niet bekend is of zij fraudeur zijn en dus niet dat de overgebleven groep uit fraudeurs bestaat).
+  
+  **Generalisatie**.
   Te veel vertrouwen in modellen (het reduceren van variabelen) kan de generalisatie van modellen naar nieuwe of ongeziene situaties belemmeren. Modellen die getraind zijn op vereenvoudigde representaties van problemen presteren mogelijk niet goed in nieuwe situaties.
-continue button field: reductie_overwegingen
+continue button field: reductie_tot_variabelen_verantwoord_1
 ---
 question: Question
 subquestion: |
@@ -45,14 +44,23 @@ subquestion: |
   *Toelichting*: Zonder een dergelijke vergelijking ontbreekt een essentieel evaluatieonderdeel. Mogelijk presteren mensen (veel) beter dan de datagedreven analyse.
   
   *Bronnen*:
+  
   * Lin, Z.J., Jung J., Goel, S. & Skeem, J. (2020). The limits of human predictions of recidivism. Science advances, 6(7). https://doi.org/10.1126/sciadv.aaz0652.
+  
   * Dressel, J. & Farid, H. (2018). The accuracy, fairness, and limits of predicting recidivism. Science Advances, 4(1). https://doi.org/10.1126/sciadv.aao5580.
+  
   * Starr, S. B. (2014). Evidence-Based Sentencing and the Scientific Rationalization of Discrimination. Stanford Law Review, 66(4), 803–872.
+  
   * Oleson, J. C. (2011). Risk in Sentencing: Constitutionally Suspect Variables and Evidence-Based Sentencing. SMU Law Review, 64(4), 1399–1402.
+  
   * Wolff, M. A. (2008). Evidence-Based Judicial Discretion: Promoting Public Safety Through State Sentencing Reform. New York University Law Review, 83(5), 1389–1419.
+  
   * Gottfredson, S. D. & Moriarty, L. J. (2006). Clinical Versus Actuarial Judgments in Criminal Justice Decisions: Should One Replace the Other? Federal Probation, 70(2).
+  
   * Harris, P. M. (2006). What Community Supervision Officers Need to Know About Actuarial Risk Assessment and Clinical Judgment. Federal Probation Journal, 70(2).
+  
   * Ægisdóttir, S., White, M. J., Spengler, P. M., Maugherman, A. S., Anderson, L. A., Cook, R. S., Nichols, C. N., Lampropoulos, G. K., Walker, B. S., Cohen, G., & Rush, J. D. (2006). The Meta-Analysis of Clinical Judgment Project: Fifty-Six Years of Accumulated Research on Clinical Versus Statistical Prediction. The Counseling Psychologist, 34(3), 341–382. https://doi.org/10.1177/0011000005285875.
+  
   * Glaser, D. (1955). The Efficacy of Alternative Approaches to Parole Prediction. American Sociological Review, 20(3), 283–287.
 field: vergelijking_met_mensen_1
 buttons:
@@ -72,9 +80,13 @@ subquestion: |
   Heeft een vergelijking plaatsgevonden met een model met minder variabelen en minder complexe modellen?
   
   *Toelichting*: Onderzoek heeft aangetoond dat, waar het gaat om het voorspellen van menselijk gedrag, eenvoudige modellen (bv. logistische regressie) met slechts enkele variabelen vergelijkbaar of niet veel slechter presteren van complexe modellen (bv. neurale netwerken) met vele variabelen.
-  Voorbeelden:
+  
+  *Bronnen*:
+  
   * Salganik, M. J., et al. (2020). Measuring the predictability of life outcomes with a scientific mass collaboration. Proceedings of the National Academy of Sciences, 117(15), 8398–8403. https://doi.org/10.1073/pnas.1915006117.
+  
   * Jung, J., Concannon, C., Shroff, R., Goel, S. & Goldstein, D.G. (2017). Simple rules for complex decisions. https://arxiv.org/abs/1702.04690.
+  
   * Dressel, J. & Farid, H. (2018). The accuracy, fairness, and limits of predicting recidivism. Science Advances, 4(1). https://doi-org.mu.idm.oclc.org/10.1126/sciadv.aao5580.
 field: vergelijking_met_eenvoudige_modellen_1
 buttons:
@@ -132,16 +144,17 @@ continue button field: keuze_eenvoudig_model
 ---
 question: Notice
 subquestion: |
-  Overweeg om een eenvoudig model te gebruiken.
+  Er lijken goede redenen te zijn om een complex model te gebruiken.
 continue button field: keuze_complex_model
 ---
 question: Question
 subquestion: |
-  Voor welke variabelen geldt dat het gerechtvaardigd is om onderscheid te maken?
+  Is het voor alle variabelen in het beoogde of gebruikte model gerechtvaardigd om deze in het model te betrekken?
   
-  *Toelichting*: Het gevolg van het maken van onderscheid is dat (groepen van) personen verschillend worden behandeld. Soms kan dat worden gerechtvaardigd (bv. autobestuurders die veel ongelukken veroorzaken), soms ligt dat moeilijker (bv. etniciteit om recidivegevaar te voorspellen).
+  *Toelichting*: Het gevolg van het maken van onderscheid is dat (groepen van) personen verschillend worden behandeld. Soms kan dat worden gerechtvaardigd (bv. autobestuurders die veel ongelukken veroorzaken), soms ligt dat gevoelig of is het zelfs verboden (bv. etniciteit om recidivegevaar te voorspellen). Voor iedere variabele dient dan ook de vraag te worden gesteld of er goede redenen zijn om deze wel/niet mee te nemen in het model en of statistische redenen om een variabele op te nemen (ten behoeve van een betere voorspelling) opweegt tegen andere waarden, met name publieke waarden.
   
-  *Bronnen*: Eckhouse, L., Lum, K., Conti-Cook, C., & Ciccolini, J. (2019). Layers of Bias: A Unified Approach for Understanding Problems With Risk Assessment. Criminal Justice and Behavior, 46(2), 185–209. https://doi.org/10.1177/0093854818811379.
+  *Bronnen*: 
+  * Eckhouse, L., Lum, K., Conti-Cook, C., & Ciccolini, J. (2019). Layers of Bias: A Unified Approach for Understanding Problems With Risk Assessment. Criminal Justice and Behavior, 46(2), 185–209. https://doi.org/10.1177/0093854818811379.
 field: onderscheid_acceptabel
 buttons:
   - "Ja"
@@ -181,9 +194,10 @@ question: Question
 subquestion: |
   Meten de gebruikte of te gebruiken variabelen wat zij beogen te meten?
   
-  *Toelichting*: Het ligt voor de hand om variabelen te gebruiken die meten wat men beoogt te meten. Dit is echter niet zonder meer het geval. Veelal kunnen bepaalde verschijnselen (bv. 'fraude') niet direct worden gemeten, maar via indicatoren. 
+  *Toelichting*: Het ligt voor de hand om variabelen te gebruiken die meten wat men beoogt te meten. Dit is echter niet zonder meer het geval. Veelal kunnen bepaalde verschijnselen (bv. 'fraude') niet direct worden gemeten, maar via indicatoren. Daarom is het belangrijk bewijs of aanwijzingen te verzamelen over de variabelen (indicatoren) en na te denken over welke andere fenomenen de beoogde of gebruikte variabelen zouden kunnen meten.
   
-  *Voorbeeld 1*: Meet een variabele 'ligt het bedrijf op een weg met doorgaand verkeer of meer afgezonderd' een indicator van bedrijfsfraude, van kapitaalkracht en/of van het type bedrijfsactiviteiten (noodzaak tot zichtbaarheid)?
+  *Voorbeeld 1*: Meet een variabele 'ligt het bedrijf op een weg met doorgaand verkeer of meer afgezonderd' een indicator van bedrijfsfraude, van kapitaalkracht en/of het type bedrijfsactiviteiten (noodzaak tot zichtbaarheid)?
+  
   *Voorbeeld 2*: Meet de postcode de kans op crimineel gedrag, etniciteit, en/of de buurten die door de politie vaker worden bezocht en waar hierdoor vaker strafbaar gedrag wordt geconstateerd dan in wijken die minder vaak worden bezocht?
 field: meetvaliditeit
 buttons:
@@ -194,9 +208,9 @@ question: Question
 subquestion: |
   Is er een vergelijkingsgroep?
   
-  *Toelichting*: De verwachting is doorgaans dat datagedreven analyses iets beter of sneller meten dan het alternatief dat thans wordt of zou kunnen worden gebruikt. Zonder goede vergelijkingsgroep is het niet mogelijk om de prestaties van datagedreven anlayses op waarde te schatten.
+  *Toelichting*: De verwachting is doorgaans dat datagedreven analyses een fenomeen beter of sneller meten dan het alternatief dat thans wordt of zou kunnen worden gebruikt. Zonder goede vergelijkingsgroep is het niet mogelijk om de prestaties van datagedreven anlayses op waarde te schatten.
   
-  *Voorbeeld*: Een instrument dat in 34% van de gevallen een juiste voorspelling geeft van of uitwonende studenten onterecht een beurs ontvangen, doet het goed als een willekeurige steekproef leidt tot 12% success, maar niet goed als mensen komen tot 56% juiste voorspellingen.
+  *Voorbeeld*: Een instrument dat in 34% van de gevallen een juiste voorspelling geeft, doet het goed als een willekeurige steekproef leidt tot 12% success, maar niet goed als mensen komen tot 56% juiste voorspellingen.
 field: vergelijkingsgroep
 buttons:
   - "Ja"
@@ -260,7 +274,6 @@ code: |
   start
   if ongelijkheid == 'Nee':
     reductie_tot_variabelen_verantwoord_1
-    reductie_overwegingen
     if reductie_tot_variabelen == 'Nee':
       niet_verantwoord
     if reductie_tot_variabelen == 'Ja':
@@ -302,7 +315,22 @@ code: |
                                   if geen_menselijk_toezicht_gerechtvaardigd == 'Nee':
                                     niet_verantwoord
                           if model_bias == 'Nee':
-                            niet_verantwoord
+                            if onderdeel_besluitvorming == 'Nee':
+                              verantwoord
+                            if onderdeel_besluitvorming == 'Ja':
+                              if menselijk_toezicht == 'Ja':
+                                if effectieve_remedie == 'Ja':
+                                  verantwoord
+                                if effectieve_remedie == 'Nee':
+                                  niet_verantwoord
+                              if menselijk_toezicht == 'Nee':
+                                if geen_menselijk_toezicht_gerechtvaardigd == 'Ja':
+                                  if effectieve_remedie == 'Ja':
+                                    verantwoord
+                                  if effectieve_remedie == 'Nee':
+                                    niet_verantwoord
+                                if geen_menselijk_toezicht_gerechtvaardigd == 'Nee':
+                                  niet_verantwoord
                         if afweging_complex_eenvoudig_model == 'Ja':
                           keuze_complex_model
                           if model_bias == 'Ja':
@@ -326,7 +354,22 @@ code: |
                                   if geen_menselijk_toezicht_gerechtvaardigd == 'Nee':
                                     niet_verantwoord
                           if model_bias == 'Nee':
-                            niet_verantwoord
+                            if onderdeel_besluitvorming == 'Nee':
+                              verantwoord
+                            if onderdeel_besluitvorming == 'Ja':
+                              if menselijk_toezicht == 'Ja':
+                                if effectieve_remedie == 'Ja':
+                                  verantwoord
+                                if effectieve_remedie == 'Nee':
+                                  niet_verantwoord
+                              if menselijk_toezicht == 'Nee':
+                                if geen_menselijk_toezicht_gerechtvaardigd == 'Ja':
+                                  if effectieve_remedie == 'Ja':
+                                    verantwoord
+                                  if effectieve_remedie == 'Nee':
+                                    niet_verantwoord
+                                if geen_menselijk_toezicht_gerechtvaardigd == 'Nee':
+                                  niet_verantwoord
                       if vergelijking_met_eenvoudige_modellen_2 == 'Ja':
                         keuze_complex_model
                         if model_bias == 'Ja':
@@ -350,7 +393,22 @@ code: |
                                 if geen_menselijk_toezicht_gerechtvaardigd == 'Nee':
                                   niet_verantwoord
                         if model_bias == 'Nee':
-                          niet_verantwoord
+                          if onderdeel_besluitvorming == 'Nee':
+                            verantwoord
+                          if onderdeel_besluitvorming == 'Ja':
+                            if menselijk_toezicht == 'Ja':
+                              if effectieve_remedie == 'Ja':
+                                verantwoord
+                              if effectieve_remedie == 'Nee':
+                                niet_verantwoord
+                            if menselijk_toezicht == 'Nee':
+                              if geen_menselijk_toezicht_gerechtvaardigd == 'Ja':
+                                if effectieve_remedie == 'Ja':
+                                  verantwoord
+                                if effectieve_remedie == 'Nee':
+                                  niet_verantwoord
+                              if geen_menselijk_toezicht_gerechtvaardigd == 'Nee':
+                                niet_verantwoord
                   if data_bias == 'Ja':
                     if bias_gerechtvaardigd == 'Ja':
                       if vergelijking_met_eenvoudige_modellen_1 == 'Nee':
@@ -380,7 +438,22 @@ code: |
                                     if geen_menselijk_toezicht_gerechtvaardigd == 'Nee':
                                       niet_verantwoord
                             if model_bias == 'Nee':
-                              niet_verantwoord
+                              if onderdeel_besluitvorming == 'Nee':
+                                verantwoord
+                              if onderdeel_besluitvorming == 'Ja':
+                                if menselijk_toezicht == 'Ja':
+                                  if effectieve_remedie == 'Ja':
+                                    verantwoord
+                                  if effectieve_remedie == 'Nee':
+                                    niet_verantwoord
+                                if menselijk_toezicht == 'Nee':
+                                  if geen_menselijk_toezicht_gerechtvaardigd == 'Ja':
+                                    if effectieve_remedie == 'Ja':
+                                      verantwoord
+                                    if effectieve_remedie == 'Nee':
+                                      niet_verantwoord
+                                  if geen_menselijk_toezicht_gerechtvaardigd == 'Nee':
+                                    niet_verantwoord
                           if afweging_complex_eenvoudig_model == 'Ja':
                             keuze_complex_model
                             if model_bias == 'Ja':
@@ -404,7 +477,22 @@ code: |
                                     if geen_menselijk_toezicht_gerechtvaardigd == 'Nee':
                                       niet_verantwoord
                             if model_bias == 'Nee':
-                              niet_verantwoord
+                              if onderdeel_besluitvorming == 'Nee':
+                                verantwoord
+                              if onderdeel_besluitvorming == 'Ja':
+                                if menselijk_toezicht == 'Ja':
+                                  if effectieve_remedie == 'Ja':
+                                    verantwoord
+                                  if effectieve_remedie == 'Nee':
+                                    niet_verantwoord
+                                if menselijk_toezicht == 'Nee':
+                                  if geen_menselijk_toezicht_gerechtvaardigd == 'Ja':
+                                    if effectieve_remedie == 'Ja':
+                                      verantwoord
+                                    if effectieve_remedie == 'Nee':
+                                      niet_verantwoord
+                                  if geen_menselijk_toezicht_gerechtvaardigd == 'Nee':
+                                    niet_verantwoord
                         if vergelijking_met_eenvoudige_modellen_2 == 'Ja':
                           keuze_complex_model
                           if model_bias == 'Ja':
@@ -428,7 +516,22 @@ code: |
                                   if geen_menselijk_toezicht_gerechtvaardigd == 'Nee':
                                     niet_verantwoord
                           if model_bias == 'Nee':
-                            niet_verantwoord
+                            if onderdeel_besluitvorming == 'Nee':
+                              verantwoord
+                            if onderdeel_besluitvorming == 'Ja':
+                              if menselijk_toezicht == 'Ja':
+                                if effectieve_remedie == 'Ja':
+                                  verantwoord
+                                if effectieve_remedie == 'Nee':
+                                  niet_verantwoord
+                              if menselijk_toezicht == 'Nee':
+                                if geen_menselijk_toezicht_gerechtvaardigd == 'Ja':
+                                  if effectieve_remedie == 'Ja':
+                                    verantwoord
+                                  if effectieve_remedie == 'Nee':
+                                    niet_verantwoord
+                                if geen_menselijk_toezicht_gerechtvaardigd == 'Nee':
+                                  niet_verantwoord
                     if bias_gerechtvaardigd == 'Nee':
                       niet_verantwoord
                 if onderscheid_acceptabel == 'Nee':
@@ -463,7 +566,22 @@ code: |
                                 if geen_menselijk_toezicht_gerechtvaardigd == 'Nee':
                                   niet_verantwoord
                         if model_bias == 'Nee':
-                          niet_verantwoord
+                          if onderdeel_besluitvorming == 'Nee':
+                            verantwoord
+                          if onderdeel_besluitvorming == 'Ja':
+                            if menselijk_toezicht == 'Ja':
+                              if effectieve_remedie == 'Ja':
+                                verantwoord
+                              if effectieve_remedie == 'Nee':
+                                niet_verantwoord
+                            if menselijk_toezicht == 'Nee':
+                              if geen_menselijk_toezicht_gerechtvaardigd == 'Ja':
+                                if effectieve_remedie == 'Ja':
+                                  verantwoord
+                                if effectieve_remedie == 'Nee':
+                                  niet_verantwoord
+                              if geen_menselijk_toezicht_gerechtvaardigd == 'Nee':
+                                niet_verantwoord
                       if afweging_complex_eenvoudig_model == 'Ja':
                         keuze_complex_model
                         if model_bias == 'Ja':
@@ -487,7 +605,22 @@ code: |
                                 if geen_menselijk_toezicht_gerechtvaardigd == 'Nee':
                                   niet_verantwoord
                         if model_bias == 'Nee':
-                          niet_verantwoord
+                          if onderdeel_besluitvorming == 'Nee':
+                            verantwoord
+                          if onderdeel_besluitvorming == 'Ja':
+                            if menselijk_toezicht == 'Ja':
+                              if effectieve_remedie == 'Ja':
+                                verantwoord
+                              if effectieve_remedie == 'Nee':
+                                niet_verantwoord
+                            if menselijk_toezicht == 'Nee':
+                              if geen_menselijk_toezicht_gerechtvaardigd == 'Ja':
+                                if effectieve_remedie == 'Ja':
+                                  verantwoord
+                                if effectieve_remedie == 'Nee':
+                                  niet_verantwoord
+                              if geen_menselijk_toezicht_gerechtvaardigd == 'Nee':
+                                niet_verantwoord
                     if vergelijking_met_eenvoudige_modellen_2 == 'Ja':
                       keuze_complex_model
                       if model_bias == 'Ja':
@@ -511,7 +644,22 @@ code: |
                               if geen_menselijk_toezicht_gerechtvaardigd == 'Nee':
                                 niet_verantwoord
                       if model_bias == 'Nee':
-                        niet_verantwoord
+                        if onderdeel_besluitvorming == 'Nee':
+                          verantwoord
+                        if onderdeel_besluitvorming == 'Ja':
+                          if menselijk_toezicht == 'Ja':
+                            if effectieve_remedie == 'Ja':
+                              verantwoord
+                            if effectieve_remedie == 'Nee':
+                              niet_verantwoord
+                          if menselijk_toezicht == 'Nee':
+                            if geen_menselijk_toezicht_gerechtvaardigd == 'Ja':
+                              if effectieve_remedie == 'Ja':
+                                verantwoord
+                              if effectieve_remedie == 'Nee':
+                                niet_verantwoord
+                            if geen_menselijk_toezicht_gerechtvaardigd == 'Nee':
+                              niet_verantwoord
                 if data_bias == 'Ja':
                   if bias_gerechtvaardigd == 'Ja':
                     if vergelijking_met_eenvoudige_modellen_1 == 'Nee':
@@ -541,7 +689,22 @@ code: |
                                   if geen_menselijk_toezicht_gerechtvaardigd == 'Nee':
                                     niet_verantwoord
                           if model_bias == 'Nee':
-                            niet_verantwoord
+                            if onderdeel_besluitvorming == 'Nee':
+                              verantwoord
+                            if onderdeel_besluitvorming == 'Ja':
+                              if menselijk_toezicht == 'Ja':
+                                if effectieve_remedie == 'Ja':
+                                  verantwoord
+                                if effectieve_remedie == 'Nee':
+                                  niet_verantwoord
+                              if menselijk_toezicht == 'Nee':
+                                if geen_menselijk_toezicht_gerechtvaardigd == 'Ja':
+                                  if effectieve_remedie == 'Ja':
+                                    verantwoord
+                                  if effectieve_remedie == 'Nee':
+                                    niet_verantwoord
+                                if geen_menselijk_toezicht_gerechtvaardigd == 'Nee':
+                                  niet_verantwoord
                         if afweging_complex_eenvoudig_model == 'Ja':
                           keuze_complex_model
                           if model_bias == 'Ja':
@@ -565,7 +728,22 @@ code: |
                                   if geen_menselijk_toezicht_gerechtvaardigd == 'Nee':
                                     niet_verantwoord
                           if model_bias == 'Nee':
-                            niet_verantwoord
+                            if onderdeel_besluitvorming == 'Nee':
+                              verantwoord
+                            if onderdeel_besluitvorming == 'Ja':
+                              if menselijk_toezicht == 'Ja':
+                                if effectieve_remedie == 'Ja':
+                                  verantwoord
+                                if effectieve_remedie == 'Nee':
+                                  niet_verantwoord
+                              if menselijk_toezicht == 'Nee':
+                                if geen_menselijk_toezicht_gerechtvaardigd == 'Ja':
+                                  if effectieve_remedie == 'Ja':
+                                    verantwoord
+                                  if effectieve_remedie == 'Nee':
+                                    niet_verantwoord
+                                if geen_menselijk_toezicht_gerechtvaardigd == 'Nee':
+                                  niet_verantwoord
                       if vergelijking_met_eenvoudige_modellen_2 == 'Ja':
                         keuze_complex_model
                         if model_bias == 'Ja':
@@ -589,7 +767,22 @@ code: |
                                 if geen_menselijk_toezicht_gerechtvaardigd == 'Nee':
                                   niet_verantwoord
                         if model_bias == 'Nee':
-                          niet_verantwoord
+                          if onderdeel_besluitvorming == 'Nee':
+                            verantwoord
+                          if onderdeel_besluitvorming == 'Ja':
+                            if menselijk_toezicht == 'Ja':
+                              if effectieve_remedie == 'Ja':
+                                verantwoord
+                              if effectieve_remedie == 'Nee':
+                                niet_verantwoord
+                            if menselijk_toezicht == 'Nee':
+                              if geen_menselijk_toezicht_gerechtvaardigd == 'Ja':
+                                if effectieve_remedie == 'Ja':
+                                  verantwoord
+                                if effectieve_remedie == 'Nee':
+                                  niet_verantwoord
+                              if geen_menselijk_toezicht_gerechtvaardigd == 'Nee':
+                                niet_verantwoord
                   if bias_gerechtvaardigd == 'Nee':
                     niet_verantwoord
               if onderscheid_acceptabel == 'Nee':
@@ -601,7 +794,6 @@ code: |
   if ongelijkheid == 'Ja':
     if ongelijkheid_gerechtvaardigd == 'Ja':
       reductie_tot_variabelen_verantwoord_1
-      reductie_overwegingen
       if reductie_tot_variabelen == 'Nee':
         niet_verantwoord
       if reductie_tot_variabelen == 'Ja':
@@ -643,7 +835,22 @@ code: |
                                     if geen_menselijk_toezicht_gerechtvaardigd == 'Nee':
                                       niet_verantwoord
                             if model_bias == 'Nee':
-                              niet_verantwoord
+                              if onderdeel_besluitvorming == 'Nee':
+                                verantwoord
+                              if onderdeel_besluitvorming == 'Ja':
+                                if menselijk_toezicht == 'Ja':
+                                  if effectieve_remedie == 'Ja':
+                                    verantwoord
+                                  if effectieve_remedie == 'Nee':
+                                    niet_verantwoord
+                                if menselijk_toezicht == 'Nee':
+                                  if geen_menselijk_toezicht_gerechtvaardigd == 'Ja':
+                                    if effectieve_remedie == 'Ja':
+                                      verantwoord
+                                    if effectieve_remedie == 'Nee':
+                                      niet_verantwoord
+                                  if geen_menselijk_toezicht_gerechtvaardigd == 'Nee':
+                                    niet_verantwoord
                           if afweging_complex_eenvoudig_model == 'Ja':
                             keuze_complex_model
                             if model_bias == 'Ja':
@@ -667,7 +874,22 @@ code: |
                                     if geen_menselijk_toezicht_gerechtvaardigd == 'Nee':
                                       niet_verantwoord
                             if model_bias == 'Nee':
-                              niet_verantwoord
+                              if onderdeel_besluitvorming == 'Nee':
+                                verantwoord
+                              if onderdeel_besluitvorming == 'Ja':
+                                if menselijk_toezicht == 'Ja':
+                                  if effectieve_remedie == 'Ja':
+                                    verantwoord
+                                  if effectieve_remedie == 'Nee':
+                                    niet_verantwoord
+                                if menselijk_toezicht == 'Nee':
+                                  if geen_menselijk_toezicht_gerechtvaardigd == 'Ja':
+                                    if effectieve_remedie == 'Ja':
+                                      verantwoord
+                                    if effectieve_remedie == 'Nee':
+                                      niet_verantwoord
+                                  if geen_menselijk_toezicht_gerechtvaardigd == 'Nee':
+                                    niet_verantwoord
                         if vergelijking_met_eenvoudige_modellen_2 == 'Ja':
                           keuze_complex_model
                           if model_bias == 'Ja':
@@ -691,7 +913,22 @@ code: |
                                   if geen_menselijk_toezicht_gerechtvaardigd == 'Nee':
                                     niet_verantwoord
                           if model_bias == 'Nee':
-                            niet_verantwoord
+                            if onderdeel_besluitvorming == 'Nee':
+                              verantwoord
+                            if onderdeel_besluitvorming == 'Ja':
+                              if menselijk_toezicht == 'Ja':
+                                if effectieve_remedie == 'Ja':
+                                  verantwoord
+                                if effectieve_remedie == 'Nee':
+                                  niet_verantwoord
+                              if menselijk_toezicht == 'Nee':
+                                if geen_menselijk_toezicht_gerechtvaardigd == 'Ja':
+                                  if effectieve_remedie == 'Ja':
+                                    verantwoord
+                                  if effectieve_remedie == 'Nee':
+                                    niet_verantwoord
+                                if geen_menselijk_toezicht_gerechtvaardigd == 'Nee':
+                                  niet_verantwoord
                     if data_bias == 'Ja':
                       if bias_gerechtvaardigd == 'Ja':
                         if vergelijking_met_eenvoudige_modellen_1 == 'Nee':
@@ -721,7 +958,22 @@ code: |
                                       if geen_menselijk_toezicht_gerechtvaardigd == 'Nee':
                                         niet_verantwoord
                               if model_bias == 'Nee':
-                                niet_verantwoord
+                                if onderdeel_besluitvorming == 'Nee':
+                                  verantwoord
+                                if onderdeel_besluitvorming == 'Ja':
+                                  if menselijk_toezicht == 'Ja':
+                                    if effectieve_remedie == 'Ja':
+                                      verantwoord
+                                    if effectieve_remedie == 'Nee':
+                                      niet_verantwoord
+                                  if menselijk_toezicht == 'Nee':
+                                    if geen_menselijk_toezicht_gerechtvaardigd == 'Ja':
+                                      if effectieve_remedie == 'Ja':
+                                        verantwoord
+                                      if effectieve_remedie == 'Nee':
+                                        niet_verantwoord
+                                    if geen_menselijk_toezicht_gerechtvaardigd == 'Nee':
+                                      niet_verantwoord
                             if afweging_complex_eenvoudig_model == 'Ja':
                               keuze_complex_model
                               if model_bias == 'Ja':
@@ -745,7 +997,22 @@ code: |
                                       if geen_menselijk_toezicht_gerechtvaardigd == 'Nee':
                                         niet_verantwoord
                               if model_bias == 'Nee':
-                                niet_verantwoord
+                                if onderdeel_besluitvorming == 'Nee':
+                                  verantwoord
+                                if onderdeel_besluitvorming == 'Ja':
+                                  if menselijk_toezicht == 'Ja':
+                                    if effectieve_remedie == 'Ja':
+                                      verantwoord
+                                    if effectieve_remedie == 'Nee':
+                                      niet_verantwoord
+                                  if menselijk_toezicht == 'Nee':
+                                    if geen_menselijk_toezicht_gerechtvaardigd == 'Ja':
+                                      if effectieve_remedie == 'Ja':
+                                        verantwoord
+                                      if effectieve_remedie == 'Nee':
+                                        niet_verantwoord
+                                    if geen_menselijk_toezicht_gerechtvaardigd == 'Nee':
+                                      niet_verantwoord
                           if vergelijking_met_eenvoudige_modellen_2 == 'Ja':
                             keuze_complex_model
                             if model_bias == 'Ja':
@@ -769,7 +1036,22 @@ code: |
                                     if geen_menselijk_toezicht_gerechtvaardigd == 'Nee':
                                       niet_verantwoord
                             if model_bias == 'Nee':
-                              niet_verantwoord
+                              if onderdeel_besluitvorming == 'Nee':
+                                verantwoord
+                              if onderdeel_besluitvorming == 'Ja':
+                                if menselijk_toezicht == 'Ja':
+                                  if effectieve_remedie == 'Ja':
+                                    verantwoord
+                                  if effectieve_remedie == 'Nee':
+                                    niet_verantwoord
+                                if menselijk_toezicht == 'Nee':
+                                  if geen_menselijk_toezicht_gerechtvaardigd == 'Ja':
+                                    if effectieve_remedie == 'Ja':
+                                      verantwoord
+                                    if effectieve_remedie == 'Nee':
+                                      niet_verantwoord
+                                  if geen_menselijk_toezicht_gerechtvaardigd == 'Nee':
+                                    niet_verantwoord
                       if bias_gerechtvaardigd == 'Nee':
                         niet_verantwoord
                   if onderscheid_acceptabel == 'Nee':
@@ -804,7 +1086,22 @@ code: |
                                   if geen_menselijk_toezicht_gerechtvaardigd == 'Nee':
                                     niet_verantwoord
                           if model_bias == 'Nee':
-                            niet_verantwoord
+                            if onderdeel_besluitvorming == 'Nee':
+                              verantwoord
+                            if onderdeel_besluitvorming == 'Ja':
+                              if menselijk_toezicht == 'Ja':
+                                if effectieve_remedie == 'Ja':
+                                  verantwoord
+                                if effectieve_remedie == 'Nee':
+                                  niet_verantwoord
+                              if menselijk_toezicht == 'Nee':
+                                if geen_menselijk_toezicht_gerechtvaardigd == 'Ja':
+                                  if effectieve_remedie == 'Ja':
+                                    verantwoord
+                                  if effectieve_remedie == 'Nee':
+                                    niet_verantwoord
+                                if geen_menselijk_toezicht_gerechtvaardigd == 'Nee':
+                                  niet_verantwoord
                         if afweging_complex_eenvoudig_model == 'Ja':
                           keuze_complex_model
                           if model_bias == 'Ja':
@@ -828,7 +1125,22 @@ code: |
                                   if geen_menselijk_toezicht_gerechtvaardigd == 'Nee':
                                     niet_verantwoord
                           if model_bias == 'Nee':
-                            niet_verantwoord
+                            if onderdeel_besluitvorming == 'Nee':
+                              verantwoord
+                            if onderdeel_besluitvorming == 'Ja':
+                              if menselijk_toezicht == 'Ja':
+                                if effectieve_remedie == 'Ja':
+                                  verantwoord
+                                if effectieve_remedie == 'Nee':
+                                  niet_verantwoord
+                              if menselijk_toezicht == 'Nee':
+                                if geen_menselijk_toezicht_gerechtvaardigd == 'Ja':
+                                  if effectieve_remedie == 'Ja':
+                                    verantwoord
+                                  if effectieve_remedie == 'Nee':
+                                    niet_verantwoord
+                                if geen_menselijk_toezicht_gerechtvaardigd == 'Nee':
+                                  niet_verantwoord
                       if vergelijking_met_eenvoudige_modellen_2 == 'Ja':
                         keuze_complex_model
                         if model_bias == 'Ja':
@@ -852,7 +1164,22 @@ code: |
                                 if geen_menselijk_toezicht_gerechtvaardigd == 'Nee':
                                   niet_verantwoord
                         if model_bias == 'Nee':
-                          niet_verantwoord
+                          if onderdeel_besluitvorming == 'Nee':
+                            verantwoord
+                          if onderdeel_besluitvorming == 'Ja':
+                            if menselijk_toezicht == 'Ja':
+                              if effectieve_remedie == 'Ja':
+                                verantwoord
+                              if effectieve_remedie == 'Nee':
+                                niet_verantwoord
+                            if menselijk_toezicht == 'Nee':
+                              if geen_menselijk_toezicht_gerechtvaardigd == 'Ja':
+                                if effectieve_remedie == 'Ja':
+                                  verantwoord
+                                if effectieve_remedie == 'Nee':
+                                  niet_verantwoord
+                              if geen_menselijk_toezicht_gerechtvaardigd == 'Nee':
+                                niet_verantwoord
                   if data_bias == 'Ja':
                     if bias_gerechtvaardigd == 'Ja':
                       if vergelijking_met_eenvoudige_modellen_1 == 'Nee':
@@ -882,7 +1209,22 @@ code: |
                                     if geen_menselijk_toezicht_gerechtvaardigd == 'Nee':
                                       niet_verantwoord
                             if model_bias == 'Nee':
-                              niet_verantwoord
+                              if onderdeel_besluitvorming == 'Nee':
+                                verantwoord
+                              if onderdeel_besluitvorming == 'Ja':
+                                if menselijk_toezicht == 'Ja':
+                                  if effectieve_remedie == 'Ja':
+                                    verantwoord
+                                  if effectieve_remedie == 'Nee':
+                                    niet_verantwoord
+                                if menselijk_toezicht == 'Nee':
+                                  if geen_menselijk_toezicht_gerechtvaardigd == 'Ja':
+                                    if effectieve_remedie == 'Ja':
+                                      verantwoord
+                                    if effectieve_remedie == 'Nee':
+                                      niet_verantwoord
+                                  if geen_menselijk_toezicht_gerechtvaardigd == 'Nee':
+                                    niet_verantwoord
                           if afweging_complex_eenvoudig_model == 'Ja':
                             keuze_complex_model
                             if model_bias == 'Ja':
@@ -906,7 +1248,22 @@ code: |
                                     if geen_menselijk_toezicht_gerechtvaardigd == 'Nee':
                                       niet_verantwoord
                             if model_bias == 'Nee':
-                              niet_verantwoord
+                              if onderdeel_besluitvorming == 'Nee':
+                                verantwoord
+                              if onderdeel_besluitvorming == 'Ja':
+                                if menselijk_toezicht == 'Ja':
+                                  if effectieve_remedie == 'Ja':
+                                    verantwoord
+                                  if effectieve_remedie == 'Nee':
+                                    niet_verantwoord
+                                if menselijk_toezicht == 'Nee':
+                                  if geen_menselijk_toezicht_gerechtvaardigd == 'Ja':
+                                    if effectieve_remedie == 'Ja':
+                                      verantwoord
+                                    if effectieve_remedie == 'Nee':
+                                      niet_verantwoord
+                                  if geen_menselijk_toezicht_gerechtvaardigd == 'Nee':
+                                    niet_verantwoord
                         if vergelijking_met_eenvoudige_modellen_2 == 'Ja':
                           keuze_complex_model
                           if model_bias == 'Ja':
@@ -930,7 +1287,22 @@ code: |
                                   if geen_menselijk_toezicht_gerechtvaardigd == 'Nee':
                                     niet_verantwoord
                           if model_bias == 'Nee':
-                            niet_verantwoord
+                            if onderdeel_besluitvorming == 'Nee':
+                              verantwoord
+                            if onderdeel_besluitvorming == 'Ja':
+                              if menselijk_toezicht == 'Ja':
+                                if effectieve_remedie == 'Ja':
+                                  verantwoord
+                                if effectieve_remedie == 'Nee':
+                                  niet_verantwoord
+                              if menselijk_toezicht == 'Nee':
+                                if geen_menselijk_toezicht_gerechtvaardigd == 'Ja':
+                                  if effectieve_remedie == 'Ja':
+                                    verantwoord
+                                  if effectieve_remedie == 'Nee':
+                                    niet_verantwoord
+                                if geen_menselijk_toezicht_gerechtvaardigd == 'Nee':
+                                  niet_verantwoord
                     if bias_gerechtvaardigd == 'Nee':
                       niet_verantwoord
                 if onderscheid_acceptabel == 'Nee':
@@ -943,5 +1315,5 @@ code: |
       niet_verantwoord
 ---
 # [START INLINE GRAPHDOC EXPORT]
-# {"nodes":[{"id":"458f9439-4c06-4677-a9ce-e721b1cff95d","appearance":{"x":100,"y":-130,"width":180,"height":36},"gd":{"type":"start","content":"Deze tool gaat over de inzet van datagedreven analyses in enigerlei besluitvorming. Door de verschillende stappen te doorlopen, wordt inzicht verkregen in de essentiele aspecten om te bepalen of de inzet van datagedreven analyses voldoende verantwoord is.\n\n(De tool spreekt over datagedreven analyses, wat anlaysis met zowel artificiele intelligentie (AI) als statistiek omvat.)","variable":"start"}},{"id":"2b7baaeb-0a97-4c46-b4db-6fe20dd915fb","appearance":{"x":190,"y":210,"width":180,"height":36},"gd":{"type":"decision","content":"Is het verantwoord om de problematiek waar datagedreven analyses voor worden ontwikkeld of ingezet te reduceren tot variabelen?","variable":"reductie_tot_variabelen"}},{"id":"668134a8-cdf1-48a9-aed7-7498c00323b6","appearance":{"x":-20,"y":990,"width":180,"height":36},"gd":{"type":"end","content":"De inzet van datagedreven analyses is mogelijk niet of onvoldoende verantwoord.","variable":"niet_verantwoord"}},{"id":"69144205-5eac-4acd-b0b3-95a416bff889","appearance":{"x":190,"y":90,"width":180,"height":36},"gd":{"type":"notice","content":"Een eerste stap is om te bepalen of het verantwoord is om de problematiek waar datagedreven analyses voor worden ontwikkeld of ingezet te reduceren variabelen. Daarbij zijn verschillende overwegingen relevant, die hierna worden besproken.","variable":"reductie_tot_variabelen_verantwoord_1"}},{"id":"e5f27c25-c7e3-4ee5-99a6-302a37b28075","appearance":{"x":190,"y":150,"width":180,"height":36},"gd":{"type":"notice","content":"**Oversimplificatie** \nHet proces om complexe problemen te reduceren tot variabelen kan de werkelijkheid oversimplificeren. Veel problemen in de echte wereld worden beïnvloed door een veelheid aan factoren die niet adequaat kunnen worden weergegeven door een beperkte set variabelen. Het negeren van belangrijke factoren kan leiden tot onnauwkeurige modellen en voorspellingen. \n\n**Veronderstellingen**\nBij het reduceren van variabelen worden vaak aannames gedaan over de relaties tussen variabelen. Deze aannames gelden niet altijd in de echte wereld, wat leidt tot onnauwkeurigheden, zelfs als een model vanuit statistisch perspectief goede resultaten vertoont. Zo geldt dat in veel gevallen geen goed of volledig begrip bestaat van de onderliggende mechanismen die complexe problemen veroorzaken. Het reduceren van deze problemen tot variabelen kan leiden tot modellen die gebaseerd zijn op onvolledige of onjuiste aannames. Voorts geldt dat veel fenomenen niet-lineaire relaties tussen variabelen vertonen. Het vereenvoudigen van deze relaties tot lineaire modellen kan leiden tot verkeerde uitkomsten en conclusies. Daarbij zijn er bij sommige problemen complexe interacties tussen variabelen. Door ze te reduceren tot individuele variabelen, kunnen de interacties verloren gaan.\n\n**Contextgevoeligheid**\nOf datagedreven analyses verantwoord zijn, hangt af van de context waarin ze worden toegepast. Het opsporen van mogelijke fraude is een heel andere dan de inzet van datagedreven analyses om het recht meer begrijpelijk te maken voor burgers. De *impact* voor betrokkenen kan per toepassing verschillen. Ook binnen een toepassing kan de impact verschillen. Het inzetten van datagedreven analyses voor het identificeren van fraudeurs is een andere context dan het inzetten ervan om te bepalen welke groep *in ieder geval niet* als fraudeur wordt aangemerkt (wat betekent dat het voor de overgebleven groep niet bekend is of zij fraudeur zijn en dus niet dat de overgebleven groep uit fraudeurs bestaat).\n\n**Generalisatie**\nTe veel vertrouwen in modellen (het reduceren van variabelen) kan de generalisatie van modellen naar nieuwe of ongeziene situaties belemmeren. Modellen die getraind zijn op vereenvoudigde representaties van problemen presteren mogelijk niet goed in nieuwe situaties.","variable":"reductie_overwegingen"}},{"id":"656449a7-2f51-485b-bdf8-4db5aa13115f","appearance":{"x":500,"y":420,"width":180,"height":36},"gd":{"type":"decision","content":"Is bekend (d.w.z. onderzocht) hoe datagedreven analyses presteren ten opzichte van mensen?\n\n*Toelichting*: Zonder een dergelijke vergelijking ontbreekt een essentieel evaluatieonderdeel. Mogelijk presteren mensen (veel) beter dan de datagedreven analyse.\n\n*Bronnen*:\n* Lin, Z.J., Jung J., Goel, S. & Skeem, J. (2020). The limits of human predictions of recidivism. Science advances, 6(7). https://doi.org/10.1126/sciadv.aaz0652.\n* Dressel, J. & Farid, H. (2018). The accuracy, fairness, and limits of predicting recidivism. Science Advances, 4(1). https://doi.org/10.1126/sciadv.aao5580.\n* Starr, S. B. (2014). Evidence-Based Sentencing and the Scientific Rationalization of Discrimination. Stanford Law Review, 66(4), 803–872.\n* Oleson, J. C. (2011). Risk in Sentencing: Constitutionally Suspect Variables and Evidence-Based Sentencing. SMU Law Review, 64(4), 1399–1402.\n* Wolff, M. A. (2008). Evidence-Based Judicial Discretion: Promoting Public Safety Through State Sentencing Reform. New York University Law Review, 83(5), 1389–1419.\n* Gottfredson, S. D. & Moriarty, L. J. (2006). Clinical Versus Actuarial Judgments in Criminal Justice Decisions: Should One Replace the Other? Federal Probation, 70(2).\n* Harris, P. M. (2006). What Community Supervision Officers Need to Know About Actuarial Risk Assessment and Clinical Judgment. Federal Probation Journal, 70(2).\n* Ægisdóttir, S., White, M. J., Spengler, P. M., Maugherman, A. S., Anderson, L. A., Cook, R. S., Nichols, C. N., Lampropoulos, G. K., Walker, B. S., Cohen, G., & Rush, J. D. (2006). The Meta-Analysis of Clinical Judgment Project: Fifty-Six Years of Accumulated Research on Clinical Versus Statistical Prediction. The Counseling Psychologist, 34(3), 341–382. https://doi.org/10.1177/0011000005285875.\n* Glaser, D. (1955). The Efficacy of Alternative Approaches to Parole Prediction. American Sociological Review, 20(3), 283–287.","variable":"vergelijking_met_mensen_1"}},{"id":"e1ac95bb-48e0-43cd-9c7d-92083fdcf0ec","appearance":{"x":620,"y":490,"width":180,"height":36},"gd":{"type":"decision","content":"Presteert het datagedreven model beter dan mensen?","variable":"vergelijking_met_mensen_2"}},{"id":"82a34c79-31a6-4022-8a7d-0a6f404623b7","appearance":{"x":580,"y":930,"width":180,"height":36},"gd":{"type":"decision","content":"Heeft een vergelijking plaatsgevonden met een model met minder variabelen en minder complexe modellen?\n\n*Toelichting*: Onderzoek heeft aangetoond dat, waar het gaat om het voorspellen van menselijk gedrag, eenvoudige modellen (bv. logistische regressie) met slechts enkele variabelen vergelijkbaar of niet veel slechter presteren van complexe modellen (bv. neurale netwerken) met vele variabelen.\nVoorbeelden:\n* Salganik, M. J., et al. (2020). Measuring the predictability of life outcomes with a scientific mass collaboration. Proceedings of the National Academy of Sciences, 117(15), 8398–8403. https://doi.org/10.1073/pnas.1915006117.\n* Jung, J., Concannon, C., Shroff, R., Goel, S. & Goldstein, D.G. (2017). Simple rules for complex decisions. https://arxiv.org/abs/1702.04690.\n* Dressel, J. & Farid, H. (2018). The accuracy, fairness, and limits of predicting recidivism. Science Advances, 4(1). https://doi-org.mu.idm.oclc.org/10.1126/sciadv.aao5580.","variable":"vergelijking_met_eenvoudige_modellen_1"}},{"id":"cfa14ec1-893b-47b5-b94a-694ad4fecbaf","appearance":{"x":100,"y":-60,"width":180,"height":36},"gd":{"type":"decision","content":"Introduceert of vergroot de inzet van datagedreven analyses ongelijkheid?\n\n*Toelichting*: data en AI komt niet noodzakelijk aan iedereen in gelijke mate ten goede. Bepaalde groepen hebben minder of geen toegang tot technologie dan andere groepen. Ook een gebrek aan technologische geletterdheid is (mede)bepalend voor een antwoord op de vraag of personen en organisaties in gelijke mate profiteren van de technologie.","variable":"ongelijkheid"}},{"id":"be0c4054-12e4-4731-9f16-8f6964231b6e","appearance":{"x":0,"y":20,"width":180,"height":36},"gd":{"type":"decision","content":"Zijn er overtuigende argumenten voor de ongelijkheid?","variable":"ongelijkheid_gerechtvaardigd"}},{"id":"cdfd0273-c673-49ed-b7db-e7f764032288","appearance":{"x":580,"y":1000,"width":180,"height":36},"gd":{"type":"decision","content":"Presteert het complex(ere) model beter dan het eenvoudig(ere) model?","variable":"vergelijking_met_eenvoudige_modellen_2"}},{"id":"8b2189a1-4118-4aec-bd68-18e8b63028ae","appearance":{"x":570,"y":580,"width":180,"height":36},"gd":{"type":"decision","content":"Is de inzet van datagedreven analyses niettemin verantwoord?\n\n*Toelichting*: Als onduidelijk is of mensen beter preseteren dan datagedreven analyses is de inzet ervan mogelijk niet verantwoord, zelfs als ze tijdwinst opleveren of kosten besparen. ","variable":"afweging_efficientie"}},{"id":"1e61e8d4-8ea0-445b-a00f-380d83d714f1","appearance":{"x":660,"y":1080,"width":180,"height":36},"gd":{"type":"decision","content":"Verdient de inzet van een complex model de voorkeur boven een eenvoudig model? ","variable":"afweging_complex_eenvoudig_model"}},{"id":"348bd976-7d68-4f9c-915b-f303d915072a","appearance":{"x":660,"y":1170,"width":180,"height":36},"gd":{"type":"notice","content":"Overweeg om een eenvoudig model te gebruiken.","variable":"keuze_eenvoudig_model"}},{"id":"ed4dffe8-84eb-44a3-a94e-a65b6ac4cf2f","appearance":{"x":460,"y":1170,"width":180,"height":36},"gd":{"type":"notice","content":"Overweeg om een eenvoudig model te gebruiken.","variable":"keuze_complex_model"}},{"id":"d237a43d-a311-4845-826f-015b9f9767c6","appearance":{"x":760,"y":650,"width":180,"height":36},"gd":{"type":"decision","content":"Voor welke variabelen geldt dat het gerechtvaardigd is om onderscheid te maken?\n\n*Toelichting*: Het gevolg van het maken van onderscheid is dat (groepen van) personen verschillend worden behandeld. Soms kan dat worden gerechtvaardigd (bv. autobestuurders die veel ongelukken veroorzaken), soms ligt dat moeilijker (bv. etniciteit om recidivegevaar te voorspellen).\n\n*Bronnen*: Eckhouse, L., Lum, K., Conti-Cook, C., & Ciccolini, J. (2019). Layers of Bias: A Unified Approach for Understanding Problems With Risk Assessment. Criminal Justice and Behavior, 46(2), 185–209. https://doi.org/10.1177/0093854818811379.","variable":"onderscheid_acceptabel"}},{"id":"c0b1a6e3-8800-4181-9214-91b0fcc07976","appearance":{"x":540,"y":1250,"width":180,"height":36},"gd":{"type":"decision","content":"Produceert het model bias?\n\n*Toelichting:* Model bias betreft situaties waarin het model consistente, systematische fout maakt in haar voorspellingen, bijvoorbeeld door te veel of juist te weinig gewicht toe te kennen aan bepaalde aspecten (variabelen) of interacties tussen variabelen.","variable":"model_bias"}},{"id":"6dbe9e5e-0972-464e-b826-2f16f317b292","appearance":{"x":650,"y":750,"width":180,"height":36},"gd":{"type":"decision","content":"Is er bias in de data?\n\n*Toelichting*: Bias is het verschijnsel dat bepaalde elementen van een dataset zwaarder wegen of gepresenteerd worden dan andere. Als er bias in de data is, heeft dit gevolgen voor het model en de resultaten.","variable":"data_bias"}},{"id":"ad30ed73-7b87-4cce-8d7b-a3efe5c8abbc","appearance":{"x":480,"y":860,"width":180,"height":36},"gd":{"type":"decision","content":"Zijn er overtuigende redenen om te concluderen dat de bias niet in de weg staat aan het gebruik van datagedreven analyses?\n\n*Toelichting*: Bijvoorbeeld omdat het model voldoende gecorrigeerd kan worden voor bias.","variable":"bias_gerechtvaardigd"}},{"id":"3efbbda5-35f3-450c-9e7d-ca77fda3a69c","appearance":{"x":290,"y":280,"width":180,"height":36},"gd":{"type":"decision","content":"Meten de gebruikte of te gebruiken variabelen wat zij beogen te meten?\n\n*Toelichting*: Het ligt voor de hand om variabelen te gebruiken die meten wat men beoogt te meten. Dit is echter niet zonder meer het geval. Veelal kunnen bepaalde verschijnselen (bv. 'fraude') niet direct worden gemeten, maar via indicatoren. \n\n*Voorbeeld 1*: Meet een variabele 'ligt het bedrijf op een weg met doorgaand verkeer of meer afgezonderd' een indicator van bedrijfsfraude, van kapitaalkracht en/of van het type bedrijfsactiviteiten (noodzaak tot zichtbaarheid)?\n*Voorbeeld 2*: Meet de postcode de kans op crimineel gedrag, etniciteit, en/of de buurten die door de politie vaker worden bezocht en waar hierdoor vaker strafbaar gedrag wordt geconstateerd dan in wijken die minder vaak worden bezocht?","variable":"meetvaliditeit"}},{"id":"1b29e684-41b6-4a8a-a58d-c019ed7af203","appearance":{"x":390,"y":350,"width":180,"height":36},"gd":{"type":"decision","content":"Is er een vergelijkingsgroep?\n\n*Toelichting*: De verwachting is doorgaans dat datagedreven analyses iets beter of sneller meten dan het alternatief dat thans wordt of zou kunnen worden gebruikt. Zonder goede vergelijkingsgroep is het niet mogelijk om de prestaties van datagedreven anlayses op waarde te schatten.\n\n*Voorbeeld*: Een instrument dat in 34% van de gevallen een juiste voorspelling geeft van of uitwonende studenten onterecht een beurs ontvangen, doet het goed als een willekeurige steekproef leidt tot 12% success, maar niet goed als mensen komen tot 56% juiste voorspellingen.","variable":"vergelijkingsgroep"}},{"id":"1f9f1a3f-2a44-4361-b486-ff2386996412","appearance":{"x":520,"y":1830,"width":180,"height":36},"gd":{"type":"end","content":"De inzet van datagedreven analyses lijkt verantwoord te zijn.\n\n*Let op*: Er kunnen altijd omstandigheden of situaties zijn waarin in deze (of enige andere) beslisboom is voorzien.","variable":"verantwoord"}},{"id":"fea6026d-d58a-4a45-ab7b-3791a8b994e2","appearance":{"x":580,"y":1350,"width":180,"height":36},"gd":{"type":"decision","content":"Zijn er overtuigende redenen om te concluderen dat de bias niet in de weg staat aan het gebruik van datagedreven analyses?","variable":"bias_model_gerechtvaardigd"}},{"id":"ce1ab607-d0c6-4886-9821-5a927bd68d1a","appearance":{"x":690,"y":1440,"width":180,"height":36},"gd":{"type":"decision","content":"Maakt de datagedreven analyse onderdeel uit van een beslissing die gevolgen heeft of kan hebben voor een of meerdere individuen en/of organisaties?","variable":"onderdeel_besluitvorming"}},{"id":"f5cee753-499e-4b7c-9bda-eab57cf3ae89","appearance":{"x":460,"y":1690,"width":180,"height":36},"gd":{"type":"decision","content":"Heeft degene die geraakt wordt of kan worden door de besluitvorming een effectieve remedie ter beschikking?\n\n*Toelichting:* Het gaat om mogelijkheden om een beslissing te controleren en ertegen bezwaar te kunnen maken of een klacht ertegen te kunnen indienen. De remedie moet tevens *effectief* zijn, dat wil zeggen, er de mogelijkheid om de beslissing te betwisten of aan te vechten moet reeel zijn.\n\n*Voorbeeld:* Datagedreven analyses die leiden tot de vaststelling dat iemand een fraudeur is, waarbij de bewijslast bij de fraudeur ligt om hun ongelijk te bewijzen (omkering van de bewijslast) en het feitelijk (nagenoeg) onmogelijk is om dat ongelijk te bewijzen, doet de vraag rijzen of er een effectieve remedie beschikbaar is.","variable":"effectieve_remedie"}},{"id":"8712cf29-a08a-4b1e-b60c-706b31afecbd","appearance":{"x":580,"y":1520,"width":180,"height":36},"gd":{"type":"decision","content":"Is er effectief toezicht door mensen?\n\n*Toelichting:* Het toezicht dient effectief te zijn, dat wil zeggen dat mensen kunnen intervenieren en daadwerkelijk intervenieren waar nodig en gewenst. Er zijn verschillende modellen van menselijk toezicht.","variable":"menselijk_toezicht"}},{"id":"90fec9ed-7025-4bd5-b48c-37ecb320951d","appearance":{"x":430,"y":1580,"width":180,"height":36},"gd":{"type":"decision","content":"Kan het ontbreken van menselijk toezicht worden gerechtvaardigd?","variable":"geen_menselijk_toezicht_gerechtvaardigd"}}],"edges":[{"id":"124aba91-0cd0-49c4-8191-2e73e9f35d2f","node_from_id":"2b7baaeb-0a97-4c46-b4db-6fe20dd915fb","node_to_id":"668134a8-cdf1-48a9-aed7-7498c00323b6","gd":{"content":"Nee"}},{"id":"fc89299c-ecfe-4eef-a69e-d2d3a8921acd","node_from_id":"69144205-5eac-4acd-b0b3-95a416bff889","node_to_id":"e5f27c25-c7e3-4ee5-99a6-302a37b28075","gd":{"content":null}},{"id":"2cc1e4b4-2c94-4a9f-a3d1-8b96e56c23a8","node_from_id":"e5f27c25-c7e3-4ee5-99a6-302a37b28075","node_to_id":"2b7baaeb-0a97-4c46-b4db-6fe20dd915fb","gd":{"content":null}},{"id":"3384a7ac-51e8-4b9e-a1e0-d689592b24fe","node_from_id":"656449a7-2f51-485b-bdf8-4db5aa13115f","node_to_id":"668134a8-cdf1-48a9-aed7-7498c00323b6","gd":{"content":"Nee"}},{"id":"a6789806-0768-4014-b0ee-f6a9fc435c35","node_from_id":"656449a7-2f51-485b-bdf8-4db5aa13115f","node_to_id":"e1ac95bb-48e0-43cd-9c7d-92083fdcf0ec","gd":{"content":"Ja"}},{"id":"2f4415f5-8370-483f-94f3-c5c0c0bb5d98","node_from_id":"458f9439-4c06-4677-a9ce-e721b1cff95d","node_to_id":"cfa14ec1-893b-47b5-b94a-694ad4fecbaf","gd":{"content":null}},{"id":"85797819-4b64-4a2e-8968-93023cce3e80","node_from_id":"cfa14ec1-893b-47b5-b94a-694ad4fecbaf","node_to_id":"69144205-5eac-4acd-b0b3-95a416bff889","gd":{"content":"Nee"}},{"id":"cff20a8b-cc5d-4551-8084-96e38c5315e1","node_from_id":"be0c4054-12e4-4731-9f16-8f6964231b6e","node_to_id":"69144205-5eac-4acd-b0b3-95a416bff889","gd":{"content":"Ja"}},{"id":"e8a8dfe7-18ca-4d13-8049-7a0c2288c417","node_from_id":"be0c4054-12e4-4731-9f16-8f6964231b6e","node_to_id":"668134a8-cdf1-48a9-aed7-7498c00323b6","gd":{"content":"Nee"}},{"id":"befb4a84-0880-48be-b22f-4eb42a51b036","node_from_id":"cfa14ec1-893b-47b5-b94a-694ad4fecbaf","node_to_id":"be0c4054-12e4-4731-9f16-8f6964231b6e","gd":{"content":"Ja"}},{"id":"1179654d-e3e5-4bac-9585-f3796154a1ee","node_from_id":"82a34c79-31a6-4022-8a7d-0a6f404623b7","node_to_id":"668134a8-cdf1-48a9-aed7-7498c00323b6","gd":{"content":"Nee"}},{"id":"4b812a98-fc49-42df-ab27-f6424418625c","node_from_id":"82a34c79-31a6-4022-8a7d-0a6f404623b7","node_to_id":"cdfd0273-c673-49ed-b7db-e7f764032288","gd":{"content":"Ja"}},{"id":"7aa1d50d-3a62-4272-8cea-daa2204096f7","node_from_id":"8b2189a1-4118-4aec-bd68-18e8b63028ae","node_to_id":"668134a8-cdf1-48a9-aed7-7498c00323b6","gd":{"content":"Nee"}},{"id":"97670366-cf3b-473f-8092-926e6249e835","node_from_id":"e1ac95bb-48e0-43cd-9c7d-92083fdcf0ec","node_to_id":"8b2189a1-4118-4aec-bd68-18e8b63028ae","gd":{"content":"Nee"}},{"id":"e15d87e2-6801-4de7-8ef6-3860b46e9781","node_from_id":"cdfd0273-c673-49ed-b7db-e7f764032288","node_to_id":"1e61e8d4-8ea0-445b-a00f-380d83d714f1","gd":{"content":"Nee"}},{"id":"309e8cba-a79f-4467-92af-02f4bad0b7b4","node_from_id":"1e61e8d4-8ea0-445b-a00f-380d83d714f1","node_to_id":"348bd976-7d68-4f9c-915b-f303d915072a","gd":{"content":"Nee"}},{"id":"41ded9d9-759c-4243-8473-5899bcd5c376","node_from_id":"1e61e8d4-8ea0-445b-a00f-380d83d714f1","node_to_id":"ed4dffe8-84eb-44a3-a94e-a65b6ac4cf2f","gd":{"content":"Ja"}},{"id":"d9c14ad6-333f-497c-89f0-800ac4916efa","node_from_id":"348bd976-7d68-4f9c-915b-f303d915072a","node_to_id":"c0b1a6e3-8800-4181-9214-91b0fcc07976","gd":{"content":null}},{"id":"ae3f0ed2-190d-4864-9c3c-af05a1346f83","node_from_id":"ed4dffe8-84eb-44a3-a94e-a65b6ac4cf2f","node_to_id":"c0b1a6e3-8800-4181-9214-91b0fcc07976","gd":{"content":null}},{"id":"e177aa82-a0ab-494b-b2bb-a5dc5b0ec7c2","node_from_id":"e1ac95bb-48e0-43cd-9c7d-92083fdcf0ec","node_to_id":"d237a43d-a311-4845-826f-015b9f9767c6","gd":{"content":"Ja"}},{"id":"95926569-aaf0-456d-ab11-d701dd2b65ef","node_from_id":"8b2189a1-4118-4aec-bd68-18e8b63028ae","node_to_id":"d237a43d-a311-4845-826f-015b9f9767c6","gd":{"content":"Ja"}},{"id":"1cf11324-c5da-4774-a648-a7d8889adcce","node_from_id":"d237a43d-a311-4845-826f-015b9f9767c6","node_to_id":"6dbe9e5e-0972-464e-b826-2f16f317b292","gd":{"content":"Ja"}},{"id":"0a3b78ec-312b-4c23-97a8-43156050be43","node_from_id":"6dbe9e5e-0972-464e-b826-2f16f317b292","node_to_id":"82a34c79-31a6-4022-8a7d-0a6f404623b7","gd":{"content":"Nee"}},{"id":"5a8a4b52-e87f-45ba-87ea-70cca14d4566","node_from_id":"d237a43d-a311-4845-826f-015b9f9767c6","node_to_id":"668134a8-cdf1-48a9-aed7-7498c00323b6","gd":{"content":"Nee"}},{"id":"15bd06e5-118e-4be1-96b1-2a3f2b07663b","node_from_id":"cdfd0273-c673-49ed-b7db-e7f764032288","node_to_id":"ed4dffe8-84eb-44a3-a94e-a65b6ac4cf2f","gd":{"content":"Ja"}},{"id":"de46a8f6-0fd0-484c-ae64-9db3eddccf4d","node_from_id":"6dbe9e5e-0972-464e-b826-2f16f317b292","node_to_id":"ad30ed73-7b87-4cce-8d7b-a3efe5c8abbc","gd":{"content":"Ja"}},{"id":"dd8cf075-c44f-42e4-bc89-df58d46963e6","node_from_id":"ad30ed73-7b87-4cce-8d7b-a3efe5c8abbc","node_to_id":"82a34c79-31a6-4022-8a7d-0a6f404623b7","gd":{"content":"Ja"}},{"id":"1e1bc9d4-5ac4-42b8-8be2-1d0ab3e72bbc","node_from_id":"ad30ed73-7b87-4cce-8d7b-a3efe5c8abbc","node_to_id":"668134a8-cdf1-48a9-aed7-7498c00323b6","gd":{"content":"Nee"}},{"id":"48489e27-6b07-461e-8313-b182d5f0ccb2","node_from_id":"2b7baaeb-0a97-4c46-b4db-6fe20dd915fb","node_to_id":"3efbbda5-35f3-450c-9e7d-ca77fda3a69c","gd":{"content":"Ja"}},{"id":"0a520fb2-31bb-4d37-a626-16711e8ea2de","node_from_id":"3efbbda5-35f3-450c-9e7d-ca77fda3a69c","node_to_id":"1b29e684-41b6-4a8a-a58d-c019ed7af203","gd":{"content":"Ja"}},{"id":"3f001e03-1347-4311-a864-06df72120ab4","node_from_id":"1b29e684-41b6-4a8a-a58d-c019ed7af203","node_to_id":"656449a7-2f51-485b-bdf8-4db5aa13115f","gd":{"content":"Ja"}},{"id":"0b0397da-6f3e-45d9-ad6a-344ac95528ee","node_from_id":"3efbbda5-35f3-450c-9e7d-ca77fda3a69c","node_to_id":"668134a8-cdf1-48a9-aed7-7498c00323b6","gd":{"content":"Nee"}},{"id":"f38b2050-1b50-4e22-8e65-2de640efc336","node_from_id":"1b29e684-41b6-4a8a-a58d-c019ed7af203","node_to_id":"668134a8-cdf1-48a9-aed7-7498c00323b6","gd":{"content":"Nee"}},{"id":"da989fb3-16e3-4f5b-8c5c-9423880dc8f8","node_from_id":"c0b1a6e3-8800-4181-9214-91b0fcc07976","node_to_id":"fea6026d-d58a-4a45-ab7b-3791a8b994e2","gd":{"content":"Ja"}},{"id":"f735a49b-40a9-4d9a-81d4-f6d57dfece54","node_from_id":"fea6026d-d58a-4a45-ab7b-3791a8b994e2","node_to_id":"668134a8-cdf1-48a9-aed7-7498c00323b6","gd":{"content":"Nee"}},{"id":"f8115c30-7f70-41be-8e91-7078f13d5b1a","node_from_id":"ce1ab607-d0c6-4886-9821-5a927bd68d1a","node_to_id":"1f9f1a3f-2a44-4361-b486-ff2386996412","gd":{"content":"Nee"}},{"id":"6f40f82b-30c0-4001-87c9-f2f5e76ee164","node_from_id":"f5cee753-499e-4b7c-9bda-eab57cf3ae89","node_to_id":"1f9f1a3f-2a44-4361-b486-ff2386996412","gd":{"content":"Ja"}},{"id":"23769cc6-eef7-4695-885d-a383668b76d1","node_from_id":"f5cee753-499e-4b7c-9bda-eab57cf3ae89","node_to_id":"668134a8-cdf1-48a9-aed7-7498c00323b6","gd":{"content":"Nee"}},{"id":"66abe6a6-e9e9-4492-9c72-36875cae5764","node_from_id":"c0b1a6e3-8800-4181-9214-91b0fcc07976","node_to_id":"668134a8-cdf1-48a9-aed7-7498c00323b6","gd":{"content":"Nee"}},{"id":"4f52003d-0f51-4c00-92de-233afe0b872d","node_from_id":"fea6026d-d58a-4a45-ab7b-3791a8b994e2","node_to_id":"ce1ab607-d0c6-4886-9821-5a927bd68d1a","gd":{"content":"Ja"}},{"id":"7044efaa-0b69-421e-aa11-82778b2f9ad4","node_from_id":"ce1ab607-d0c6-4886-9821-5a927bd68d1a","node_to_id":"8712cf29-a08a-4b1e-b60c-706b31afecbd","gd":{"content":"Ja"}},{"id":"1e6889e5-f4d1-4775-b128-3114903e778a","node_from_id":"8712cf29-a08a-4b1e-b60c-706b31afecbd","node_to_id":"f5cee753-499e-4b7c-9bda-eab57cf3ae89","gd":{"content":"Ja"}},{"id":"0b4c1f1b-8b63-4cb9-b408-6cf569f45899","node_from_id":"8712cf29-a08a-4b1e-b60c-706b31afecbd","node_to_id":"90fec9ed-7025-4bd5-b48c-37ecb320951d","gd":{"content":"Nee"}},{"id":"5c316e81-5f2a-4bcb-9d00-7c25966c38ec","node_from_id":"90fec9ed-7025-4bd5-b48c-37ecb320951d","node_to_id":"f5cee753-499e-4b7c-9bda-eab57cf3ae89","gd":{"content":"Ja"}},{"id":"6f127101-5a11-497e-9cfb-8999fea49360","node_from_id":"90fec9ed-7025-4bd5-b48c-37ecb320951d","node_to_id":"668134a8-cdf1-48a9-aed7-7498c00323b6","gd":{"content":"Nee"}}],"main":{"name":"Untitled graph"}}
+# {"nodes":[{"id":"458f9439-4c06-4677-a9ce-e721b1cff95d","appearance":{"x":100,"y":-130,"width":180,"height":36},"gd":{"type":"start","content":"Deze tool gaat over de inzet van datagedreven analyses in enigerlei besluitvorming. Door de verschillende stappen te doorlopen, wordt inzicht verkregen in de essentiele aspecten om te bepalen of de inzet van datagedreven analyses voldoende verantwoord is.\n\nHet doel van de tool is om discussies over de inzet van datagedreven analyses (bestaande en toekomstige) te kanaliseren, te bevorderen dat de juiste vragen worden gesteld (en beantwoord) en te helpen bij het creeren van een verantwoording voor de inzet van datagedreven analyses.\n\n(De tool spreekt over datagedreven analyses, wat anlaysis met zowel artificiele intelligentie (AI) als statistiek omvat.)","variable":"start"}},{"id":"2b7baaeb-0a97-4c46-b4db-6fe20dd915fb","appearance":{"x":190,"y":210,"width":180,"height":36},"gd":{"type":"decision","content":"Is het verantwoord om de problematiek waar datagedreven analyses voor worden ontwikkeld of ingezet te reduceren tot variabelen?","variable":"reductie_tot_variabelen"}},{"id":"668134a8-cdf1-48a9-aed7-7498c00323b6","appearance":{"x":-20,"y":990,"width":180,"height":36},"gd":{"type":"end","content":"De inzet van datagedreven analyses is mogelijk niet of onvoldoende verantwoord.","variable":"niet_verantwoord"}},{"id":"69144205-5eac-4acd-b0b3-95a416bff889","appearance":{"x":190,"y":120,"width":180,"height":36},"gd":{"type":"notice","content":"Een eerste stap is om te bepalen of het verantwoord is om de problematiek waar datagedreven analyses voor worden ontwikkeld of ingezet te reduceren variabelen. Daarbij zijn onder meer de volgende overwegingen relevant:\n\n**Oversimplificatie** .\nHet proces om complexe problemen te reduceren tot variabelen kan de werkelijkheid oversimplificeren. Veel problemen in de echte wereld worden beïnvloed door een veelheid aan factoren dat niet adequaat kan worden teruggebracht tot een beperkte set variabelen. Het negeren van belangrijke factoren kan leiden tot onnauwkeurige modellen en voorspellingen. \n\n**Veronderstellingen**.\nBij het reduceren van variabelen worden vaak aannames gedaan over de relaties tussen variabelen. Deze aannames gelden niet altijd in de echte wereld, wat leidt tot onnauwkeurigheden, zelfs als een model vanuit statistisch perspectief goede resultaten vertoont. Aannames over de onderliggende mechanismen die complexe problemen veroorzaken, kunnen dan leiden tot onvolledige of onjuiste modellen. Voorts geldt dat veel fenomenen niet-lineaire relaties tussen variabelen vertonen. Het vereenvoudigen van deze relaties tot lineaire modellen kan leiden tot verkeerde uitkomsten en conclusies. Daarbij zijn er bij sommige problemen complexe interacties tussen variabelen. Door ze te reduceren tot individuele variabelen, kunnen de interacties verloren gaan.\n\n**Contextgevoeligheid**.\nOf datagedreven analyses verantwoord zijn, hangt af van de context waarin ze worden toegepast. Het opsporen van mogelijke fraude is een heel andere context dan de inzet van datagedreven analyses om het recht meer begrijpelijk te maken voor burgers. De *impact* voor betrokkenen kan per toepassing verschillen. Ook binnen een toepassing kan de impact verschillen. Het inzetten van datagedreven analyses voor het identificeren van fraudeurs is een andere context dan het inzetten ervan om te bepalen welke groep *in ieder geval niet* als fraudeur wordt aangemerkt (wat betekent dat het voor de overgebleven groep niet bekend is of zij fraudeur zijn en dus niet dat de overgebleven groep uit fraudeurs bestaat).\n\n**Generalisatie**.\nTe veel vertrouwen in modellen (het reduceren van variabelen) kan de generalisatie van modellen naar nieuwe of ongeziene situaties belemmeren. Modellen die getraind zijn op vereenvoudigde representaties van problemen presteren mogelijk niet goed in nieuwe situaties.","variable":"reductie_tot_variabelen_verantwoord_1"}},{"id":"656449a7-2f51-485b-bdf8-4db5aa13115f","appearance":{"x":500,"y":420,"width":180,"height":36},"gd":{"type":"decision","content":"Is bekend (d.w.z. onderzocht) hoe datagedreven analyses presteren ten opzichte van mensen?\n\n*Toelichting*: Zonder een dergelijke vergelijking ontbreekt een essentieel evaluatieonderdeel. Mogelijk presteren mensen (veel) beter dan de datagedreven analyse.\n\n*Bronnen*:\n\n* Lin, Z.J., Jung J., Goel, S. & Skeem, J. (2020). The limits of human predictions of recidivism. Science advances, 6(7). https://doi.org/10.1126/sciadv.aaz0652.\n\n* Dressel, J. & Farid, H. (2018). The accuracy, fairness, and limits of predicting recidivism. Science Advances, 4(1). https://doi.org/10.1126/sciadv.aao5580.\n\n* Starr, S. B. (2014). Evidence-Based Sentencing and the Scientific Rationalization of Discrimination. Stanford Law Review, 66(4), 803–872.\n\n* Oleson, J. C. (2011). Risk in Sentencing: Constitutionally Suspect Variables and Evidence-Based Sentencing. SMU Law Review, 64(4), 1399–1402.\n\n* Wolff, M. A. (2008). Evidence-Based Judicial Discretion: Promoting Public Safety Through State Sentencing Reform. New York University Law Review, 83(5), 1389–1419.\n\n* Gottfredson, S. D. & Moriarty, L. J. (2006). Clinical Versus Actuarial Judgments in Criminal Justice Decisions: Should One Replace the Other? Federal Probation, 70(2).\n\n* Harris, P. M. (2006). What Community Supervision Officers Need to Know About Actuarial Risk Assessment and Clinical Judgment. Federal Probation Journal, 70(2).\n\n* Ægisdóttir, S., White, M. J., Spengler, P. M., Maugherman, A. S., Anderson, L. A., Cook, R. S., Nichols, C. N., Lampropoulos, G. K., Walker, B. S., Cohen, G., & Rush, J. D. (2006). The Meta-Analysis of Clinical Judgment Project: Fifty-Six Years of Accumulated Research on Clinical Versus Statistical Prediction. The Counseling Psychologist, 34(3), 341–382. https://doi.org/10.1177/0011000005285875.\n\n* Glaser, D. (1955). The Efficacy of Alternative Approaches to Parole Prediction. American Sociological Review, 20(3), 283–287.","variable":"vergelijking_met_mensen_1"}},{"id":"e1ac95bb-48e0-43cd-9c7d-92083fdcf0ec","appearance":{"x":620,"y":490,"width":180,"height":36},"gd":{"type":"decision","content":"Presteert het datagedreven model beter dan mensen?","variable":"vergelijking_met_mensen_2"}},{"id":"82a34c79-31a6-4022-8a7d-0a6f404623b7","appearance":{"x":580,"y":930,"width":180,"height":36},"gd":{"type":"decision","content":"Heeft een vergelijking plaatsgevonden met een model met minder variabelen en minder complexe modellen?\n\n*Toelichting*: Onderzoek heeft aangetoond dat, waar het gaat om het voorspellen van menselijk gedrag, eenvoudige modellen (bv. logistische regressie) met slechts enkele variabelen vergelijkbaar of niet veel slechter presteren van complexe modellen (bv. neurale netwerken) met vele variabelen.\n\n*Bronnen*:\n\n* Salganik, M. J., et al. (2020). Measuring the predictability of life outcomes with a scientific mass collaboration. Proceedings of the National Academy of Sciences, 117(15), 8398–8403. https://doi.org/10.1073/pnas.1915006117.\n\n* Jung, J., Concannon, C., Shroff, R., Goel, S. & Goldstein, D.G. (2017). Simple rules for complex decisions. https://arxiv.org/abs/1702.04690.\n\n* Dressel, J. & Farid, H. (2018). The accuracy, fairness, and limits of predicting recidivism. Science Advances, 4(1). https://doi-org.mu.idm.oclc.org/10.1126/sciadv.aao5580.","variable":"vergelijking_met_eenvoudige_modellen_1"}},{"id":"cfa14ec1-893b-47b5-b94a-694ad4fecbaf","appearance":{"x":100,"y":-60,"width":180,"height":36},"gd":{"type":"decision","content":"Introduceert of vergroot de inzet van datagedreven analyses ongelijkheid?\n\n*Toelichting*: data en AI komt niet noodzakelijk aan iedereen in gelijke mate ten goede. Bepaalde groepen hebben minder of geen toegang tot technologie dan andere groepen. Ook een gebrek aan technologische geletterdheid is (mede)bepalend voor een antwoord op de vraag of personen en organisaties in gelijke mate profiteren van de technologie.","variable":"ongelijkheid"}},{"id":"be0c4054-12e4-4731-9f16-8f6964231b6e","appearance":{"x":0,"y":20,"width":180,"height":36},"gd":{"type":"decision","content":"Zijn er overtuigende argumenten voor de ongelijkheid?","variable":"ongelijkheid_gerechtvaardigd"}},{"id":"cdfd0273-c673-49ed-b7db-e7f764032288","appearance":{"x":580,"y":1000,"width":180,"height":36},"gd":{"type":"decision","content":"Presteert het complex(ere) model beter dan het eenvoudig(ere) model?","variable":"vergelijking_met_eenvoudige_modellen_2"}},{"id":"8b2189a1-4118-4aec-bd68-18e8b63028ae","appearance":{"x":570,"y":580,"width":180,"height":36},"gd":{"type":"decision","content":"Is de inzet van datagedreven analyses niettemin verantwoord?\n\n*Toelichting*: Als onduidelijk is of mensen beter preseteren dan datagedreven analyses is de inzet ervan mogelijk niet verantwoord, zelfs als ze tijdwinst opleveren of kosten besparen. ","variable":"afweging_efficientie"}},{"id":"1e61e8d4-8ea0-445b-a00f-380d83d714f1","appearance":{"x":660,"y":1080,"width":180,"height":36},"gd":{"type":"decision","content":"Verdient de inzet van een complex model de voorkeur boven een eenvoudig model? ","variable":"afweging_complex_eenvoudig_model"}},{"id":"348bd976-7d68-4f9c-915b-f303d915072a","appearance":{"x":660,"y":1170,"width":180,"height":36},"gd":{"type":"notice","content":"Overweeg om een eenvoudig model te gebruiken.","variable":"keuze_eenvoudig_model"}},{"id":"ed4dffe8-84eb-44a3-a94e-a65b6ac4cf2f","appearance":{"x":460,"y":1170,"width":180,"height":36},"gd":{"type":"notice","content":"Er lijken goede redenen te zijn om een complex model te gebruiken.","variable":"keuze_complex_model"}},{"id":"d237a43d-a311-4845-826f-015b9f9767c6","appearance":{"x":760,"y":650,"width":180,"height":36},"gd":{"type":"decision","content":"Is het voor alle variabelen in het beoogde of gebruikte model gerechtvaardigd om deze in het model te betrekken?\n\n*Toelichting*: Het gevolg van het maken van onderscheid is dat (groepen van) personen verschillend worden behandeld. Soms kan dat worden gerechtvaardigd (bv. autobestuurders die veel ongelukken veroorzaken), soms ligt dat gevoelig of is het zelfs verboden (bv. etniciteit om recidivegevaar te voorspellen). Voor iedere variabele dient dan ook de vraag te worden gesteld of er goede redenen zijn om deze wel/niet mee te nemen in het model en of statistische redenen om een variabele op te nemen (ten behoeve van een betere voorspelling) opweegt tegen andere waarden, met name publieke waarden.\n\n*Bronnen*: \n* Eckhouse, L., Lum, K., Conti-Cook, C., & Ciccolini, J. (2019). Layers of Bias: A Unified Approach for Understanding Problems With Risk Assessment. Criminal Justice and Behavior, 46(2), 185–209. https://doi.org/10.1177/0093854818811379.","variable":"onderscheid_acceptabel"}},{"id":"c0b1a6e3-8800-4181-9214-91b0fcc07976","appearance":{"x":540,"y":1250,"width":180,"height":36},"gd":{"type":"decision","content":"Produceert het model bias?\n\n*Toelichting:* Model bias betreft situaties waarin het model consistente, systematische fout maakt in haar voorspellingen, bijvoorbeeld door te veel of juist te weinig gewicht toe te kennen aan bepaalde aspecten (variabelen) of interacties tussen variabelen.","variable":"model_bias"}},{"id":"6dbe9e5e-0972-464e-b826-2f16f317b292","appearance":{"x":650,"y":750,"width":180,"height":36},"gd":{"type":"decision","content":"Is er bias in de data?\n\n*Toelichting*: Bias is het verschijnsel dat bepaalde elementen van een dataset zwaarder wegen of gepresenteerd worden dan andere. Als er bias in de data is, heeft dit gevolgen voor het model en de resultaten.","variable":"data_bias"}},{"id":"ad30ed73-7b87-4cce-8d7b-a3efe5c8abbc","appearance":{"x":480,"y":860,"width":180,"height":36},"gd":{"type":"decision","content":"Zijn er overtuigende redenen om te concluderen dat de bias niet in de weg staat aan het gebruik van datagedreven analyses?\n\n*Toelichting*: Bijvoorbeeld omdat het model voldoende gecorrigeerd kan worden voor bias.","variable":"bias_gerechtvaardigd"}},{"id":"3efbbda5-35f3-450c-9e7d-ca77fda3a69c","appearance":{"x":290,"y":280,"width":180,"height":36},"gd":{"type":"decision","content":"Meten de gebruikte of te gebruiken variabelen wat zij beogen te meten?\n\n*Toelichting*: Het ligt voor de hand om variabelen te gebruiken die meten wat men beoogt te meten. Dit is echter niet zonder meer het geval. Veelal kunnen bepaalde verschijnselen (bv. 'fraude') niet direct worden gemeten, maar via indicatoren. Daarom is het belangrijk bewijs of aanwijzingen te verzamelen over de variabelen (indicatoren) en na te denken over welke andere fenomenen de beoogde of gebruikte variabelen zouden kunnen meten.\n\n*Voorbeeld 1*: Meet een variabele 'ligt het bedrijf op een weg met doorgaand verkeer of meer afgezonderd' een indicator van bedrijfsfraude, van kapitaalkracht en/of het type bedrijfsactiviteiten (noodzaak tot zichtbaarheid)?\n\n*Voorbeeld 2*: Meet de postcode de kans op crimineel gedrag, etniciteit, en/of de buurten die door de politie vaker worden bezocht en waar hierdoor vaker strafbaar gedrag wordt geconstateerd dan in wijken die minder vaak worden bezocht?","variable":"meetvaliditeit"}},{"id":"1b29e684-41b6-4a8a-a58d-c019ed7af203","appearance":{"x":390,"y":350,"width":180,"height":36},"gd":{"type":"decision","content":"Is er een vergelijkingsgroep?\n\n*Toelichting*: De verwachting is doorgaans dat datagedreven analyses een fenomeen beter of sneller meten dan het alternatief dat thans wordt of zou kunnen worden gebruikt. Zonder goede vergelijkingsgroep is het niet mogelijk om de prestaties van datagedreven anlayses op waarde te schatten.\n\n*Voorbeeld*: Een instrument dat in 34% van de gevallen een juiste voorspelling geeft, doet het goed als een willekeurige steekproef leidt tot 12% success, maar niet goed als mensen komen tot 56% juiste voorspellingen.","variable":"vergelijkingsgroep"}},{"id":"1f9f1a3f-2a44-4361-b486-ff2386996412","appearance":{"x":520,"y":1830,"width":180,"height":36},"gd":{"type":"end","content":"De inzet van datagedreven analyses lijkt verantwoord te zijn.\n\n*Let op*: Er kunnen altijd omstandigheden of situaties zijn waarin in deze (of enige andere) beslisboom is voorzien.","variable":"verantwoord"}},{"id":"fea6026d-d58a-4a45-ab7b-3791a8b994e2","appearance":{"x":470,"y":1350,"width":180,"height":36},"gd":{"type":"decision","content":"Zijn er overtuigende redenen om te concluderen dat de bias niet in de weg staat aan het gebruik van datagedreven analyses?","variable":"bias_model_gerechtvaardigd"}},{"id":"ce1ab607-d0c6-4886-9821-5a927bd68d1a","appearance":{"x":690,"y":1440,"width":180,"height":36},"gd":{"type":"decision","content":"Maakt de datagedreven analyse onderdeel uit van een beslissing die gevolgen heeft of kan hebben voor een of meerdere individuen en/of organisaties?","variable":"onderdeel_besluitvorming"}},{"id":"f5cee753-499e-4b7c-9bda-eab57cf3ae89","appearance":{"x":460,"y":1690,"width":180,"height":36},"gd":{"type":"decision","content":"Heeft degene die geraakt wordt of kan worden door de besluitvorming een effectieve remedie ter beschikking?\n\n*Toelichting:* Het gaat om mogelijkheden om een beslissing te controleren en ertegen bezwaar te kunnen maken of een klacht ertegen te kunnen indienen. De remedie moet tevens *effectief* zijn, dat wil zeggen, er de mogelijkheid om de beslissing te betwisten of aan te vechten moet reeel zijn.\n\n*Voorbeeld:* Datagedreven analyses die leiden tot de vaststelling dat iemand een fraudeur is, waarbij de bewijslast bij de fraudeur ligt om hun ongelijk te bewijzen (omkering van de bewijslast) en het feitelijk (nagenoeg) onmogelijk is om dat ongelijk te bewijzen, doet de vraag rijzen of er een effectieve remedie beschikbaar is.","variable":"effectieve_remedie"}},{"id":"8712cf29-a08a-4b1e-b60c-706b31afecbd","appearance":{"x":580,"y":1520,"width":180,"height":36},"gd":{"type":"decision","content":"Is er effectief toezicht door mensen?\n\n*Toelichting:* Het toezicht dient effectief te zijn, dat wil zeggen dat mensen kunnen intervenieren en daadwerkelijk intervenieren waar nodig en gewenst. Er zijn verschillende modellen van menselijk toezicht.","variable":"menselijk_toezicht"}},{"id":"90fec9ed-7025-4bd5-b48c-37ecb320951d","appearance":{"x":430,"y":1580,"width":180,"height":36},"gd":{"type":"decision","content":"Kan het ontbreken van menselijk toezicht worden gerechtvaardigd?","variable":"geen_menselijk_toezicht_gerechtvaardigd"}}],"edges":[{"id":"124aba91-0cd0-49c4-8191-2e73e9f35d2f","node_from_id":"2b7baaeb-0a97-4c46-b4db-6fe20dd915fb","node_to_id":"668134a8-cdf1-48a9-aed7-7498c00323b6","gd":{"content":"Nee"}},{"id":"3384a7ac-51e8-4b9e-a1e0-d689592b24fe","node_from_id":"656449a7-2f51-485b-bdf8-4db5aa13115f","node_to_id":"668134a8-cdf1-48a9-aed7-7498c00323b6","gd":{"content":"Nee"}},{"id":"a6789806-0768-4014-b0ee-f6a9fc435c35","node_from_id":"656449a7-2f51-485b-bdf8-4db5aa13115f","node_to_id":"e1ac95bb-48e0-43cd-9c7d-92083fdcf0ec","gd":{"content":"Ja"}},{"id":"2f4415f5-8370-483f-94f3-c5c0c0bb5d98","node_from_id":"458f9439-4c06-4677-a9ce-e721b1cff95d","node_to_id":"cfa14ec1-893b-47b5-b94a-694ad4fecbaf","gd":{"content":null}},{"id":"85797819-4b64-4a2e-8968-93023cce3e80","node_from_id":"cfa14ec1-893b-47b5-b94a-694ad4fecbaf","node_to_id":"69144205-5eac-4acd-b0b3-95a416bff889","gd":{"content":"Nee"}},{"id":"cff20a8b-cc5d-4551-8084-96e38c5315e1","node_from_id":"be0c4054-12e4-4731-9f16-8f6964231b6e","node_to_id":"69144205-5eac-4acd-b0b3-95a416bff889","gd":{"content":"Ja"}},{"id":"e8a8dfe7-18ca-4d13-8049-7a0c2288c417","node_from_id":"be0c4054-12e4-4731-9f16-8f6964231b6e","node_to_id":"668134a8-cdf1-48a9-aed7-7498c00323b6","gd":{"content":"Nee"}},{"id":"befb4a84-0880-48be-b22f-4eb42a51b036","node_from_id":"cfa14ec1-893b-47b5-b94a-694ad4fecbaf","node_to_id":"be0c4054-12e4-4731-9f16-8f6964231b6e","gd":{"content":"Ja"}},{"id":"1179654d-e3e5-4bac-9585-f3796154a1ee","node_from_id":"82a34c79-31a6-4022-8a7d-0a6f404623b7","node_to_id":"668134a8-cdf1-48a9-aed7-7498c00323b6","gd":{"content":"Nee"}},{"id":"4b812a98-fc49-42df-ab27-f6424418625c","node_from_id":"82a34c79-31a6-4022-8a7d-0a6f404623b7","node_to_id":"cdfd0273-c673-49ed-b7db-e7f764032288","gd":{"content":"Ja"}},{"id":"7aa1d50d-3a62-4272-8cea-daa2204096f7","node_from_id":"8b2189a1-4118-4aec-bd68-18e8b63028ae","node_to_id":"668134a8-cdf1-48a9-aed7-7498c00323b6","gd":{"content":"Nee"}},{"id":"97670366-cf3b-473f-8092-926e6249e835","node_from_id":"e1ac95bb-48e0-43cd-9c7d-92083fdcf0ec","node_to_id":"8b2189a1-4118-4aec-bd68-18e8b63028ae","gd":{"content":"Nee"}},{"id":"e15d87e2-6801-4de7-8ef6-3860b46e9781","node_from_id":"cdfd0273-c673-49ed-b7db-e7f764032288","node_to_id":"1e61e8d4-8ea0-445b-a00f-380d83d714f1","gd":{"content":"Nee"}},{"id":"309e8cba-a79f-4467-92af-02f4bad0b7b4","node_from_id":"1e61e8d4-8ea0-445b-a00f-380d83d714f1","node_to_id":"348bd976-7d68-4f9c-915b-f303d915072a","gd":{"content":"Nee"}},{"id":"41ded9d9-759c-4243-8473-5899bcd5c376","node_from_id":"1e61e8d4-8ea0-445b-a00f-380d83d714f1","node_to_id":"ed4dffe8-84eb-44a3-a94e-a65b6ac4cf2f","gd":{"content":"Ja"}},{"id":"d9c14ad6-333f-497c-89f0-800ac4916efa","node_from_id":"348bd976-7d68-4f9c-915b-f303d915072a","node_to_id":"c0b1a6e3-8800-4181-9214-91b0fcc07976","gd":{"content":null}},{"id":"ae3f0ed2-190d-4864-9c3c-af05a1346f83","node_from_id":"ed4dffe8-84eb-44a3-a94e-a65b6ac4cf2f","node_to_id":"c0b1a6e3-8800-4181-9214-91b0fcc07976","gd":{"content":null}},{"id":"e177aa82-a0ab-494b-b2bb-a5dc5b0ec7c2","node_from_id":"e1ac95bb-48e0-43cd-9c7d-92083fdcf0ec","node_to_id":"d237a43d-a311-4845-826f-015b9f9767c6","gd":{"content":"Ja"}},{"id":"95926569-aaf0-456d-ab11-d701dd2b65ef","node_from_id":"8b2189a1-4118-4aec-bd68-18e8b63028ae","node_to_id":"d237a43d-a311-4845-826f-015b9f9767c6","gd":{"content":"Ja"}},{"id":"1cf11324-c5da-4774-a648-a7d8889adcce","node_from_id":"d237a43d-a311-4845-826f-015b9f9767c6","node_to_id":"6dbe9e5e-0972-464e-b826-2f16f317b292","gd":{"content":"Ja"}},{"id":"0a3b78ec-312b-4c23-97a8-43156050be43","node_from_id":"6dbe9e5e-0972-464e-b826-2f16f317b292","node_to_id":"82a34c79-31a6-4022-8a7d-0a6f404623b7","gd":{"content":"Nee"}},{"id":"5a8a4b52-e87f-45ba-87ea-70cca14d4566","node_from_id":"d237a43d-a311-4845-826f-015b9f9767c6","node_to_id":"668134a8-cdf1-48a9-aed7-7498c00323b6","gd":{"content":"Nee"}},{"id":"15bd06e5-118e-4be1-96b1-2a3f2b07663b","node_from_id":"cdfd0273-c673-49ed-b7db-e7f764032288","node_to_id":"ed4dffe8-84eb-44a3-a94e-a65b6ac4cf2f","gd":{"content":"Ja"}},{"id":"de46a8f6-0fd0-484c-ae64-9db3eddccf4d","node_from_id":"6dbe9e5e-0972-464e-b826-2f16f317b292","node_to_id":"ad30ed73-7b87-4cce-8d7b-a3efe5c8abbc","gd":{"content":"Ja"}},{"id":"dd8cf075-c44f-42e4-bc89-df58d46963e6","node_from_id":"ad30ed73-7b87-4cce-8d7b-a3efe5c8abbc","node_to_id":"82a34c79-31a6-4022-8a7d-0a6f404623b7","gd":{"content":"Ja"}},{"id":"1e1bc9d4-5ac4-42b8-8be2-1d0ab3e72bbc","node_from_id":"ad30ed73-7b87-4cce-8d7b-a3efe5c8abbc","node_to_id":"668134a8-cdf1-48a9-aed7-7498c00323b6","gd":{"content":"Nee"}},{"id":"48489e27-6b07-461e-8313-b182d5f0ccb2","node_from_id":"2b7baaeb-0a97-4c46-b4db-6fe20dd915fb","node_to_id":"3efbbda5-35f3-450c-9e7d-ca77fda3a69c","gd":{"content":"Ja"}},{"id":"0a520fb2-31bb-4d37-a626-16711e8ea2de","node_from_id":"3efbbda5-35f3-450c-9e7d-ca77fda3a69c","node_to_id":"1b29e684-41b6-4a8a-a58d-c019ed7af203","gd":{"content":"Ja"}},{"id":"3f001e03-1347-4311-a864-06df72120ab4","node_from_id":"1b29e684-41b6-4a8a-a58d-c019ed7af203","node_to_id":"656449a7-2f51-485b-bdf8-4db5aa13115f","gd":{"content":"Ja"}},{"id":"0b0397da-6f3e-45d9-ad6a-344ac95528ee","node_from_id":"3efbbda5-35f3-450c-9e7d-ca77fda3a69c","node_to_id":"668134a8-cdf1-48a9-aed7-7498c00323b6","gd":{"content":"Nee"}},{"id":"f38b2050-1b50-4e22-8e65-2de640efc336","node_from_id":"1b29e684-41b6-4a8a-a58d-c019ed7af203","node_to_id":"668134a8-cdf1-48a9-aed7-7498c00323b6","gd":{"content":"Nee"}},{"id":"da989fb3-16e3-4f5b-8c5c-9423880dc8f8","node_from_id":"c0b1a6e3-8800-4181-9214-91b0fcc07976","node_to_id":"fea6026d-d58a-4a45-ab7b-3791a8b994e2","gd":{"content":"Ja"}},{"id":"f735a49b-40a9-4d9a-81d4-f6d57dfece54","node_from_id":"fea6026d-d58a-4a45-ab7b-3791a8b994e2","node_to_id":"668134a8-cdf1-48a9-aed7-7498c00323b6","gd":{"content":"Nee"}},{"id":"f8115c30-7f70-41be-8e91-7078f13d5b1a","node_from_id":"ce1ab607-d0c6-4886-9821-5a927bd68d1a","node_to_id":"1f9f1a3f-2a44-4361-b486-ff2386996412","gd":{"content":"Nee"}},{"id":"6f40f82b-30c0-4001-87c9-f2f5e76ee164","node_from_id":"f5cee753-499e-4b7c-9bda-eab57cf3ae89","node_to_id":"1f9f1a3f-2a44-4361-b486-ff2386996412","gd":{"content":"Ja"}},{"id":"23769cc6-eef7-4695-885d-a383668b76d1","node_from_id":"f5cee753-499e-4b7c-9bda-eab57cf3ae89","node_to_id":"668134a8-cdf1-48a9-aed7-7498c00323b6","gd":{"content":"Nee"}},{"id":"4f52003d-0f51-4c00-92de-233afe0b872d","node_from_id":"fea6026d-d58a-4a45-ab7b-3791a8b994e2","node_to_id":"ce1ab607-d0c6-4886-9821-5a927bd68d1a","gd":{"content":"Ja"}},{"id":"7044efaa-0b69-421e-aa11-82778b2f9ad4","node_from_id":"ce1ab607-d0c6-4886-9821-5a927bd68d1a","node_to_id":"8712cf29-a08a-4b1e-b60c-706b31afecbd","gd":{"content":"Ja"}},{"id":"1e6889e5-f4d1-4775-b128-3114903e778a","node_from_id":"8712cf29-a08a-4b1e-b60c-706b31afecbd","node_to_id":"f5cee753-499e-4b7c-9bda-eab57cf3ae89","gd":{"content":"Ja"}},{"id":"0b4c1f1b-8b63-4cb9-b408-6cf569f45899","node_from_id":"8712cf29-a08a-4b1e-b60c-706b31afecbd","node_to_id":"90fec9ed-7025-4bd5-b48c-37ecb320951d","gd":{"content":"Nee"}},{"id":"5c316e81-5f2a-4bcb-9d00-7c25966c38ec","node_from_id":"90fec9ed-7025-4bd5-b48c-37ecb320951d","node_to_id":"f5cee753-499e-4b7c-9bda-eab57cf3ae89","gd":{"content":"Ja"}},{"id":"6f127101-5a11-497e-9cfb-8999fea49360","node_from_id":"90fec9ed-7025-4bd5-b48c-37ecb320951d","node_to_id":"668134a8-cdf1-48a9-aed7-7498c00323b6","gd":{"content":"Nee"}},{"id":"670ef6ae-b044-487e-9492-b37cc615484e","node_from_id":"69144205-5eac-4acd-b0b3-95a416bff889","node_to_id":"2b7baaeb-0a97-4c46-b4db-6fe20dd915fb","gd":{"content":null}},{"id":"ea98a8fd-72f4-4b48-915d-d857f80fc8e8","node_from_id":"c0b1a6e3-8800-4181-9214-91b0fcc07976","node_to_id":"ce1ab607-d0c6-4886-9821-5a927bd68d1a","gd":{"content":"Nee"}}],"main":{"name":"Untitled graph"}}
 # [END INLINE GRAPHDOC EXPORT]
